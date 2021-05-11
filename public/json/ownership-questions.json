@@ -1,0 +1,245 @@
+[
+  {
+    "id": 1,
+    "question": "Real Estate is defined as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Land including, water, air, and improvements.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Property sold between buyers and sellers.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Commercial property, but not residential.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Land and all items within the improvements.",
+        "is_correct": false
+      }
+    ],
+    "remediation": "- Real Estate is defined as land, water, air, and improvements attached to the land."
+  },
+  {
+    "id": 2,
+    "question": "Items attached to land intended to be permanent would be considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Personal Property",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Real Property",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Monuments",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Appurtenances",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Items attached to land intended to be permanent are considered real property or commonly called real estate."
+  },
+  {
+    "id": 3,
+    "question": "Which of the following is considered personal property:",
+    "options": [
+      {
+        "id": 1,
+        "value": "A basketball goal affixed to the ground in cement",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "A stack of firewood",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Built-in bookshelves",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Garage door openers",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Personal property is classified as temporary moveable items that are not attached or specifically designed to belong with the subject property."
+  },
+  {
+    "id": 4,
+    "question": "Items that were once personal property that becomes attached to land are called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Chattels",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Easements",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Improvements",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Fixtures",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Personal property items attached to land become real estate or real property and are called fixtures."
+  },
+  {
+    "id": 5,
+    "question": "The purchase of real estate comes with certain privileges known as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Life Estate",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Bundle of Rights",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Air Rights",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Surface Rights",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The purchase of real estate, affords the property owner a bundle of rights that include the right of"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is NOT a severable property right that can be sold separately:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Surface Rights",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Air Rights",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Civil Rights",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subsurface Rights",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Rights to the Surface, SubSurface, and Air can be sold by the property owner separately from the bundle of rights."
+  },
+  {
+    "id": 7,
+    "question": "The existence of a storage shed that sits on the land of another is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Encroachment",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Encumbrance",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Easement",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Escheat",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Encroachment occurs when an improvement or fixture intrudes upon an adjoining property."
+  },
+  {
+    "id": 8,
+    "question": "An estate for years contains which of the following:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Auto-renew clause",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Statutory Law",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Beginning and end date with no auto-renewing clause.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Homestead Protection",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Estate for years may be for any period of time stating specific beginning & terminations dates and may not contain an automatic renewal clause."
+  },
+  {
+    "id": 9,
+    "question": "When more than two parties share ownership, the owner's share an:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Interest",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Eminent Domain",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Estate at Sufferance",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Undivided Interest",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When two or more co-owners collectively own a property they share an undivided interest in the property."
+  }
+]

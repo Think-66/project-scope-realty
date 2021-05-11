@@ -1,0 +1,60 @@
+[
+  {
+    "id": 1,
+    "question": "A real estate appraisal is defined as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "A guarantee of what the property will sell for",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Opinion of Value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Comparative Market Analysis",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Cost Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A real estate Appraisal is an opinion of the market value of a property."
+    ]
+  },
+  {
+    "id": 2,
+    "question": "What makes properties go up in value when inventory is low?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The Law of Supply and Demand",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Stock Market",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Index 500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution Clause",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Law of Supply and Demand causes properties to go up in value when inventory is low and go down in value when supply is high."
+    ]
+  }
+]

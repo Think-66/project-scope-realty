@@ -1939,6 +1939,7 @@ a:hover {
 	z-index: 9999;
 	overflow: hidden;
 	background: #fff;
+	display: none;
 }
 #preloader:before {
 	content: "";
