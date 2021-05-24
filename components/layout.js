@@ -1,14 +1,16 @@
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Head from "next/head";
 
-export default function Layout ({children}) {
+export default function AppLayout({ children, noFooter }) {
   return (
     <>
-      <Header/>
-      <main>
-        {children}
-      </main>
-      <Footer/>
+      <Head>
+        <title>Reality</title>
+      </Head>
+      {!noFooter && <Header />}
+      <main>{children}</main>
+      {!noFooter && <Footer />}
     </>
-  )
+  );
 }

@@ -1,153 +1,107 @@
-import Head from 'next/head'
-import SlideUpAnimation from '../animations/slideUpAnimation';
-import FadeInAnimation from '../animations/fadeInAnimation';
-import React, { useEffect  } from "react";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import { signIn, csrfToken } from 'next-auth/client';
+import React, { useState } from "react";
+import Head from "next/head";
+import { useRouter } from "next/router";
+import Layout from "../components/layout";
+import { signIn, csrfToken } from "next-auth/client";
 
 Login.getInitialProps = async (context) => {
-    return {
-        csrfToken: await csrfToken(context)
-    }
-}
+  return {
+    csrfToken: await csrfToken(context),
+  };
+};
 
-export default function Login({ csrfToken }) {
-    return (
-        <div>
-            <Head>
-                <meta charSet="utf-8" />
-                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-                <title>Login</title>
-                <meta name="description" content />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" />
-                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossOrigin="anonymous" />
-            </Head>
-            <div>
-                <header className="login-header">
-                    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                    <div className="container-fluid position-relative">
-                        <a className="navbar-brand" href="#">
-                        <img src="images/footerlogo.png" alt="logo" className="img-fluid" />
-                        </a>
-                    </div>
-                    </nav>
-                </header>
-                <section className="bannertitle-sec">
-                    <div className="container">
-                    <div className="bannerwithcount">
-                        <h4 className="bannertitle col-xs-12 col-md-5 col-lg-3">
-                        Log in
+export default function Login() {
+  const router = useRouter();
+  const [email, setEmail] = useState(null);
+
+  return (
+    <Layout noFooter={true}>
+      <Head>
+        <title>Login</title>
+      </Head>
+      <div>
+        <section className="single-page-sec">
+          <div className="container">
+            <div className="row">
+              <div className="col-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <h2 className="ctl-pro-sig text-center ctl-hdr-mar-bot">
+                  Sign in to Scope Reality
+                </h2>
+              </div>
+              <div className="col-lg-8 col-md-8 col-sm-12 m-auto">
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault();
+                    signIn("email", { email });
+                  }}
+                  className="login_form"
+                >
+                  <div className="ctl-pro-inf-blk ctl-mar-bot">
+                    <div className="ctl-inf-bot">
+                      <div className="ctl-com-inp ctl-mar-bot">
+                        <label htmlFor="email">EMAIL</label>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          placeholder="thomas@mail.com"
+                          onChange={(event) => {
+                            setEmail(event.target.value);
+                          }}
+                        />
+                      </div>
+                      {/* <div className="ctl-com-inp ctl-mar-bot">
+                      <label htmlFor="pwd">PASSWORD</label>
+                      <input
+                        type="password"
+                        id="pwd"
+                        placeholder="*************"
+                      />
+                      <a href="#!" className="ctl-fot-pwd">
+                        Forget your password?
+                      </a>
+                    </div> */}
+                      <div className="ctl-sigin ctl-mar-bot">
+                        <input type="submit" defaultValue="Sign in" />
+                      </div>
+                      <div className="ctl-not-mem">
+                        <h4 className="ctl-not-mem">
+                          Not a member?
+                          <a href="#!" className="ctl-fot-pwd">
+                            Register
+                          </a>
                         </h4>
+                      </div>
+                      <div className="clearfix" />
                     </div>
+                    <div className="clearfix" />
+                  </div>
+                </form>
+
+                <div className="ctl-pro-inf-scp">
+                  <div className="ctl-scp-top">
+                    <h4>SCOPE REALTY AGENTS:</h4>
+                  </div>
+                  <div className="ctl-scp-bot">
+                    <div className="ctl-sco-ico-lft">
+                      <a href="#!">
+                        {" "}
+                        <img src="/images/image12.png" alt="" />
+                      </a>
                     </div>
-                </section>
-                <section className="referfriendpage_wrapper loginpage_wrapper">       
-                    <div className="container">     
-                    <div className="row">
-                        <div className="col-md-7 col-lg-7 login_wrapper">
-                        <form method='post' action='/api/auth/signin/email' className="login_form">
-                            <div className="emailwrap">
-                                <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
-                                <label htmlFor="email">Email address</label>
-                                <input type='text' id='email' name='email' placeholder="Type your email address"/>
-                                <div className="submitbutton_wrap">
-                                    <button type='submit' className=" save_btn ">Submit</button>
-                                </div>
-                            </div>
-                        </form>
-                        </div>
+                    <div className="ctl-sco-ico-rit">
+                      <a onClick={() => signIn("google")}>
+                        <img src="/images/image11.png" alt="" />
+                      </a>
                     </div>
-                    </div></section>
-                <footer>
-                    <div className="container">
-                    <div className="row footer_row">
-                        <div className="col-md-5">
-                        <div className="col-right-padding footer_widgets_logo">
-                            <a href="#">
-                            <img src="images/footerlogo.png" alt="logo" />
-                            </a>
-                            <p>
-                            The premier real estate education resource.
-                            </p>
-                            <p>
-                            Copyright © Summit RET 2021
-                            </p>
-                        </div>
-                        </div>
-                        <div className="col-md-2">
-                        <div className="footer_widgets menu_widgets">
-                            <ul>
-                            <li>
-                                <a href="#">
-                                Courses
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                Blog
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                Contact Us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                About Us
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div className="col-md-2">
-                        <div className="footer_widgets menu_widgets">
-                            <ul>
-                            <li>
-                                <a href="#">
-                                My Account
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                Privacy Policy
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                Terms
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                        <div className="col-md-3">
-                        <div className="footer_widgets menu_widgets">
-                            <ul>
-                            <li>
-                                <a href="#">
-                                support@summitret.com
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                (855) 765-0049
-                                </a>
-                            </li>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </footer>
-                {/*[if lt IE 8]>
-                    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-                <![endif]*/}
+                  </div>
                 </div>
-        </div>
-    );
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
 }

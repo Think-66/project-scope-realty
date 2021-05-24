@@ -19,6 +19,12 @@ const options = {
       },
       from: process.env.EMAIL_FROM,
     }),
+    Providers.Google({
+      clientId: process.env.GOOGLE_ID,
+      clientSecret: process.env.GOOGLE_SECRET,
+      authorizationUrl:
+        "https://accounts.google.com/o/oauth2/v2/auth?prompt=consent&access_type=offline&response_type=code",
+    }),
   ],
   // Database optional. MySQL, Maria DB, Postgres and MongoDB are supported.
   // https://next-auth.js.org/configuration/databases
@@ -84,10 +90,10 @@ const options = {
   // pages is not specified for that route.
   // https://next-auth.js.org/configuration/pages
   pages: {
-    signIn: "/login", // Displays signin buttons
-    // signOut: '/api/auth/signout', // Displays form with sign out button
-    // error: '/api/auth/error', // Error code passed in query string as ?error=
-    // verifyRequest: '/api/auth/verify-request', // Used for check email page
+    // signIn: "/login", // Displays signin buttons
+    // signOut: "/api/auth/signout", // Displays form with sign out button
+    // error: "/api/auth/error", // Error code passed in query string as ?error=
+    // verifyRequest: "/api/auth/verify-request", // Used for check email page
     // newUser: null // If set, new users will be directed here on first sign in
   },
 
@@ -103,9 +109,7 @@ const options = {
       //console.log("URL: " + JSON.stringify(url, null, 4));
       //console.log("Base URL: " + JSON.stringify(baseUrl, null, 4));
       return Promise.resolve(
-        `${
-          process.env.APP_URL || "http://localhost:3000"
-        }/practice-exam-page-one`
+        `${process.env.APP_URL || "http://localhost:3000"}/dashboard`
       );
     },
     // jwt: async (token, user, account, profile, isNewUser) => { return Promise.resolve(token) },

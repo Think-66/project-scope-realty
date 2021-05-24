@@ -6,120 +6,59 @@ import { dependencies } from "../package.json";
 export default function Footer() {
   const [session, loading] = useSession();
   return (
-    <>
-      {session && (
-        <>
-          <footer className="footer-section">
-            <div className="footer-top">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-3 col-sm-6 footer-inner">
-                    {/*Column1*/}
-                    <div className="footer-logo">
-                      <a className="navbar-brand" href="index.html">
-                        <img
-                          src="assets/img/logo.svg"
-                          className="img-logo img-fluid"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-6 footer-inner">
-                    {/*Column1*/}
-                    <div className="footer-pad">
-                      <h4>Help &amp; Support</h4>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                          <a href="#">Stay Safe</a>
-                        </li>
-                        <li>
-                          <a href="#">Contact us</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-6 pl-lg-5 footer-inner">
-                    {/*Column1*/}
-                    <div className="footer-pad">
-                      <h4>Social</h4>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#">Blog</a>
-                        </li>
-                        <li>
-                          <a href="#">Facebook</a>
-                        </li>
-                        <li>
-                          <a href="#">Twitter</a>
-                        </li>
-                        <li>
-                          <a href="#">Youtube</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-md-3 col-sm-6 footer-inner">
-                    {/*Column1*/}
-                    <div className="footer-pad">
-                      <h4>About us</h4>
-                      <ul className="list-unstyled">
-                        <li>
-                          <a href="#">About us</a>
-                        </li>
-                        <li>
-                          <a href="#">Career</a>
-                        </li>
-                        <li>
-                          <a href="#">Terms and Conditions</a>
-                        </li>
-                        <li>
-                          <a href="#">Privacy Policy</a>
-                        </li>
-                        <li>
-                          <a href="#">Sitemap</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="col-md-2 footer-inner">
-                    <h4>Follow Us</h4>
-                    <ul className="social-network social-circle list-inline">
-                      <li className="list-inline-item">
-                        <a href="#" className="icoFacebook" title="Facebook">
-                          <i className="fa fa-facebook" />
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a href="#" className="icoTwitter" title="Linkedin">
-                          <i className="fa fa-twitter" />
-                        </a>
-                      </li>
-                      <li className="list-inline-item">
-                        <a href="#" className="icoInstagram" title="Instagram">
-                          <i className="fa fa-instagram" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="footer-bottom">
-              <div className="container">
-                <div className="row">
-                  <div className="col-md-12">
-                    <p className="text-center">Copyright @ 2019</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-          <div id="preloader" />
-        </>
-      )}
-    </>
+    <footer className="main-footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+            <h3 className="ft-head">Headquarters</h3>
+            <ul className="ft-list">
+              <li>
+                68 West 39th Street, 2nd Fl <br />
+                New York, NY 10018
+              </li>
+              <li>(212) 408-1620</li>
+              <li>(347) 619-6229 fax</li>
+            </ul>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+            <h3 className="ft-head">COmpany</h3>
+            <ul className="ft-list">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Team</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-lg-4 col-md-4 col-sm-12 col-12">
+            <h3 className="ft-head">More</h3>
+            <ul className="ft-list">
+              <li>
+                <a href="#">Reviews</a>
+              </li>
+              <li>
+                <a href="#">Press</a>
+              </li>
+              <li>
+                <a href="#">ASPCA</a>
+              </li>
+              <li>
+                <a href="#">St. Jude Children's Research Hospital</a>
+              </li>
+              <li>
+                <a href="#">Covenant House New York</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="bottom-stripe">
+        <p>© Copyright 2021</p>
+      </div>
+    </footer>
   );
 }
