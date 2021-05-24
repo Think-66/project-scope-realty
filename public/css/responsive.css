@@ -1,0 +1,230 @@
+@media(max-width: 1196px){
+    .wrapper{
+        margin-top: -260px;
+    }
+}
+@media(max-width: 991px){
+    .wrapper{
+        margin-top: 0px;
+    }
+}
+@media(max-width: 780px){
+    .main-nav{
+        padding: 0px 1.5rem;
+    }
+    .main-nav .nav-wrapper .profile-wrape{
+        margin-right: 0;
+    }
+}
+@media(max-width: 640px){
+    .main-nav{
+        padding: 0px 1.5rem;
+    }
+    .main-nav .nav-wrapper .profile-wrape .profile-name{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+    .ctl-cli-mar-aut{
+        margin: auto;
+    }
+    .ctl-cli-mem-txt h3{
+        font-size: 21px !important;
+        text-align: center!important;
+        padding-left:0 !important;
+        padding-top: 10px;
+    }
+    .ctl-onl-mem-txt{
+        margin-top: 10px;
+        padding-left: 0 !important;
+    }
+    .ctl-bak-cus-btn a {
+        display: block !important;
+        text-align: center !important;
+    }
+    .cmp-cus-des-pad{
+        padding-left: 15px !important;
+    }
+    .ctl-msg-det-txt{
+        margin-top: 10px;
+    }
+    .ctl-out-goi-mes{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .ctl-out-goi-rit{
+        float: right;
+        margin-top: 20px;
+    }
+    .ctl-cli-opt-bot {
+        padding: 20px 0 !important;
+    }
+    .ctl-msg-unl-hor{
+        overflow-x: scroll;
+    }
+    .ctl-sen-cus-btn {
+        text-align: center !important;
+    }
+    .ctl-cli-con-top{
+        height: 614px !important;
+    }
+    /**/
+    .ctl-bak-lis-top{
+        display: grid !important;
+        grid-template-columns: auto;
+
+        grid-row-gap: 20px;
+    }
+    .ctl-bak-lis-top a {
+        margin: auto;
+    }
+    .ctl-bak-lis-top a img{
+        height: 90px !important;
+    }
+    .ctl-hdr-fil-top {
+        padding: 25px 25px !important;
+    }
+    .ctl-bak-cus-btn{
+        margin-top: 25px;
+    }
+    .ctl-hdr-fil-bot{
+        padding: 25px 15px !important;
+    }
+    .ctl-dow-cus-btn a{
+        width: 100% !important;
+    }
+}
+
+/*end of 320 X 575 resolution screen*/
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .ctl-cli-mar-aut{
+        margin: auto;
+    }
+    .ctl-cli-mem-txt h3{
+        font-size: 21px !important;
+        text-align: center!important;
+        padding-left:0 !important;
+        padding-top: 10px;
+    }
+    .ctl-onl-mem-txt{
+        margin-top: 10px;
+        padding-left: 0 !important;
+    }
+    .ctl-bak-cus-btn a {
+        display: block !important;
+        text-align: center !important;
+    }
+    .cmp-cus-des-pad{
+        padding-left: 15px !important;
+    }
+    .ctl-msg-det-txt{
+        margin-top: 10px;
+    }
+    .ctl-out-goi-mes{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .ctl-out-goi-rit{
+        float: right;
+        margin-top: 20px;
+    }
+    .ctl-cli-opt-bot {
+        padding: 20px 0 !important;
+    }
+    .ctl-msg-unl-hor{
+        overflow-x: scroll;
+    }
+    .ctl-sen-cus-btn {
+        text-align: center !important;
+    }
+    .ctl-cli-con-top{
+        height: 614px !important;
+    }
+    /**/
+    .ctl-bak-lis-top{
+        display: grid !important;
+        grid-template-columns: auto auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .ctl-bak-lis-top a {
+        width: 100% !important;
+    }
+    .ctl-bak-lis-top a img{
+        height: 113px !important;
+    }
+    .ctl-hdr-fil-top {
+        padding: 25px 25px !important;
+    }
+    .ctl-bak-cus-btn{
+        margin-top: 25px;
+    }
+    .ctl-hdr-fil-bot{
+        padding: 30px 15px !important;
+    }
+
+}
+/*end of 576 X 767 resolution screen*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ctl-cli-mar-aut{
+        margin: auto;
+    }
+    .ctl-cli-mem-txt h3{
+        font-size: 21px !important;
+        text-align: center!important;
+        padding-left:0 !important;
+        padding-top: 10px;
+    }
+    .ctl-onl-mem-txt{
+        margin-top: 10px;
+        padding-left: 0 !important;
+    }
+    .ctl-bak-cus-btn a {
+        display: block !important;
+        text-align: center !important;
+    }
+    .cmp-cus-des-pad{
+        padding-left: 15px !important;
+    }
+    .ctl-msg-det-txt{
+        margin-top: 10px;
+    }
+    .ctl-out-goi-mes{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+    .ctl-out-goi-rit{
+        float: right;
+        margin-top: 20px;
+    }
+    .ctl-cli-opt-bot {
+        padding: 20px 0 !important;
+    }
+    .ctl-msg-unl-hor{
+        overflow-x: scroll;
+    }
+    .ctl-sen-cus-btn {
+        text-align: center !important;
+    }
+    .ctl-cli-con-top{
+        height: 614px !important;
+    }
+    /**/
+}
+
+/*end of 768 X 991 resolution screen*/
