@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSession } from "next-auth/client";
 import Layout from "./layout";
 import AccessDenied from "./access-denied";
+import { ToastContainer } from "react-nextjs-toast";
 
 export default function ProtectedLayout({ children }) {
   const [session, loading] = useSession();
