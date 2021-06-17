@@ -1,0 +1,5805 @@
+[
+  {
+    "id": 1,
+    "question": "What makes properties go up in value when inventory is low?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The Law of Supply and Demand",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Stock Market",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Index 500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution Clause",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Law of Supply and Demand causes properties to go up in value when inventory is low and go down in value when supply is high."
+    ]
+  },
+  {
+    "id": 2,
+    "question": "Which is NOT true of the appraisal process?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The subject property value never gets adjusted.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "When the subject property is superior add value to the comparable.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "When the subject property is inferior subtract value from the comparable.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "When the comparable property is superior subtract value from the comparable.",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The subject property value never gets adjusted.. Adjustments are always made to the comparable property only."
+    ]
+  },
+  {
+    "id": 3,
+    "question": "Define Appreciation:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Gratitude",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Loss of Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Humble",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Increase of Value",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Appreciation is the increase of value, opposite of depreciation."
+    ]
+  },
+  {
+    "id": 4,
+    "question": "Is an Appraisal the same as a CMA?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Yes, both must be completed by an Appraiser.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Yes, they both give opinion of value of subject property.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "No, a licensed appraiser must complete an appraisal agents can complete CMAs.",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Yes, they both can be complete by an agent.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A licensed appraiser must complete an appraisal but real estate agents are able to complete CMAs."
+    ]
+  },
+  {
+    "id": 5,
+    "question": "An appraiser's job is to determine:",
+    "options": [
+      {
+        "id": 1,
+        "value": "If the buyer makes enough to support the loan",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "A properties market value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Both of these",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Neither of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An appraiser's job is to determine a property's market value."
+    ]
+  },
+  {
+    "id": 6,
+    "question": "The first objective in the appraisal process is to:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Take pictures of the property",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Measure the Property",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "State the Problem",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Decide if the buyer can afford the purchase price",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The first objective in the appraisal process is to state the problem."
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Ryan listed his home for sale with an agent. The property was exposed to an open and free market and after a reasonable time the property sold to a buyer unrelated to Ryan. This can be considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Fair Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Arms Length Transaction",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Sale Under Duress",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property exposed to an open and free market and sells after a reasonable period of time, to unrelated parties which both acted in their own self interest is considered an Arm\u00e2\u20ac\u2122s Length Transaction."
+    ]
+  },
+  {
+    "id": 8,
+    "question": "The most in depth type of appraisal commonly used for investment and commercial properties is called :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Comprehensive Appraisal",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Narrative Appraisal",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Short Form Appraisal",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Letter Form Appraisal",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The most in depth type of appraisal commonly used for investment and commercial properties is called a Narrative Appraisal."
+    ]
+  },
+  {
+    "id": 9,
+    "question": "Which appraisal principle determines the most beneficial utilization for a piece of property?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Highest and Best Use",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Regression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      [
+        "The",
+        "appraisal principle of Highest and Best Use determines the most beneficial utilization for a piece of property."
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "question": "When listing inventory is low homes sell for higher prices than when the market is flooded with listing. This is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Supply and Demand",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "An item is most valuable when there are fewer of them. The lower the supply the higher the demand."
+    ]
+  },
+  {
+    "id": 11,
+    "question": "The idea that one property will bring the same as a similar comparable property is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Progression",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Anticipation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The idea that one property will bring the same as a similar comparable property is called substitution."
+    ]
+  },
+  {
+    "id": 12,
+    "question": "The appraisal principle in which property values are increased or decreased depending on how well they adapt to the surroundings is.",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Anticipation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle in which property values are increased or decreased depending on how well they adapt to the surroundings is Conformity."
+    ]
+  },
+  {
+    "id": 13,
+    "question": "The appraisal principle that property will gain value as nice expensive homes are built nearby or lose value as surrounding properties are allowed to deteriorate is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Progression/Regression",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Competitions",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Anticipation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle that property will gain value as nice expensive homes are built nearby or lose value as surrounding properties are allowed to deteriorate is called Progression and Regression."
+    ]
+  },
+  {
+    "id": 14,
+    "question": "In the appraisal process you always adjust the value of the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Comparable",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Improvement",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Personal Property",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In the appraisal process you always adjust the value of the comparable and never the value of the subject property."
+    ]
+  },
+  {
+    "id": 15,
+    "question": "When a comparable property is of better quality than the subject you:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Subtract Value from subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add value to subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subtract value from comparable",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Add value to comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When a comparable property is of better quality than the subject you subtract value from the comparable."
+    ]
+  },
+  {
+    "id": 16,
+    "question": "When a comparable property is of poorer quality than the subject you:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Subtract Value from subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add value to subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subtract value from comparable",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Add value to comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When a comparable property is of poorer quality than the subject you add value to the comparable."
+    ]
+  },
+  {
+    "id": 17,
+    "question": "A property is only worth what someone could buy a reasonably similar property for explains the appraisal principle of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Substitution",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Anticipation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of substitution is the idea that similar properties must have similar values. A property is only worth what someone could buy a reasonable similar property for."
+    ]
+  },
+  {
+    "id": 18,
+    "question": "A comparable is a two bedroom and the subject property is a three bedroom. The appraiser gives a bedroom a value of $10,000. What adjustments will the appraiser make?",
+    "options": [
+      {
+        "id": 1,
+        "value": "None",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add $10,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add $10,000 to the comparable",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Subtract $10,000 from the subject",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When the subject property has more amenities or is considered superior to the comparable property you would add value to the comparable."
+    ]
+  },
+  {
+    "id": 19,
+    "question": "A comparable has a three car garage and the subject property has a 2 car garage. The appraiser values a garage at $5,000. What adjustment will the appraiser make?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $5,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add $5,000 to the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subtract $5,000 from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract $5,000 from the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the comparable property has more amenities or is considered superior to the subject property you would subtract value to the comparable."
+    ]
+  },
+  {
+    "id": 20,
+    "question": "The appraiser\u00e2\u20ac\u2122s fee for completing an appraisal can not be based on:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The amount of time they worked on the appraisal",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The training they have received",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The value of the property",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Any of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An appraisal fee can not be based on the value of the subject property appraised. An Appraiser may charge for their time but the price can never be connected to the determined value."
+    ]
+  },
+  {
+    "id": 21,
+    "question": "The state highway that runs north of town will soon become an Interstate. A local gas station purchased a corner lot with future Interstate frontage with an expectation of a higher future value. This is an example of;",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Anticipation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When the surroundings of a property are improving, investing in property with the expectation of a higher value in the future when the improvements are completed is an example of anticipation."
+    ]
+  },
+  {
+    "id": 22,
+    "question": "The Sales comparison approach is based on the appraisal principle of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Substitution",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Anticipation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of substitution is the idea that similar comparable properties must have similar comparable values. A property is only worth what someone could buy a reasonably similar property for."
+    ]
+  },
+  {
+    "id": 23,
+    "question": "Kenny has lived in his current home 5 years and is ready to move into something bigger. Just after Kenny moved in the neighboring property was rented out and the tenants have not taken care of the property at all. At this point Kenny\u00e2\u20ac\u2122s property value has fallen below what he paid for the home due to the unsightly mess next door. This is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Appreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Regression",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Progression",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Anticipation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Regression occurs between opposite types of property. A deteriorating property will negatively affect the value of surrounding properties."
+    ]
+  },
+  {
+    "id": 24,
+    "question": "Alley Spring is experiencing a surge of new residents but the land around the spring is already developed with no more buildable area. What will this do to the price of the existing homes in the area?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The prices will decrease slowly",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The prices will stay stable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The prices will increase",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "The price will decrease quickly",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The demand for land is increasing which will cause the existing homes in the area to experience an increase in value."
+    ]
+  },
+  {
+    "id": 25,
+    "question": "When commercial lease prices are declining in an area it is probable that :",
+    "options": [
+      {
+        "id": 1,
+        "value": "The market is stable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The unemployment is decreasing",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The market is increasing",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "There is an oversupply in the market",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When lease prices decrease it indicates an over-supply of leasable property in an area. Lower the demand lower the value."
+    ]
+  },
+  {
+    "id": 26,
+    "question": "When a property is put to the highest and best use it:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conforms to the surrounding properties",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Contains the largest improvement allowed by zoning",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Is for commercial use",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Is financially and physically practical, most lucrative, and legal",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When a property is put to the highest and best use it Is financially and physically practical, most lucrative, and legal use of the property."
+    ]
+  },
+  {
+    "id": 27,
+    "question": "Appraiser Lauren has a subject property with a swimming pool and the comparable property does not have a pool. How will she adjust for this?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add value to the comparable",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Subtract value from the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add value to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract value from the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 28,
+    "question": "Subject property does not have a fireplace, but the comparable has a nice gas log fireplace how would the appraiser adjust for this?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add value to the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtract value from the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add value to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract value from the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the comparable property has a feature the subject property does not subtract the value of the feature from the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 29,
+    "question": "A property that has recently sold and is similar to the subject property is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Contingent",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Comparable",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "CoCooperative",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Consideration",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property that has recently sold and is similar to the subject property is called comparable and the principle of substitution."
+    ]
+  },
+  {
+    "id": 30,
+    "question": "The price at today\u00e2\u20ac\u2122s values using current materials to construct a property for the same use would be called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Replication Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Comparable Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Replacement Cost",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The price at today\u00e2\u20ac\u2122s values using current materials to construct a property for the same use would be called replacement cost."
+    ]
+  },
+  {
+    "id": 31,
+    "question": "The price at today\u00e2\u20ac\u2122s values using current constitution materials and method to construct an exact replica of the subject is called?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Replication Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Reproduction Cost",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Comparable Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Replacement Cost",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The price at today\u00e2\u20ac\u2122s values using current constitution materials and methods to construct an exact replica of the subject is called reproduction costs."
+    ]
+  },
+  {
+    "id": 32,
+    "question": "A method of appraisal that values properties established off the sale of similar properties.",
+    "options": [
+      {
+        "id": 1,
+        "value": "Replacement Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Market Approach",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Income Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A method of appraisal that values properties established off the sale of similar properties is market approach."
+    ]
+  },
+  {
+    "id": 33,
+    "question": "What appraisal approach calculates land value plus current improvements and subtracts depreciation?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Cost Approach",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Market Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Reproduction Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal by Cost Approach calculates land value, plus current improvements, and subtracts depreciation to obtain an opinion of value."
+    ]
+  },
+  {
+    "id": 34,
+    "question": "The name for the property being appraised is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Comparable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subject",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Specimen",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Object",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The name for the property being appraised is the subject property."
+    ]
+  },
+  {
+    "id": 35,
+    "question": "During the appraisal process value is added or subtracted from the comparable property to make up for differences in the comparable and the subject property. These corrections are called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Anticipation",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Adjustments",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Analysis",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "During the appraisal process value is added or subtracted from the comparable property to make up for differences in the comparable and the subject property. These corrections are called adjustments."
+    ]
+  },
+  {
+    "id": 36,
+    "question": "A report agents reconcile to attain a list price for a property based on current listings, recent sales, and expireds would be called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Agent Market Report (AMR)",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Brokers Price Report (BPR)",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Broker\u00e2\u20ac\u2122s Listing Report (BLR)",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Comparative Market Analysis (CMA)",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "A report agents reconcile to attain a list price for a property based on current listings, recent sales, and expireds would be called a Comparative Market Analysis (CMA)"
+    ]
+  },
+  {
+    "id": 37,
+    "question": "When a properties improvements depreciate from wear and tear this is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Capitalization",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Delapation",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Physical Deterioration",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Incurable Depreciation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Physical Deterioration is the wear and tear on improvements."
+    ]
+  },
+  {
+    "id": 38,
+    "question": "A type of depreciation that occurs from improvements that are poorly developed, over developed, or incorrectly designed for the current days needs is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Functional Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Curable Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Physical Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Economic Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A type of depreciation that occurs from improvements that are poorly developed, over developed, or incorrectly designed for the current day's needs is called Functional Obsolescence."
+    ]
+  },
+  {
+    "id": 39,
+    "question": "If an apartment building is fully rented and rents are fully collected the property has returned 100% of the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Gross Rent Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gross Potential Income",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Net Potential Income",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A properties Gross Potential Income is the amount that could be collected if it were completely rented and rents collected in full."
+    ]
+  },
+  {
+    "id": 40,
+    "question": "Converting future income to current value is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Comingle",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Capitalization",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Commit",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Replacement Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Converting future income to current value is called capitalization by converting assets to capital."
+    ]
+  },
+  {
+    "id": 41,
+    "question": "The board members meet each month to go over their investment property reports. They review the gross income, minus vacancies, collections, and operating expenses this is called the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Gross Rent Multiplier (GRM)",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gross Rent Income (GRI)",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Net Operating Income (NOI)",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Net Rent Multiplier (NRM)",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Net Operating Income (NOI) is the gross income, minus vacancies, collections, and operating expenses."
+    ]
+  },
+  {
+    "id": 42,
+    "question": "The money paid out to maintain business income is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Operating Expenses",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Net Expenses",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Gross Expenses",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Market Expenses",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Operating Expenses are the expenses necessary to maintain a business and continue to operate and produce an income."
+    ]
+  },
+  {
+    "id": 43,
+    "question": "The idea that the least expensive of two very similar properties will sell first is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Remediation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Substitution",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Competition",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The idea that the least expensive of two very similar properties will sell first is an example of the appraisal theory substitution."
+    ]
+  },
+  {
+    "id": 44,
+    "question": "To given an opinion or estimate of value of real property is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Appraisal",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Competition",
+        "is_correct": false
+      }
+    ],
+    "remediation": ["An appraisal is an opinion of value of real property."]
+  },
+  {
+    "id": 45,
+    "question": "The appraisal method of estimating a property's value based on the expected income is the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Income Approach",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Substitution Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Comparable Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Income Approach measures monetary income the subject property is expected to procedure and gives it a value the property would likely sell for."
+    ]
+  },
+  {
+    "id": 46,
+    "question": "What is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross rents to determine its value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Gross Rent Multiplier",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Net Operating Income",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Scheduled Gross Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Gross Rent Multiplier (GRM) is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross monthly rents to determine its value."
+    ]
+  },
+  {
+    "id": 47,
+    "question": "An appraisal method that is based on the properties sq ft construction cost is?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Measurement Method",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Replacement Method",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Square Foot Method",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Rebuild Method",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Square foot method is an appraisal method that is based on the properties sq ft construction cost."
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Painting the kitchen is an example of depreciation that can be remedied at a suitable cost. This is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Curable Depreciation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Economic Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Curable Depreciation is a form of depreciation that can be remedied for a reasonable cost without extensive repairs that would not be feasible."
+    ]
+  },
+  {
+    "id": 49,
+    "question": "Foundation cracking and crumbling beneath a home is an example of depreciation that can not be remedied at a reasonable expense. This is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable Depreciation",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Curable Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Economic Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Incurable Depreciation is depreciation that can not be remedied as a reasonable cost in comparison to the value of the property."
+    ]
+  },
+  {
+    "id": 50,
+    "question": "The Board that sets appraisal industry standards is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The Appraisal Board",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The Appraisal Foundation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The Market Value Experts",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The Market Analysis Board",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Appraisal Foundation sets appraisal industry standards."
+    ]
+  },
+  {
+    "id": 51,
+    "question": "In a market with few buyers and an over abundance of sellers is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "A Seller\u00e2\u20ac\u2122s Market",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "A Broker\u00e2\u20ac\u2122s Market",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "A Buyer\u00e2\u20ac\u2122s Market",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "A Stable Market",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In a market with few buyers and an over abundance of sellers is called a Buyer\u00e2\u20ac\u2122s market. Sellers will get less for their properties in a Buyer\u00e2\u20ac\u2122s market."
+    ]
+  },
+  {
+    "id": 52,
+    "question": "The most feasible use for a piece of property is known as :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Commercial",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Industrial",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Agricultural",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Highest and Best Use",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The most feasible use for a piece of property is known as the highest and best use."
+    ]
+  },
+  {
+    "id": 53,
+    "question": "A loss in property value due to deterioration or some type of obsolescence is :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Deprecation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Capitalization",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Depreciation is the loss in property value due to deterioration or some type of obsolescence."
+    ]
+  },
+  {
+    "id": 54,
+    "question": "The subject property has a $12,000 outbuilding and a $4,000 deck. A comparable that sold for $199,000 has no outbuilding no deck but has a $5,000 swimming pool. What is the adjusted value of the comparable?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$210,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$215,000",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "$208,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$206,000",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 55,
+    "question": "Appraiser Kim has a subject property with a $18,000 swimming pool. The comparable property does not have a pool. What adjustment will Kim make to the value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $18,000 to the comparable",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Subtract $18,000 from the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add $18,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract $18,000 from the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 56,
+    "question": "Subject property does not have a fireplace, but the comparable has a nice gas log fireplace valued at $7,000 how would the appraiser adjust for this?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $7,000 to the value of the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtract $7,000 from the value of the subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add $7,000 to the value of the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract $7,000 from the value of the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the comparable property has a feature the subject property does not subtract the value of the feature from the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 57,
+    "question": "Given the comparable information, what value would the appraiser give the subject property? Subject 1,500 sq/ft 2 bedroom 2 bath Comp1: 1,400sq/ft 2 bedroom 1 bath Sold $150,000, Comp 2: 1,400 sq/ft 2 bed 2 bath Sold $160,000, Comp 3: 1,500 sq/ft 2 bed 1 bath Sold $155,000",
+    "options": [
+      {
+        "id": 1,
+        "value": "$160,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$159,500",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "$162,500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$165,000",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Appraisers make adjustments to the comparable based on differences or similarities of properties. The comp with 1,500 sq/ft sold for $5,000 more than the home with 1,400 sq/ft. The home with two bathrooms sold for $10,000 more than the home with only one bathroom. The adjustment of an additional $10,00 would be made to Comp 3 to be as similar to the subject as possible and result in a $165,000 appraised value on the subject property."
+    ]
+  },
+  {
+    "id": 58,
+    "question": "A subject property has 1 more bathroom than the comparable. The appraiser gives a bathroom a $6,000 value. What adjustment will be made?",
+    "options": [
+      {
+        "id": 1,
+        "value": "None",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add $6,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subtract $6,000 from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Add $6,000 to the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 59,
+    "question": "What is the appraisal principle that creates plottage value ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Anticipation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assemblage",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 5,
+        "value": "Regression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Assemblage creates plottage value by adjoining properties, \u00e2\u20ac\u0153assembling them together\u00e2\u20ac\u009d creating a greater value."
+    ]
+  },
+  {
+    "id": 60,
+    "question": "The appraiser will look at nearby shopping, schools, hospitals, and other surrounding amenities during the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Site Analysis",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Neighborhood Analysis",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Market Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Cost Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "During the appraisal process the appraiser will conduct a Neighborhood Analysis of nearby shopping centers, schools, hospitals ect."
+    ]
+  },
+  {
+    "id": 61,
+    "question": "As the appraiser is nearing the end of the report the final step is to:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Give land a value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Reconcile Comps",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Reconcile the Values and Report",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Complete the reproduction cost report",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The final step in the appraisal process to reconciling the values to attain an opinion of value for the subject property."
+    ]
+  },
+  {
+    "id": 62,
+    "question": "The most commonly sought after value in an appraisal is the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Reproduction Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Replacement Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Economic Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Market Value",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The most commonly sought after value in an appraisal is the Market Value."
+    ]
+  },
+  {
+    "id": 63,
+    "question": "An appraiser looking at the neighborhood cycle would be concerns with?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Economic Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Growth, Change, and Stability",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Site Analysis",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of there",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Neighborhood Cycle refers to the growth, change and stability of an area."
+    ]
+  },
+  {
+    "id": 64,
+    "question": "Sally\u00e2\u20ac\u2122s home is in a lovely neighborhood with other beautifully maintained properties. This is an example of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Regression",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Conformity is the principle that a home retains its highest value by being in an area with similar-type properties."
+    ]
+  },
+  {
+    "id": 65,
+    "question": "The Johnson\u00e2\u20ac\u2122s purchased a home on Vine St. which is very similar and almost identical to the one they liked on Howard St. but Vine St. was just slightly cheaper. This is an example of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Substitution",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Regression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Substitution is the principle that homes of similar characteristics will also be of similar price and that the cheaper of the two will sell first."
+    ]
+  },
+  {
+    "id": 66,
+    "question": "What is plottage value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value of smaller than acre",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The value of land large than an acre",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The value of a town",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The value created when two or more adjoining parcels are assembled together.",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Plottage Value is created when two or more adjoining parcels are assembled together."
+    ]
+  },
+  {
+    "id": 67,
+    "question": "What is reproduction value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value based on cost to build a similar structure",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The value based on cost to build an identical structure",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The value based on cost to build the original structure",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "All of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Reproduction Value is based on the cost to reproduce an identical structure."
+    ]
+  },
+  {
+    "id": 68,
+    "question": "What is replacement value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value based on cost to build a structure for similar use",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "The value based on cost to build an identical structure",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The value based on cost to build the original structure",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "All of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Replacement value is based on the cost to build a structure for similar use, but not a replica."
+    ]
+  },
+  {
+    "id": 69,
+    "question": "What is salvage value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value of foreclosed property",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The value of property in pristine condition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The value of property at the end of its usable economic life",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "None of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Salvage Value is the value of property at the end of its usable economic life."
+    ]
+  },
+  {
+    "id": 70,
+    "question": "What is assessed value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value for resale",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Depreciated Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Value property taxes are based on",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Rental Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Assessed Value is the value in which ad valorem property taxes are based."
+    ]
+  },
+  {
+    "id": 71,
+    "question": "What is reversionary value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Condemned Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Estimated future value",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Book Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Reversionary Value is the estimated property value at some point in the future. Commonly used in pro forma analysis for investment properties."
+    ]
+  },
+  {
+    "id": 72,
+    "question": "What is insured value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value the lender requires borrow insures property for",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The value of the existing insurance policy on the property",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The highest amount insurance will cover the property for",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "All of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The insured Value is the face value of the property insurance policy."
+    ]
+  },
+  {
+    "id": 73,
+    "question": "What is mortgage value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The most a lender will loan on a property",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The least a lender will loan on the property",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The value of the property held as loan collateral",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "The value if abandoned",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The mortgage value is the value of the property as loan collateral."
+    ]
+  },
+  {
+    "id": 74,
+    "question": "Is a property address adequate to provide the exact geographical location for appraisal purposes?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Yes, you can find a property by its address",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Yes, address is included in the report",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "No, there should be a legal description to specify exact property being appraised",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Yes, address get the mail there",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In the appraisal process the property must be identified by its exact geographic location via a legal description."
+    ]
+  },
+  {
+    "id": 75,
+    "question": "The fifth step in the appraisal process is to apply the three basic appraisal approaches which include:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition, Income, Cost Approaches",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Conformity, Income, Cost Approaches",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Comparison, Income, Cost Approaches",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Condemned, Income, Cost Approaches",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In the fifth step of the appraisal process the appraiser will apply the three basic appraisal approaches which include Comparison, Income, Cost Approaches."
+    ]
+  },
+  {
+    "id": 76,
+    "question": "The sales comparison approach is also called the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value Approach",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Tax Value Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Competition Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Conformity Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The sales comparison approach is also called the market Value Approach."
+    ]
+  },
+  {
+    "id": 77,
+    "question": "During an appraisal adjustment may be made for:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Time of Sale",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Transaction Characteristics",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Physical Characteristics",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "All of the above",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "During an appraisal adjustment may be made for Time of Sale, Transaction Characteristics,Physical Characteristics, and Location."
+    ]
+  },
+  {
+    "id": 78,
+    "question": "Economic Obsolescence is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Internal",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "External",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Both",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Neither",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Economic Obsolescence is an external factor that brings down the properties value."
+    ]
+  },
+  {
+    "id": 79,
+    "question": "The economic life of a property is defined as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The time in which a structure is expected to remain useful",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "The time in which a property will make an income",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The time in which a property will sell",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The economic life of a property is defined as the time in which a structure is expected to remain useful."
+    ]
+  },
+  {
+    "id": 80,
+    "question": "An example of the principle of contribution would be:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The loss of value due to economic obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The loss of value due to zoning changes",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The loss of value due to condemnation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The gain in property due an extra garage",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Contribution is the value that various components add to the properties value as a whole."
+    ]
+  },
+  {
+    "id": 81,
+    "question": "An older residential home now zoned commercial was renovated into a video store and tanning salon. This is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Plottage",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Highest and Best Use",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The transition of the property to an income producing business not only conforms to the neighborhood but also is the highest and best use. A residential home located in a business district is not the highest and best use of the land due to the value of commercial property."
+    ]
+  },
+  {
+    "id": 82,
+    "question": "Colt owns a 40 acre farm and purchases the 60 acres adjoining it. The property value of the land combined is higher than it was separately. This is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Anticipation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assemblage",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Competition",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Assemblage occurs when two pieces of land are adjoined and combined have a greater value than the prior sum of the two pieces."
+    ]
+  },
+  {
+    "id": 83,
+    "question": "A new processing plant is coming to town and will employ 1,500 people. What will this do to the real estate market of the area?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Rents will go down",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Home Prices will go down",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "More home for sale",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Home values will go up",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Due to supply and demand the rent and home values in the area will increase and the supply of home and rentals will decrease."
+    ]
+  },
+  {
+    "id": 84,
+    "question": "Improvements that extend the properties usefulness life expectancy and increase value is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Principle expenditures",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Capital Gains",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Capital expenditures",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Investment Gains",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Capital Expenditures are improvements to the property that increase the value or extend the property's useful life."
+    ]
+  },
+  {
+    "id": 85,
+    "question": "Which of the following is not one of the three approaches to value in the appraisal process?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Sales Comparable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Expense Approach",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Cost Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The three approaches to value in an appraisal are Cost, Income, and Sales Comparison.The appraiser will review all three methods of appraising the property, determining which would be best to use for the property in question."
+    ]
+  },
+  {
+    "id": 86,
+    "question": "When a drugstore builds across the street from another drugstore it is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Progression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Competition states that two similar businesses attract more customers when within close proximity than they would separately."
+    ]
+  },
+  {
+    "id": 87,
+    "question": "If the subject property has one more bathroom than the comparable property what adjustment will the appraiser make?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add value to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add value to the comparable",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Subtract value from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract value from the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+    ]
+  },
+  {
+    "id": 88,
+    "question": "Which of the following never depreciates?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Schools",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Hospitals",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Governments Buildings",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Vacant Land",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "A rule in the appraisal process is land itself is never depreciated. Land is indestructible and useful forever, unlike the improvements attached it will never depreciate."
+    ]
+  },
+  {
+    "id": 89,
+    "question": "The market value of a property is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The sales price",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The appraised value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Both of these",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Neither of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The market value of a home is the opinion of value after the property data has been analyzed and compared to similar property sales."
+    ]
+  },
+  {
+    "id": 90,
+    "question": "The market price of a property is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The sales price",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "The appraised value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Both of these",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Neither of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The market price is the price the home sold for on the open market with acceptable exposure and informed buyers and sellers."
+    ]
+  },
+  {
+    "id": 91,
+    "question": "The term Anticipation refers to :",
+    "options": [
+      {
+        "id": 1,
+        "value": "The excitement of owning property",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The future benefits expected from the property ownership",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The decrease in a properties value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The depreciation of a property",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The term Anticipation refers to the future benefits one expects to receive over the period of time they own the property."
+    ]
+  },
+  {
+    "id": 92,
+    "question": "The value improvements make to a property is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Collateral",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Contribution",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Change",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Contribution is the value that various components add to the properties value as a whole."
+    ]
+  },
+  {
+    "id": 93,
+    "question": "Bill and Mary built a smaller modest home in a quiet neighborhood. Soon after changes in the area made their neighborhood highly sought after. Larger homes were built all around Bill and Mary\u00e2\u20ac\u2122s home causing their property value to increase. This is an example of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Progression",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The appraisal principle that property will gain value as nice expensive homes are built nearby or lose value as surrounding properties are allowed to deteriorate is called Progression and Regression."
+    ]
+  },
+  {
+    "id": 94,
+    "question": "All of the following are examples of the Highest and Best use EXCEPT:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Legally allowable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Highly profitable",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Non productive",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Highly Practical",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When a property is put to the highest and best use it Is financially and physically practical, most lucrative, and legal use of the property."
+    ]
+  },
+  {
+    "id": 95,
+    "question": "Producing a comparable structure at today\u00e2\u20ac\u2122s material prices is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Replacement Cost",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Construction Cost",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Reproduction Cost",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Market Cost",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The price at today\u00e2\u20ac\u2122s values using current materials to construct a property for the same use would be called replacement cost."
+    ]
+  },
+  {
+    "id": 96,
+    "question": "Using the cost approach the appraiser estimates the a piece of land to have a value of $15,000 and replacement cost of the improvements $125,000. The total depreciation from all causes is $12,000. What is the opinion of the properties value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$113,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$128,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$125,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$120,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal by Cost Approach calculates land value, plus current improvements, and subtracts depreciation to obtain an opinion of value."
+    ]
+  },
+  {
+    "id": 97,
+    "question": "The appraiser gave Larry\u00e2\u20ac\u2122s barn a salvage value meaning it is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "At the end of its economic life.",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "At the end of its anticipated life",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "At the end of its useless life",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "At the end of its market life",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Salvage Value is the value of property at the end of its usable economic life."
+    ]
+  },
+  {
+    "id": 98,
+    "question": "The estimated value of a property for which ad valorem taxes are based is called?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assessed Value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Salvage Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Appraised Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Assessed Value is the value in which ad valorem property taxes are based."
+    ]
+  },
+  {
+    "id": 99,
+    "question": "Find the capitalization rate of a property that has sold for $190,000 with an annual net operating income of $13,300.",
+    "options": [
+      {
+        "id": 1,
+        "value": "8%",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "9%",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "7%",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "5%",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "To find the Capitalization Rate divide the annual net operating income by the property price."
+    ]
+  },
+  {
+    "id": 100,
+    "question": "The income approach would be used for which of the following properties?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Schools",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Single Family Homes",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Rental properties",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Wooded rural lots",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The income approach is used to determine the value of properties that produce an income, most commonly from rent."
+    ]
+  },
+  {
+    "id": 101,
+    "question": "A comparable property has one more bathroom than the subject property. How would the appraiser make an adjustment?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add Value to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtract value from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add Value to the Comparable",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract value from the Comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When a comparable property has an amenity the subject property does not you subtract value from the comparable."
+    ]
+  },
+  {
+    "id": 102,
+    "question": "An agent preparing to meet with a seller may complete:",
+    "options": [
+      {
+        "id": 1,
+        "value": "An Appraisal to arrive at a list price",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "A CAM to arrive at a list price",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "A CMA to arrive at a list price",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of these",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A Comparative Market Analysis is a process performed by a real estate agent to arrive at an opinion of value based on current market data and trends."
+    ]
+  },
+  {
+    "id": 103,
+    "question": "Which of the following is NOT one of the four public land use controls?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Police Power",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Eminent Domain",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Taxation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Assemblage",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The four public land use controls are Police power, Eminent Domain, Escheat, and Taxation."
+    ]
+  },
+  {
+    "id": 104,
+    "question": "Police power includes all of the following EXCEPT:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Taxation",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Building Codes",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Planning",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Zoning",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Police Power includes planning, zoning, building codes, environmental protections, and subdivision regulations."
+    ]
+  },
+  {
+    "id": 105,
+    "question": "The regulated use of land types of structures in designated districts is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Zoning",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Assemblage",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The regulated use of land types of structures in designated districts is called Zoning."
+    ]
+  },
+  {
+    "id": 106,
+    "question": "An park placed between a residential subdivision and an industrial park would be considered a :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Non-Conforming use",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Conforming Use",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Buffer Zone",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Annexation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "\u00e2\u20ac\u0153Buffer Zones\u00e2\u20ac\u009d are placed strategically to separate two separate types of land uses."
+    ]
+  },
+  {
+    "id": 107,
+    "question": "What would Rizo\u00e2\u20ac\u2122s Italian need to obtain to build a restaurant in an area zoned industrial?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Annexation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Special Use Permit",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Building Permit",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Contractors License",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A Special Use Permit may be obtained to use property in a way contrary to the zoning as long as it is of public benefit."
+    ]
+  },
+  {
+    "id": 108,
+    "question": "A Precolation test is used for:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Testing the air quality",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Testing ground water",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Testing for mold",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Testing for radon",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A Precolation test is used for testing groundwater for runoff near septic tanks, gas tanks, and wells."
+    ]
+  },
+  {
+    "id": 109,
+    "question": "A property has outdated leaking windows this is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Curable physical depreciation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Economic depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "External obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Curable Physical Depreciation is a physical component of a property that is financially peaceable to repair."
+    ]
+  },
+  {
+    "id": 110,
+    "question": "Terry\u00e2\u20ac\u2122s rental property is valued at $150,000 and has a monthly rental income of $750 per month. What is the annual rate of return?",
+    "options": [
+      {
+        "id": 1,
+        "value": "7%",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "6%",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "5%",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "8%",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Annual Rate of Return is the yearly income divided by the value. $750 x 12 months = $9,000"
+    ]
+  },
+  {
+    "id": 111,
+    "question": "What is the purpose of requiring building permits ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "To collect an income from the fees",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "To control the material used in construction",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "To establish minimum building requirements",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "To discourage construction due to the hassle",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Building Permits are required to establish and maintain minimum building requirements."
+    ]
+  },
+  {
+    "id": 112,
+    "question": "Susan remodeled her kitchen and bathrooms before listing her home for sale. The added value of these upgrades are called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Contribution",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Assemblage",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Contribution is the value that various components add to the properties value as a whole."
+    ]
+  },
+  {
+    "id": 113,
+    "question": "A major retail store in the area has closed and many people in the small community lost their jobs. What will this do to the real estate market?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The market will decrease",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "The market will increase",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The market will be stable",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The market will see no change",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The market will decrease due to the loss of jobs in the area properties may go into foreclosure."
+    ]
+  },
+  {
+    "id": 114,
+    "question": "The Jones\u00e2\u20ac\u2122 have a home in a subdivision with similar comparable homes. The principle that states these homes will retain their value is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Contribution",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle in which property values are increased or decreased depending on how well they adapt to the surroundings is Conformity. Conforming properties retain value well."
+    ]
+  },
+  {
+    "id": 115,
+    "question": "Steve owns a half acre parcel land worth $50,000. He purchases the adjoining half acre parcel for $50,000. Combined the one acre of land has a value of $120,000. This is an example of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Contribution",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assemblage",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Assemblage occurs when two pieces of land are adjoined and combined have a greater value than the prior sum of the two pieces."
+    ]
+  },
+  {
+    "id": 116,
+    "question": "Using the Income Approach, what is the formula to find the property value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Income x Rate",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Income / Rate",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Income - Rate",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Income + Rate",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Using the Income Approach, the formula used to find the property value is Income divided by Cap rate."
+    ]
+  },
+  {
+    "id": 117,
+    "question": "Using the Income Approach, what is the formula to find the Cap rate?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Income - Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Income + Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Income x Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Income / Value",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Using the Income Approach, the formula used to find the Cap rate is net Income divided by value."
+    ]
+  },
+  {
+    "id": 118,
+    "question": "Using the Income Approach, what is the formula to find the income?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Rate x Value",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Rate / Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Rate + Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Rate - Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Using the Income Approach, the formula that is used to find the income is the rate multiplied by the value."
+    ]
+  },
+  {
+    "id": 119,
+    "question": "Any similar properties that have recently sold near the subject property is considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conforming",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Comparable",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Adjustments",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property that has recently sold and is similar to the subject property is called comparable and the principle of substitution."
+    ]
+  },
+  {
+    "id": 120,
+    "question": "The method of appraising property based on the recent sales of similar properties is the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Approach",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Replacement Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The method of appraising property based on the recent sales of similar properties is the Market Approach."
+    ]
+  },
+  {
+    "id": 121,
+    "question": "The appraisal approach that considers the value of land and any existing structures minus depreciation is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Cost Approach",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Market Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Reproduction Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal by Cost Approach calculates land value, plus current improvements, and subtracts depreciation to obtain an opinion of value."
+    ]
+  },
+  {
+    "id": 122,
+    "question": "The property that the appraiser is appraising is called the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Comparable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subject Property",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Primary Property",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Improvement",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The property that the appraiser is appraising is called the Subject Property."
+    ]
+  },
+  {
+    "id": 123,
+    "question": "The rent a fully occupied property is expected to collect annually is called?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Net Income",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gross Income",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Scheduled Gross Income",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Net Operating Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The rent a fully occupied property is expected to collect annually is called Scheduled Gross Income."
+    ]
+  },
+  {
+    "id": 124,
+    "question": "The of conversion of future earnings to current value is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Operating Expenses",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Adjustments",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Capitalization",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Depreciation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The of conversion of future earnings to current value is called Capitalization."
+    ]
+  },
+  {
+    "id": 125,
+    "question": "A type of depreciation that is financially feasible to repair is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Curable Depreciation",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Incurable Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Economic Depreciation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Curable Depreciation is a form of depreciation that can be remedied for a reasonable cost without extensive repairs that would not be feasible."
+    ]
+  },
+  {
+    "id": 126,
+    "question": "When there are few buyers and many sellers it is called a:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Seller\u00e2\u20ac\u2122s Market",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Buyer\u00e2\u20ac\u2122s Market",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Stable Market",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Fluid Market",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The principle of Supply and Demand is at play when there are more sellers than buyers. In an over saturated market the sales prices will dip."
+    ]
+  },
+  {
+    "id": 127,
+    "question": "The comparable property has 200 sq ft more than the subject property. The appraiser has given the value of $75 per sq ft. How would the appraiser make the adjustment?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $15,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtract $15,000 from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Add $15,000 to the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Subtract $15,000 from the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the comparable property has more square footage than the subject property does subtract the value of the square footage from the comparable properties value to best estimate the market value of the subject property. $75 x 200 =$15,000"
+    ]
+  },
+  {
+    "id": 128,
+    "question": "What type of legal description describes an enclosed area that has the same point of beginning and ending?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Lot and Block",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Metes and Bounds",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Recorded Plat Method",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Rectangular Survey",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A Metes and Bounds legal description describes the boundaries of a property going from the point of beginning around the property and ending at the point of beginning to create a fully enclosed boundary description."
+    ]
+  },
+  {
+    "id": 129,
+    "question": "Which type of depreciation is nearly always incurable?",
+    "options": [
+      {
+        "id": 1,
+        "value": "External obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Functional obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Physical obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 130,
+    "question": "Depreciation simply means:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The increase of value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The decrease of value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Stable value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Increase of future value",
+        "is_correct": false
+      }
+    ],
+    "remediation": ["Simply put Depreciation is the loss of value."]
+  },
+  {
+    "id": 131,
+    "question": "A restaurant\u00e2\u20ac\u2122s electric bill, food costs, and utilities are considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Capital Gains",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Net Income",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Operating Expenses",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Gross Potential Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Expenses necessary to operate a business and maintain income are called Operating Expenses."
+    ]
+  },
+  {
+    "id": 132,
+    "question": "Which of the following is NOT considered an operating expense for a business?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Water Bill",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Extending the parking lot",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Trash pick up",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Electric Bill",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Expenses necessary to operate a business and maintain income are called Operating Expenses. The construction of parking facilities would be considered a capital improvement."
+    ]
+  },
+  {
+    "id": 133,
+    "question": "Simply stated Appreciation is the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Decrease in value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Increase in value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Future income",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Loss of future income",
+        "is_correct": false
+      }
+    ],
+    "remediation": ["Simply put Appreciation is the gain of value."]
+  },
+  {
+    "id": 134,
+    "question": "The reasoning behind subtracting value from a comparable when it has an amenity that the subject property does not is that:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The subject should sell for more",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The subject should sell for the same",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The subject should sell for less",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "You not subtract value from the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The reasoning behind subtracting value from a comparable when it has an amenity that the subject property does not is that the subject property would sell for less since it does not have the same amenities of the comparable."
+    ]
+  },
+  {
+    "id": 135,
+    "question": "What is NOT something an appraiser looks for when choosing comparable properties for an appraisal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Homes that have recently sold",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Sold homes near the subject property",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Religious groups in the area",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Homes similar to the subject",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Appraisers choose Comparables based on the date sold, distance from the subject, and similarities to the subject, but never based on a protected class such as Religious Groups."
+    ]
+  },
+  {
+    "id": 136,
+    "question": "During the appraisal process the the appraiser will do all of the following EXCEPT:",
+    "options": [
+      {
+        "id": 1,
+        "value": "State the problem",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gather data",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Perform a CMA",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Reconcile Values",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Real Estate agents complete Comparative Market Analysis not Real Estate Appraisers."
+    ]
+  },
+  {
+    "id": 137,
+    "question": "The three approaches used in appraisals to determine a property's market value include all of the following EXCEPT:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Sales Comparison Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Capitalization Approach",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Income Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Appraisers may use the Cost Approach, Income Approach or Sales Comparison Approach during the appraisal process to determine the property\u00e2\u20ac\u2122s market value."
+    ]
+  },
+  {
+    "id": 138,
+    "question": "When two pieces of land are conjoined and the value of the whole is more than the value of the two pieces separately, the extra value is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assemblage Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Plottage Value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Capitalization Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Conformity Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When two pieces of land are conjoined and the value of the whole is more than the value of the two pieces separately, the extra value is called Plottage Value."
+    ]
+  },
+  {
+    "id": 139,
+    "question": "David purchased 2 acres of land for $60,000. He sells \u00c2\u00bc acre lots of $25,000 each. This is an example of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assemblage",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subdivision",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Progression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Purchasing land and then selling it off in smaller pieces is an example of Subdivision."
+    ]
+  },
+  {
+    "id": 140,
+    "question": "Plottage Value is best described as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The value of a plot of land.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The value gained by adjoining two properties together.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The value of farmland.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The value of land in the future.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When two pieces of land are conjoined and the value of the whole is more than the value of the two pieces separately, the extra value is called Plottage Value."
+    ]
+  },
+  {
+    "id": 141,
+    "question": "How do appraisers depreciate land values?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Compare the land to other properties.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "By calculating the debt owed on the land.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Land values are never depreciated.",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "By completing a CMA",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Appraisers do NOT ever depreciate the value of land, only the improvements on the land. Remember land does not depreciate."
+    ]
+  },
+  {
+    "id": 142,
+    "question": "In which instance would the income approach be used in a property appraisal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "A single family residential home appraisal.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The appraisal of an apartment complex.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The appraisal of a Church building.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The appraisal of a Library.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Income Approach is used when appraising income producing properties like investments properties, apartments, and office buildings."
+    ]
+  },
+  {
+    "id": 143,
+    "question": "Which appraisal process is most commonly used when appraising a single family residential home?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The Sales Comparison Approach",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The Capitalization Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The Income Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Most commonly when appraising a single family residential home the appraiser uses the Sales Comparison Approach to find the property\u00e2\u20ac\u2122s market value."
+    ]
+  },
+  {
+    "id": 144,
+    "question": "Which of the following is an example of incurable External Obsolescence?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Well maintained home near similar properties.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "A home with a manicured park nearby.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "An industrial plant built next to residential homes.",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "An office building in a commercially zoned area with similar buildings.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External Obsolescence is the loss of value a property experiences from factors outside of the property itself and is almost always incurable."
+    ]
+  },
+  {
+    "id": 145,
+    "question": "Using the Cost Approach appraisal method the appraiser will depreciate improvements. Which of the following is NOT one of the depreciation classes?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Physical Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "External Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Market Deterioration",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Functional Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Using the Cost Approach appraisal method the appraiser may depreciate improvements using any of these three depreciation classes Physical Deterioration, External Obsolescence, or Functional Obsolescence."
+    ]
+  },
+  {
+    "id": 146,
+    "question": "Shannon is wanting to sell his home but it needs to be painted. The cost to have the home painted is $2,500. The property could be listed for $5,000 more than the real estate agents CMA reflected when painting is complete. This is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable External Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Curable Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Incurable Physical Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Curable Physical Deterioration",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Physical Deterioration is from wear and tear on a property caused over time. When the physical deterioration can be cured for a reasonable and feasible cost it is considered curable. When the cost of repair exceeds the return of value it is considered incurable."
+    ]
+  },
+  {
+    "id": 147,
+    "question": "Jared\u00e2\u20ac\u2122s home is listed for sale but the buyer\u00e2\u20ac\u2122s feedback is that the noise from planes taking off and landing next door from the airport is the reason they are not making offers. Jared\u00e2\u20ac\u2122s property is suffering from:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Curable Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Incurable External Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Incurable Physical Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Incurable Functional Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External Obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 148,
+    "question": "Donnie has taken a new job and needs to relocate. He has made minor repairs to get his home ready to list but the one thing he has not repaired is the outdated electrical system. The cost to update the electrical system is $5,500 he would only see a return of around $2,500 additional value in sale price. Donnis is facing a case of :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable Physical Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Curable External Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Incurable Functional Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Curable Functional Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Functional Obsolescence occurs when a property is functionally inadequate, for instance outdated equipment or design. When the functional obsolescence can be cured for a reasonable and feasible cost it is considered curable. When the cost of repair exceeds the return of value it is considered incurable."
+    ]
+  },
+  {
+    "id": 149,
+    "question": "The Chronological Age of an improvement is best described as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The age of the improvement\u00e2\u20ac\u2122s economic life.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The actual age of the improvement that does not change.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "The age of the improvements in useful life.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The actual age of the improvement that may be adjusted due to depreciation.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An improvement\u00e2\u20ac\u2122s Chronological Age is the actual age of the improvement that does not change. A home built 50 years ago has a Chronological Age of 50 years."
+    ]
+  },
+  {
+    "id": 150,
+    "question": "A home built 40 years ago that has been remodeled, updated, and well maintained has an extended economic life. During the appraisal process the appraiser would reduce the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Chronological Age",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Effective Age",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Market Age",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Depreciated Age",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Effective Age of a property may be adjusted based on depreciation factors. The effective age of a home is reduced by remodeling, updating, and maintaining the property to extend its economic life. A 40 year old home may be effectively 35 years old."
+    ]
+  },
+  {
+    "id": 151,
+    "question": "Chris is very interested in a home that is listed for sale but notices the floors are uneven. Before making an offer he decides to have a home inspection. He finds the floor joints are rotten in many places under the home from moisture in the crawl space over the years. The list of repairs to correct the moisture, replace the floor joist and then the flooring were very lengthy and he chose another home. The property owner is most likely facing:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Curable Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Incurable External Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Incurable Physical Depreciation",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Curable External Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Physical Deterioration is from wear and tear on a property caused over time. When the physical deterioration can be cured for a reasonable and feasible cost it is considered curable. When the cost of repair exceeds the return of value it is considered incurable."
+    ]
+  },
+  {
+    "id": 152,
+    "question": "Which of the following is an example of Physical Depreciation?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Peeling Paint",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Outdated Plumbing",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Poor Improvement Design",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Change in property zoning",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Physical Deterioration is the decrease in property value from wear and tear on a property caused over time."
+    ]
+  },
+  {
+    "id": 153,
+    "question": "Ray\u00e2\u20ac\u2122s RV Park is located on a main highway with lots of traffic. The state has just announced that the highway is being changed to an interstate. Once the interstate project is completed all existing access roads will be closed off and traffic will be routed to exits only. Ray\u00e2\u20ac\u2122s property will now only be accessible from roads coming from the other side of town making access to his property difficult. The loss of access to the heavily traveled roadway right next to his property is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Curable Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Incurable External Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Incurable Physical Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Curable External Obsolescence",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External Obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 154,
+    "question": "A home built in 1979 will always have the same:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Effective Age",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Market Age",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Depreciation Age",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Chronological Age",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "An improvement\u00e2\u20ac\u2122s Chronological Age is the actual age of the improvement that does not change. A home built 50 years ago has a Chronological Age of 50 years."
+    ]
+  },
+  {
+    "id": 155,
+    "question": "What type of property age may be adjusted by the appraiser during the appraisal process?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Chronological Age",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Capitalization Age",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Effective Age",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Comparable Age",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Effective Age of a property may be adjusted based on depreciation factors. The effective age of a home is reduced by remodeling, updating, and maintaining the property to extend its economic life. A 40 year old home may be effectively 35 years old."
+    ]
+  },
+  {
+    "id": 156,
+    "question": "Which of the following is NOT one of the four elements of property value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Demand",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Transferability",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Utility",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The four elements of property value is Demand, Utility, Scarcity, and Transferability. A common memory tool is the acronym D.U.S.T."
+    ]
+  },
+  {
+    "id": 157,
+    "question": "Linda has a lien on her property creating a cloud on the title. This affects which element of value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Utility",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Scarcity",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Transferability",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Demand",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Transferability, until the cloud on the title is removed it affects the ability to transfer property to another party."
+    ]
+  },
+  {
+    "id": 158,
+    "question": "Which of the following is one of the four elements of property value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Utility",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Stitus",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The four elements of property value is Demand, Utility, Scarcity, and Transferability. A common memory tool is the acronym D.U.S.T."
+    ]
+  },
+  {
+    "id": 159,
+    "question": "Donald wants to sell his portfolio of rental properties. He gets an appraisal to find the market value of the investment properties. What appraisal approach will the appraiser use?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Sales Comparison Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Cost Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Depreciation Approach",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Income Approach",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Used for properties that procure value, the Income Approach measures monetary income the subject property is expected to procedure and gives it a value the property would likely sell for."
+    ]
+  },
+  {
+    "id": 160,
+    "question": "The ethical performance requirements for the appraisal profession that were adopted by Congress in 1989 are referred to as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Uniform Standards of Property Appraisal Principles",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Uniform Standards of Professional Appraisal Practice",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Uniform Standards of Principle Appraisal Practice",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Uniform Standards of Property Appraisal Practice",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In 1989 Congress adopted ethical performance standards for the appraisal profession known as Uniform Standards of Professional Appraisal Practice commonly referred to as USPAP."
+    ]
+  },
+  {
+    "id": 161,
+    "question": "When choosing comparable properties for an appraisal the appraiser considers all of the following factors EXCEPT:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Location",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Condition of Home",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Age of Home",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Age of the buyer",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Comparable properties are chosen by an appraiser based on factors such as the age, condition, and location of the home as well as the date of sale. Comparables are never to be chosen based on buyer or seller attributes that fall under the protected classes in the Fair Housing Act."
+    ]
+  },
+  {
+    "id": 162,
+    "question": "Kevin\u00e2\u20ac\u2122s home is down wind of the new chicken houses. He has become unable to enjoy the outdoors due to the smell. Kevin\u00e2\u20ac\u2122s property is affected by:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Physical Depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "External Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Internal Depreciation",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 163,
+    "question": "Which of the following is an example of external obsolescence?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Cracked windows",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Bedrooms with no closets",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Outdated wiring",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Nearby railroad tracks",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "External obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 164,
+    "question": "Which of the following is an example of functional obsolescence?",
+    "options": [
+      {
+        "id": 1,
+        "value": "A roof in need of repair",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Peeling paint",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "A nearby landfill",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "HVAC unit of insufficient size",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "A type of depreciation that occurs from improvements that are poorly developed, over developed, or incorrectly designed for the current day's needs is called Functional Obsolescence."
+    ]
+  },
+  {
+    "id": 165,
+    "question": "Jerry replaced the roof on his house last summer. How does this affect the effective age of his home?",
+    "options": [
+      {
+        "id": 1,
+        "value": "It raise the effective age",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "It makes no change to the effective age",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "It lowers the affective age",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "The effective age can not do changed",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Effective Age of a property may be adjusted based on depreciation factors. The effective age of a home is reduced by remodeling, updating, and maintaining the property to extend its economic life. A 40 year old home may be effectively 35 years old."
+    ]
+  },
+  {
+    "id": 166,
+    "question": "A home with a three car garage has a higher value than a similar home with a two car garage. The value added by the garage is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Contribution",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Progression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Contribution is the value that various components add to the properties value as a whole."
+    ]
+  },
+  {
+    "id": 167,
+    "question": "When a property is used to its fullest potential of financial gain it is said to be its:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Economical Best",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Highest and Best Use",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Market Use",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Financial Gain Use",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When a property is put to the highest and best use it Is financially and physically practical, most lucrative, and legal use of the property."
+    ]
+  },
+  {
+    "id": 168,
+    "question": "For a property to obtain its highest and best use its use must be:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Profitable for the county",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Legal",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Over $100,000 per year",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Approved by the governor",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "When a property is put to the highest and best use it Is financially and physically practical, most lucrative, and legal use of the property."
+    ]
+  },
+  {
+    "id": 169,
+    "question": "Ryan has purchased a lot that adjoins the one he already owned. The value of the land as a whole is worth more than the two lots were worth separately. The extra value Ryan obtained is known as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Plottage value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Substitution value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Adjoining Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Assemblage creates plottage value by adjoining properties, \u00e2\u20ac\u0153assembling them together\u00e2\u20ac\u009d creating a greater value."
+    ]
+  },
+  {
+    "id": 170,
+    "question": "Sharon wants to sell her ranch style 3 bedroom 2 bath 1,200 sq ft home for $189,000. A very similar home is for sale on the next street over for $175,000. Which appraisal principle states that when two very similar properties are for sale the cheapest will sell first.",
+    "options": [
+      {
+        "id": 1,
+        "value": "Competition",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Progression",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Substitution",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The idea that the least expensive of two very similar properties will sell first is an example of the appraisal theory substitution."
+    ]
+  },
+  {
+    "id": 171,
+    "question": "When calculating a property\u00e2\u20ac\u2122s Gross Rent Multiplier the appraiser uses the property\u00e2\u20ac\u2122s:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Annual rent",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Annual rent minus expenses",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Monthly rent",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Monthly rent minus expenses",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Gross Rent Multiplier (GRM) is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross monthly rents to determine its value."
+    ]
+  },
+  {
+    "id": 172,
+    "question": "When calculating a property\u00e2\u20ac\u2122s Gross Income Multiplier the appraiser uses the property\u00e2\u20ac\u2122s:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Monthly rent",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Monthly rent minus expenses",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Annual rent",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Annual rent minus expenses",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Gross Income Multiplier (GIM) is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross annual rents to determine its value."
+    ]
+  },
+  {
+    "id": 173,
+    "question": "The appraiser multiples this factor by the gross monthly rents to determine the property\u00e2\u20ac\u2122s value:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Gross Rent Multiplier",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Gross Economic Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Net Rent Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Gross Income Multiplier",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Gross Rent Multiplier (GRM) is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross monthly rents to determine its value."
+    ]
+  },
+  {
+    "id": 174,
+    "question": "The appraiser multiples this factor by the gross annual rents to determine the property\u00e2\u20ac\u2122s value:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Net Rent Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gross Economic Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Net Income Multiplier",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Gross Income Multiplier",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The Gross Income Multiplier (GIM) is the factor that the appraiser multiples by the property\u00e2\u20ac\u2122s gross annual rents to determine its value."
+    ]
+  },
+  {
+    "id": 175,
+    "question": "Property manager Amy has successfully rented every available rental unit. She then collected 100% of the rent due. What has Amy collected?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Net operating income",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Gross Potential Income",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Net Annual Income",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Gross Annual Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property's Gross Potential Income is the amount that could be collected if it were completely rented and rents collected in full."
+    ]
+  },
+  {
+    "id": 176,
+    "question": "A property\u00e2\u20ac\u2122s Gross Potential Income minus vacancies is called:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Net Potential Income",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Net Operating Expenses",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Gross Effective Income",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Net Effective Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property's Gross Potential Income is the amount that could be collected if it were completely rented and rents collected in full. Gross Potential Income minus loss of income due to vacancy is called the Effective Gross Income."
+    ]
+  },
+  {
+    "id": 177,
+    "question": "If the appraiser knows the value of a property and the amount of monthly rent, by what method would the numbers be calculated to find the property\u00e2\u20ac\u2122s Gross Rent Multiplier?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Added",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtracted",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Divided",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Multiplied",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "To find a property\u00e2\u20ac\u2122s Gross Rent Multiplier the appraiser would divide the value by the monthly rent. Value /Monthly Rent =GRM"
+    ]
+  },
+  {
+    "id": 178,
+    "question": "If the appraiser knows the value of a property and the amount of annual rent, by what method would the numbers be calculated to find the property\u00e2\u20ac\u2122s Gross Income Multiplier?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Added",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Subtracted",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Divided",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Multiplied",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "To find a property\u00e2\u20ac\u2122s Gross Income Multiplier the appraiser would divide the value by the annual rent. Value /Annual Rent =GIM"
+    ]
+  },
+  {
+    "id": 179,
+    "question": "John's is charged annual ad valorem taxes based on what value of his home?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Assessed Value",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Economic Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Assessed Value is the value in which ad valorem property taxes are based."
+    ]
+  },
+  {
+    "id": 180,
+    "question": "When a property is being taken by eminent domain the county will assign the property what type of value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Market Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assessed Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Condemned Value",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When a property is being taken by eminent domain the county will assign the property a Condemned Value."
+    ]
+  },
+  {
+    "id": 181,
+    "question": "What value estimates the probable sell price of a property at some point in the future?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assessed Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Leasehold Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Reversionary Value",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Reversionary Value is used by investors to estimate the probable sell price of a property at some point in the future."
+    ]
+  },
+  {
+    "id": 182,
+    "question": "Jared is interested in purchasing a duplex and is researching what comparable properties in the area are renting for. By doing so Jared is looking to acquire information on what type of value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assessed Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Rental Value",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Reversionary Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A property\u00e2\u20ac\u2122s rental value is the income the property could produce from being rented a certain amount of time."
+    ]
+  },
+  {
+    "id": 183,
+    "question": "When a property is used as collateral for a mortgage the lender looks at the property\u00e2\u20ac\u2122s:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Leasehold Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Mortgage Value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Rental Value",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Reversionary Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Mortgage Value is the value of the property as held as collateral for a mortgage."
+    ]
+  },
+  {
+    "id": 184,
+    "question": "In an appraisal the comparable property requiring the least adjustments is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Not very similar to the subject property.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Excluded from the report.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The most similar to the subject property.",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "The only comparable used in the report.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In an appraisal the comparable property requiring the least adjustments is the most similar to the subject property. The more adjustments made to the comparable the less reliable the indication of value."
+    ]
+  },
+  {
+    "id": 185,
+    "question": "In an appraisal the comparable property requiring large monetary adjustment amounts are considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The most reliable indication of value.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The least reliable indication of value.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Easier for the appraiser to adjust.",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Harder for the appraiser to adjust.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In an appraisal the comparable property requiring the highest monetary adjustments are the least similar to the subject property, and therefore the least reliable to indicate the subject property's value."
+    ]
+  },
+  {
+    "id": 186,
+    "question": "When appraising a brand new construction single family residential home the appraiser may choose to use which of the following approaches to value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Income Approach",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Replacement Approach",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Cost Approach",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Rental Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Often used for new construction or special use properties, the appraisal by Cost Approach calculates land value, plus current improvements, and subtracts depreciation to obtain an opinion of value."
+    ]
+  },
+  {
+    "id": 187,
+    "question": "If the value of a carport is $4,000 and the comparable property does not have a carport but the subject property does, how would the appraiser make an adjustment?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Subtract $4,000 from subject",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Add $4,000 to subject",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Subtract $4,000 from comparable",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Add $4,000 to the comparable",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "When the subject property has an amenity the subject does not you add value to the comparable. The idea is if the comparable property had the amenity it would have sold for more."
+    ]
+  },
+  {
+    "id": 188,
+    "question": "Which of the following is a type of depreciation in the cost approach appraisal method?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Functional Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 2,
+        "value": "Market Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Appraised Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Assessed Deterioration",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "In the cost approach appraisal method there are three types of depreciation, Functional Obsolescence, External Obsolescence, and Physical Deterioration."
+    ]
+  },
+  {
+    "id": 189,
+    "question": "Richard replaced the roof, and HVAC system on his home last spring. As a result Richard\u00e2\u20ac\u2122s home has a reduced:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Chronological Age",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Effective Age",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Market Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The Effective Age of a property may be adjusted based on depreciation factors. The effective age of a home is reduced by remodeling, updating, and maintaining the property to extend its economic life. A 40 year old home may be effectively 35 years old."
+    ]
+  },
+  {
+    "id": 190,
+    "question": "Beth wants to sell her home but the neighbors house is so dilapidated that the value of her home is lower than it was last year. What type of deprecation is this?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Functional Obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Market Deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "External Obsolescence",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Assessed Deterioration",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "External obsolescence is nearly always incurable due to the fact that the factors are external to the property and out of the property owner control."
+    ]
+  },
+  {
+    "id": 191,
+    "question": "Pam\u00e2\u20ac\u2122s roof is leaking and needs replaced due to physical deterioration. The cost to replace the roof is $4,500. The value the roof adds to the home is $5,525. Pam\u00e2\u20ac\u2122s physical deterioration is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Incurable",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Expensive",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Curable",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Extensive",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "Curable Depreciation is a form of depreciation that can be remedied for a reasonable cost without extensive repairs that would not be feasible."
+    ]
+  },
+  {
+    "id": 192,
+    "question": "A home with six bedrooms and one bathroom could be considered:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Economically Feasible",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Functionally Obsolescent",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Desirable to a large family",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Desirable to a single person",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A type of depreciation that occurs from improvements that are poorly developed, over developed, or incorrectly designed for the current day's needs is called Functional Obsolescence."
+    ]
+  },
+  {
+    "id": 193,
+    "question": "Tom owned the only tire shop in town. When Mike built the second tire shop in town he built it was right across the street from Tom\u00e2\u20ac\u2122s existing tire shop. This is an example of:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Conformity",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Progression",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Competition",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Competition states that two similar businesses attract more customers when within close proximity than they would separately."
+    ]
+  },
+  {
+    "id": 194,
+    "question": "Burger Hut is looking for a lot to build a restaurant. The appraisal principle that states Burger Hut would be more successful near another restaurant is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Substitution",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Competition",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Reversion",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Regression",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The appraisal principle of Competition states that two similar businesses attract more customers when within close proximity than they would separately."
+    ]
+  },
+  {
+    "id": 195,
+    "question": "In what instance would a property\u00e2\u20ac\u2122s chronological age change?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Due to depreciation",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Due to property repairs",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Chronological age does not change",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Due to the property\u00e2\u20ac\u2122s rental income potential",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An improvement\u00e2\u20ac\u2122s Chronological Age is the actual age of the improvement that does not change. A home built 50 years ago has a Chronological Age of 50 years."
+    ]
+  },
+  {
+    "id": 196,
+    "question": "Paul\u00e2\u20ac\u2122s home is 67 years old. He recently completed updates that added years to the economic life of the property. Patching his leaky roof added 5 years, replacing his outdated electrical system added 3 years, and a new water heater added 2 years. What is the chronological age of Paul's home?",
+    "options": [
+      {
+        "id": 1,
+        "value": "77 years",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "57 years",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "67 years",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "87 years",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An improvement\u00e2\u20ac\u2122s Chronological Age is the actual age of the improvement that does not change. A home built 50 years ago has a Chronological Age of 50 years."
+    ]
+  },
+  {
+    "id": 197,
+    "question": "Which of the following would be an example of the principle of Contribution?",
+    "options": [
+      {
+        "id": 1,
+        "value": "The loss of value due to functional obsolescence",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The loss of value due to zoning changes",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The loss of value due to physical deterioration",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "The increase of value in property with a pool",
+        "is_correct": true
+      }
+    ],
+    "remediation": [
+      "Contribution is the value that various components add to the properties value as a whole."
+    ]
+  },
+  {
+    "id": 198,
+    "question": "Cooper and Logan have entered into a sales contract for a property and agree on the price to be paid. This is called the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assessed Value",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Appraised Value",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "Sales Price",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "Leasehold Value",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "The value that a property sells for is known as the sales price."
+    ]
+  },
+  {
+    "id": 199,
+    "question": "An appraisal is performed to protect:",
+    "options": [
+      {
+        "id": 1,
+        "value": "The seller from taking an offer that is too low.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "The buyer from paying too much.",
+        "is_correct": false
+      },
+      {
+        "id": 3,
+        "value": "The lender from over lending on the property.",
+        "is_correct": true
+      },
+      {
+        "id": 4,
+        "value": "The real estate agent from listing the property too high or too low.",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "An appraisal protects the lender for over lending on a property. The lender can not lend more than the property is worth and an appraisal ensures they do not."
+    ]
+  },
+  {
+    "id": 0,
+    "question": "A real estate appraisal is defined as:",
+    "options": [
+      {
+        "id": 1,
+        "value": "A guarantee of what the property will sell for",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Opinion of Value",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Comparative Market Analysis",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Cost Approach",
+        "is_correct": false
+      }
+    ],
+    "remediation": [
+      "A real estate Appraisal is an opinion of the market value of a property."
+    ]
+  }
+]
+arn serve

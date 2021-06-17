@@ -1,0 +1,5257 @@
+[
+  {
+    "id": 1,
+    "question": "What is the depth of a rectangular house that is 75 ft wide and contains 5,625 sq/ft?",
+    "options": [
+      {
+        "id": 1,
+        "value": "50",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "75",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "100",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "125",
+        "is_correct": false
+      }
+    ],
+    "remediation": "5,625 sq/ft / 75 ft = 75 ft Deep"
+  },
+  {
+    "id": 2,
+    "question": "Convert 50% to a decimal.",
+    "options": [
+      {
+        "id": 1,
+        "value": ".50",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "5.0",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "0.050",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "50.00",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To convert a percent to a decimal move the decimal point two spaces to the left."
+  },
+  {
+    "id": 3,
+    "question": "What is the square footage of a square lot that is 400 ft on one side?",
+    "options": [
+      {
+        "id": 1,
+        "value": "800 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "400 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "1,600 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "160,000 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To find the square footage of a square the formula is LxW 400x400=160,000 sf/ft"
+  },
+  {
+    "id": 4,
+    "question": "If a piece of land sells for $1,750 per acre how much did the buyer pay for a 635\u2019 x 325\u2019 lot?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$8,291",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$8,921",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$8,129",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$8,219",
+        "is_correct": false
+      }
+    ],
+    "remediation": "4.7377 acres x $1,750= $8,290.97 ($8,291) "
+  },
+  {
+    "id": 5,
+    "question": "What is the area of a piece of land 70\u2019 x 80\u2019?",
+    "options": [
+      {
+        "id": 1,
+        "value": "4,600 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1,500 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "5,600 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "4,800 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "70\u2019 x 80\u2019 = 5,600 sq/ft"
+  },
+  {
+    "id": 6,
+    "question": "A lot that is 62,000 sq/ft and is 400 ft deep is how wide?",
+    "options": [
+      {
+        "id": 1,
+        "value": "400 ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "155 ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "255 ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "620 ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "62,000 sq/ft / 400 ft = 155 ft wide"
+  },
+  {
+    "id": 7,
+    "question": "Convert \u00bc into a decimal.",
+    "options": [
+      {
+        "id": 1,
+        "value": "0.25",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "0.025",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "2.50",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "25.00",
+        "is_correct": false
+      }
+    ],
+    "remediation": "1 / 4 = 0.25"
+  },
+  {
+    "id": 8,
+    "question": "Convert 3.3% into a decimal.",
+    "options": [
+      {
+        "id": 1,
+        "value": "0.33",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "0.033",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "3.30",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "33.0",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To convert a percent to a decimal move the decimal point two spaces to the left."
+  },
+  {
+    "id": 9,
+    "question": "What is 0.75 as a percent?",
+    "options": [
+      {
+        "id": 1,
+        "value": "75%",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "075%",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "750%",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "0075%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "0.75 = 75%"
+  },
+  {
+    "id": 10,
+    "question": "What is 750 divided by 25%?",
+    "options": [
+      {
+        "id": 1,
+        "value": "30",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "3,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "3,500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "30,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "750 /0.25 = 3,000 "
+  },
+  {
+    "id": 11,
+    "question": "What is 550 multiplied by 20% ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "11,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1,100",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "110",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "10",
+        "is_correct": false
+      }
+    ],
+    "remediation": "550 x 0.20 = 110 "
+  },
+  {
+    "id": 12,
+    "question": "If a triangle has a base of 15\u2019 and height of 30\u2019 what is the area?",
+    "options": [
+      {
+        "id": 1,
+        "value": "450 sq ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "45 sq ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "225 sq ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "25 sq ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "450\u2019 / 2 = 225 sq/ft "
+  },
+  {
+    "id": 13,
+    "question": "What is the area of a trapezoid that is 20\u2019 L, 30\u2019 L, and 50\u2019 H?",
+    "options": [
+      {
+        "id": 1,
+        "value": "15,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1,250 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "1,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "12,000 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "25\u2019 x 50\u2019 = 1,250 sq/ft "
+  },
+  {
+    "id": 14,
+    "question": "What is the area of a trapezoid 50\u2019 L, 60\u2019 L and 125\u2019 H ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "6,875 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "8,675 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "7,685 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "5,678 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "55\u2019 x 125\u2019 = 6,875 sq/ft "
+  },
+  {
+    "id": 15,
+    "question": "Randy bought a home with a pool that measures 8\u2019 deep, 10\u2019 wide, 20\u2019 long. How many cubic feet of water will it take to fill it?",
+    "options": [
+      {
+        "id": 1,
+        "value": "1,500 cubic feet",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1,200 cubic feet",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "1,400 cubic feet",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "1,600 cubic feet",
+        "is_correct": false
+      }
+    ],
+    "remediation": "8\u2019 x 10\u2019 x 20\u2019 = 1,600 Cubic Feet "
+  },
+  {
+    "id": 16,
+    "question": "Steve bought a 125\u2019 x 100\u2019 lot to build an automotive shop on. The set back on the sides are 10\u2019, the front 20\u2019, and 15\u2019 in the back. What is the maximum buildable area of the lot?",
+    "options": [
+      {
+        "id": 1,
+        "value": "5,687 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "8,625 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "6,825 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "8,265 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "105\u2019x 65\u2019 = 6,825 sq/ft "
+  },
+  {
+    "id": 17,
+    "question": "Karen sold a home for $365,000 and received a commission check for $10,950. What percent of commission did she receive?",
+    "options": [
+      {
+        "id": 1,
+        "value": "5%",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "3%",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "6%",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "2.5%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$10,950 / $365,000 = 0.03 (3%)"
+  },
+  {
+    "id": 18,
+    "question": "Linda sold a new construction home in a beautiful neighborhood for 7% commission.If her commission was $22,050. How much did the property sell for?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$350,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$315,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$305,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$300,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$22,050 / 0.07 = $315,000"
+  },
+  {
+    "id": 19,
+    "question": "Mark listed a property and got it under contract the same week. The property sold for $173,500 at 6% how much was commission?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,891.66",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$10,410",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$8,675",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$12,145",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$173,500 x 6% = $10,410"
+  },
+  {
+    "id": 20,
+    "question": "Agent Karen wrote a contract on one of Agent Kelly\u2019s listings and it sold for $217,850. The commission was 6% to be split between the agents listing side 60% seller side 40%. How much were the agents paid?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Karen $ 7,842.60 Kelly $5,228.40",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Kelly $5, 282.40 Karen $7,824.60",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Karen $5,228.40 Kelly $7,842.60",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Kelly $5,822.40 Karen $5,742.60",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$13,071 x 40% = $5,228.40 Selling Agent Karen\u2019s Commission "
+  },
+  {
+    "id": 21,
+    "question": "When converting a percentage to a decimal how many spaces do you move the decimal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3 spaces left",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "2 spaces right",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "3 spaces right",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "2 spaces left",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When converting a percentage to a decimal move the decimal 2 places to the left."
+  },
+  {
+    "id": 22,
+    "question": "The formula to find the area of a trapezoid is:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Length + Length / 2 x Height",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Length x Length / 2 x Height",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Length / Length x 2 x Height",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Length + Length x 2 / Height",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The Formula to find the area of a Trapezoid is Length plus Length, Divided by two, Multiplied by Height. Length + Length / 2 x Height"
+  },
+  {
+    "id": 23,
+    "question": "What is the formula to find the area of a triangle?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Base + Height / 2",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Base X Height / 2",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Base - Height / 2",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Base / Height X 2",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The Formula to find the area of a Triangle is Base Multiplied by the Height, Divided by two. Base X Height / 2"
+  },
+  {
+    "id": 24,
+    "question": "A piece of land that is 180\u2019 deep and is 31,500 sq ft is how wide?",
+    "options": [
+      {
+        "id": 1,
+        "value": "125\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "180\u2019",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "165\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "175\u2019",
+        "is_correct": false
+      }
+    ],
+    "remediation": ["31,500 sq/ft / 180\u2019 = 175\u2019", "wide"]
+  },
+  {
+    "id": 25,
+    "question": "Find the area of a triangle with a base of 40\u2019 and height of 75\u2019.",
+    "options": [
+      {
+        "id": 1,
+        "value": "1,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "57.5 sq/ ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "3,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "6,000 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Divided by 2 = 1,500 sq/ft "
+  },
+  {
+    "id": 26,
+    "question": "Rectangular Surveys include square land tracts called sections. How many acres are in a section?",
+    "options": [
+      {
+        "id": 1,
+        "value": "500 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "540 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "650 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "640 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Rectangular Surveys include square land tracts called sections that are 1 mile deep and 1 mile wide containing 640 acres."
+  },
+  {
+    "id": 27,
+    "question": "How many square feet are in an acre?",
+    "options": [
+      {
+        "id": 1,
+        "value": "23,560 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "43,560 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "53,640 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "35,650 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "An acre is 43,560 sq/ft"
+  },
+  {
+    "id": 28,
+    "question": "A parcel that is 3.75 acres contains how many square feet?",
+    "options": [
+      {
+        "id": 1,
+        "value": "166,350 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "160,350 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "163,350 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "136,650 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "3.75 acres x 43,560 (sq/ft in an acre) = 163,350 sq/ft"
+  },
+  {
+    "id": 29,
+    "question": "What is the formula to calculate volume in cubic feet ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Height (Depth) + Width + Length",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Height (Depth) / Width + Length",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Height (Depth) x Width x Length",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Height (Depth) + Width x Length",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to calculate Volume in Cubic Feet is Height(Depth) X Width X Length"
+  },
+  {
+    "id": 30,
+    "question": "How many acres are in a square mile?",
+    "options": [
+      {
+        "id": 1,
+        "value": "460 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "640 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "540 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "560 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "There are 640 acres in one square mile."
+  },
+  {
+    "id": 31,
+    "question": "How many feet are in a rod?",
+    "options": [
+      {
+        "id": 1,
+        "value": "30 feet",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "25.5 feet",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "15.5 feet",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "16.5 feet",
+        "is_correct": false
+      }
+    ],
+    "remediation": "There are 16.5 feet in a rod."
+  },
+  {
+    "id": 32,
+    "question": "A chain as a unit of measurement contains:",
+    "options": [
+      {
+        "id": 1,
+        "value": "68 ft, 4 rods, 100 links",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "66 ft, 5 rods, 100 links",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "66 ft, 4 rods, 100 links",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "65 ft, 4 rods, 100 links",
+        "is_correct": false
+      }
+    ],
+    "remediation": "A chain is 66ft, 4 rods, 100 links."
+  },
+  {
+    "id": 33,
+    "question": "A mile contains:",
+    "options": [
+      {
+        "id": 1,
+        "value": "5,280 ft, 320 rods, 80 chains",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "5,500 ft, 325 rods, 75 chains",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "5,325 ft, 320 rods, 80 chains",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "5,235 ft, 300 rods, 50 chains",
+        "is_correct": false
+      }
+    ],
+    "remediation": "A mile contains 5,280 ft, 320 rods, 80 chains."
+  },
+  {
+    "id": 34,
+    "question": "Buyer Brenda just closed on a home that had bright orange walls in one of the bedrooms and the first thing she wanted to do was repaint. The room has a 12 ft ceiling and the walls measure 10\u2019, 12\u2019, 10\u2019, 12\u2019. A gallon of paint covers 150 sq/ft. How many full gallons would she need to buy?",
+    "options": [
+      {
+        "id": 1,
+        "value": "5 gallons",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "3 gallons",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "4 gallons",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "2 gallons",
+        "is_correct": false
+      }
+    ],
+    "remediation": "264\u2019 X 2 = 528\u2019, 528\u2019 / 150 sq/ft = 3.52 (4 Full Gallons) "
+  },
+  {
+    "id": 35,
+    "question": "Bob owns a 1.8 acre lot and wants to buy the 1/2 acre adjoining lot. How much land would have converted to a decimal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "2.35 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "2.30 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "2.75 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "2.25 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "1.80 + .50 = 2.30 Acres"
+  },
+  {
+    "id": 36,
+    "question": "Jerry has a 1/2 acre lot that he wants to put a basketball court on. The court will be 94\u2019 x 50\u2019 How many square feet will be uncovered?",
+    "options": [
+      {
+        "id": 1,
+        "value": "15,060 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "17,090 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "17,080 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "16,080 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "21,780 - 4,700 = 17,080 sq/ft "
+  },
+  {
+    "id": 37,
+    "question": "If a square lot measures 300\u2019 on one side, what is the total sq/ft ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "9,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "9,900 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "99,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "90,000 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "300\u2019 X 300\u2019 = 90,000 sq/ft lot."
+  },
+  {
+    "id": 38,
+    "question": "What is the formula for finding the tax base?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Assessed Value + Exemptions",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Assessed Value x Exemptions",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Assessed Value - Exemptions",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Assessed Value / Exemptions",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to find the tax base is assessed value minus exemptions."
+  },
+  {
+    "id": 39,
+    "question": "Natalie received a notice from her landlord that her rent would be increasing by 6.75%. Her current rent is $550, how much is her new rent payment?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$587",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$568",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$597",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$557",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$550 x 6.75% = $587"
+  },
+  {
+    "id": 40,
+    "question": "Ryan needs to net $25,000 on the sale of his home. His loan payoff is $175,000 his closing costs are $6,500, and commission is 6 %. What is the lowest offer Ryan can accept?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$219,680",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$225,680",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$218,680",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$215,680",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$206,500 / 0.94 % (seller\u2019s portion after commission) = $219,680 "
+  },
+  {
+    "id": 41,
+    "question": "CLover Springs has a tax base of $64,000,000 and the budget is $500,000. What is the tax rate in mills?",
+    "options": [
+      {
+        "id": 1,
+        "value": "8.7 mills",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "7.8 mills",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "10.2 mills",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "15.4 mills",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$500,000 / $64,000,000= 7.8 mills"
+  },
+  {
+    "id": 42,
+    "question": "How do you convert a decimal into a percentage ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Move the decimal 3 spaces left.",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Move the decimal 2 spaces right.",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Move the decimal 3 spaces right",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Move the decimal 2 spaces left.",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 43,
+    "question": "Pizza Cellar pays rent based on their monthly sales. Last month\u2019s sales were $65,000 and the lease calls for 2.75% of that amount as rent. How much was last month\u2019s rent?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$1,700",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$1,750",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$1,766",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$1,787",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$65,000 x 2.75% = $1,787"
+  },
+  {
+    "id": 44,
+    "question": "Clarksville\u2019s a little town up north has a tax base of $75,000.000 and the total assessed valuation of $98,000,000. What is the amount of Clarksville\u2019s tax exemptions?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$230,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$23,000,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$2,300,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$23,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$98,000,000 - $75,000,000 = $23,000,000"
+  },
+  {
+    "id": 45,
+    "question": "Property taxes paid in arrears appear on the settlement statement as?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Credit to Seller and Credit to Buyer",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Debit the Buyer and Debit the Seller",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Debit the Seller and Credit the Buyer",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Credit the Seller and Debit the Buyer",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When a property sells during the year and the property taxes are paid in arrears the seller is debited a prorated tax amount for the days they owned the property and the credit for those days is given to the buyer."
+  },
+  {
+    "id": 46,
+    "question": "Dan receives 70% commission from his broker. If he sells a home at $250,000 with a 6% commission how much would he make?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$12,500",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$10,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$10,500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$12,250",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$15,000 x 70% = $10,500 Commission "
+  },
+  {
+    "id": 47,
+    "question": "Josh needs to net $55,000 from the sale of his home after commission of 5%. How much would he have to sell for?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$57,895",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$58,985",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$56,789",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$57,678",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$55,000 / 0.95 (seller\u2019s portion after 5 % commission)= $57.895 Sales Price"
+  },
+  {
+    "id": 48,
+    "question": "Denny\u2019s home has an assessed valuation of $100,000. The property tax rate is $6.00 per $100 of assessed valuation. What is that tax amount?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$600",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$6,600",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$6,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$6,060",
+        "is_correct": false
+      }
+    ],
+    "remediation": "0.60 x 100,000 = $6,000 "
+  },
+  {
+    "id": 49,
+    "question": "Jenna\u2019s fourplex has a monthly rental income of $4,000 and the (GRM) Gross Rent Multiplier is 91, how much is her property worth?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$364,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$395,600",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$325,450",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$364,500",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$4,000 x 91 = $364,000 "
+  },
+  {
+    "id": 50,
+    "question": "Pat\u2019s home loan of $150,000 has a monthly interest-only payment of $1,000. What is the annual interest rate?",
+    "options": [
+      {
+        "id": 1,
+        "value": "5%",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "7.5%",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "8%",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "6.75%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$12,000 / $150,000 = 8% "
+  },
+  {
+    "id": 51,
+    "question": "Dawson will not entertain any offers without 3% earnest money. Agent Anna is writing an offer of $211,000. How much earnest money must her buyer include in the offer?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$3,330",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$6,630",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$6,330",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$6,350",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$211,000 x 3% = $6,330 Earnest Money"
+  },
+  {
+    "id": 52,
+    "question": "What is the formula to find the Gross Rent Multiplier?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Monthly Rental income / Sales Price",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Sales Price X Monthly Rent",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Annual Rent / Sales Price",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Sales Price x Annual Income",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to find the Gross Rent Multiplier is Monthly Rent / Sales Price."
+  },
+  {
+    "id": 53,
+    "question": "Convert 35% into a decimal.",
+    "options": [
+      {
+        "id": 1,
+        "value": "0.35",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "35.00",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "0.035",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "03.50",
+        "is_correct": false
+      }
+    ],
+    "remediation": "35% = 0.35"
+  },
+  {
+    "id": 54,
+    "question": "A lot measuring 60\u2019 long and 30\u2019 wide contains how many square feet?",
+    "options": [
+      {
+        "id": 1,
+        "value": "1,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1.900 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "1,300 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "1,800 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "60 x 30 = 1,800 sq/ft"
+  },
+  {
+    "id": 55,
+    "question": "What is the area of a triangle with a base of 35\u2019 and a height of 60\u2019?",
+    "options": [
+      {
+        "id": 1,
+        "value": "2,100 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "1,100 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "1,050 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "1,025 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "2,100 sq/ft / 2 = 1,050 sq/ ft "
+  },
+  {
+    "id": 56,
+    "question": "How many links are in a rod?",
+    "options": [
+      {
+        "id": 1,
+        "value": "30 links",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "25 links",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "50 links",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "10 lnks",
+        "is_correct": false
+      }
+    ],
+    "remediation": "A rod contains 25 links."
+  },
+  {
+    "id": 57,
+    "question": "Find the area of a rectangular shaped lot with two sides that measure 150\u2019 and two sides that measure 110\u2019.",
+    "options": [
+      {
+        "id": 1,
+        "value": "$15,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$16,500 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$17,025 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$16,050 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "150\u2019 x 110\u2019 = 16,500 sq/ft"
+  },
+  {
+    "id": 58,
+    "question": "The area of a lot is 6,750 sq/ft. Its length is 90\u201d what is the width?",
+    "options": [
+      {
+        "id": 1,
+        "value": "75\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "85\u2019",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "60\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "90\u2019",
+        "is_correct": false
+      }
+    ],
+    "remediation": "6,750sq/ft / 90\u2019= 75\u2019"
+  },
+  {
+    "id": 59,
+    "question": "How many acres are in a parcel that measures 600 x 600?",
+    "options": [
+      {
+        "id": 1,
+        "value": "8.67 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "6.57 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "8.26 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "5.50 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "360,000 sq/ft / 43,560 = 8.26 "
+  },
+  {
+    "id": 60,
+    "question": "Steve bought a parcel of land 135 x 150. Convert the sq/ft into acres.",
+    "options": [
+      {
+        "id": 1,
+        "value": ".46 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": ".48 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": ".56 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": ".44 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "20,250 sq/ft / 43,560 = .46 acres "
+  },
+  {
+    "id": 61,
+    "question": "A piece of land just sold on a busy street for $5,000,000 and had 250 ft of frontage. How much did the buyer pay per front foot?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$200,000",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$250,000",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$25,000",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$20,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$5,000,000 / 250\u2019 = $20,000 per front ft."
+  },
+  {
+    "id": 62,
+    "question": "Dave bought 3 acres of land. How many square feet is the land total?",
+    "options": [
+      {
+        "id": 1,
+        "value": "133,908 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "130,600 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "130,680 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "132,674 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "43,560 sq/ft x 3 = 130,680 sq/ft"
+  },
+  {
+    "id": 63,
+    "question": "What is the cost of a lot 500\u2019 x 350\u2019 at $625 per acre?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,420",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$2,510",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$2,500",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$2,610",
+        "is_correct": false
+      }
+    ],
+    "remediation": "4.017 x $625 = $2,510 "
+  },
+  {
+    "id": 64,
+    "question": "What is the area of a trapezoid 24\u2019 L, 28\u2019 L, 32 H?",
+    "options": [
+      {
+        "id": 1,
+        "value": "832 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "834 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "823 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "833 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "26\u2019 x 32\u2019= 832 sq/ft "
+  },
+  {
+    "id": 65,
+    "question": "If a lot measuring 200\u2019 x 125\u2019 has sideset backs of 15\u2019, front set back of 25\u2019 and a rear set back of 20\u2019. What is the maximum building area?",
+    "options": [
+      {
+        "id": 1,
+        "value": "14,250 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "15,678 sq/ft",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "13,600 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "13,500 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "170\u2019 x 80\u2019 = 13,600 sq/ft "
+  },
+  {
+    "id": 66,
+    "question": "A home sells for $122,500 and the commission is 6% split 55% to the listing agent and 45% to the selling what is the amount the agent s receive?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Listing Agent $4,307.50 Selling Agent $3,042.50",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "Listing Agent $4,307.50 Selling Agent $3,307.50",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "Listing Agent $4,307.50 Selling Agent $3,420.50",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "Listing Agent $4,042.50 Selling Agent $3,307.50",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$7,350 x 45% = $3,307.50 "
+  },
+  {
+    "id": 67,
+    "question": "Jared sells a home for $234,600 at 5% commission and receives 60% of the commission from his broker. How much did Jared make?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$7,083",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "$7,038",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "$4,692",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "$4,960",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$11,730 x 60% = $7,038 "
+  },
+  {
+    "id": 68,
+    "question": "A section is how many miles wide and deep?",
+    "options": [
+      {
+        "id": 1,
+        "value": "1 square mile",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "5 square miles",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "6 square miles",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "10 square miles",
+        "is_correct": false
+      }
+    ],
+    "remediation": "A section is 1 mile wide and 1 mile deep"
+  },
+  {
+    "id": 69,
+    "question": "How many acres in the N \u00bd of the SW \u00bc of the SE \u00bc , township 35 south, range 11 north?",
+    "options": [
+      {
+        "id": 1,
+        "value": "15 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "25 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "20 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "10 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "640 acres in a mile / 32= 20 acres "
+  },
+  {
+    "id": 70,
+    "question": "How many acres in the N \u00bd of the SE \u00bd on the NW \u00bc of section 19, township 48, range 21?",
+    "options": [
+      {
+        "id": 1,
+        "value": "35 acres",
+        "is_correct": false
+      },
+      {
+        "id": 2,
+        "value": "30 acres",
+        "is_correct": true
+      },
+      {
+        "id": 3,
+        "value": "25 acres",
+        "is_correct": false
+      },
+      {
+        "id": 4,
+        "value": "40 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "640 acres in a mile / 16=40 acres "
+  },
+  {
+    "id": 1,
+    "question": "A rental property has a GRM of 115 and rents for $2,500 per month. What is the value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$278,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$287,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$257,800",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$279,345",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$2,500 x 115 GRM = $287,500 Value"
+  },
+  {
+    "id": 2,
+    "question": "Find the value of a Commercial building that has an annual income $56,800 and a GIM 8.9.",
+    "options": [
+      {
+        "id": 1,
+        "value": "$505,520",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$500,540",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$505,420",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "504,520",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$56,800 income x 8.9 GIM =$505,520"
+  },
+  {
+    "id": 3,
+    "question": "Chad purchases a commercial property for $899,900 the annual rent income is $64,000. What is the GMI?",
+    "options": [
+      {
+        "id": 1,
+        "value": "15.6",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "14.0",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "14.2",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "14.6",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$899,900 Value / $64,000 Annual Income = 14.6"
+  },
+  {
+    "id": 4,
+    "question": "How much do lenders charge for discount points?",
+    "options": [
+      {
+        "id": 1,
+        "value": "2% of the loan amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "3% of the loan amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1% of the loan amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5% of the loan amount",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Discount points cost 1% of the loan amount."
+  },
+  {
+    "id": 5,
+    "question": "Kerry got approved for a loan with a 2% origination fee and 2 discount points on a $225,000 loan. How much was she charged for the discount points?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$4,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,075",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,250",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$225,000 x 2% = $4,500"
+  },
+  {
+    "id": 6,
+    "question": "Denny\u2019s lender charged him 1% loan origination fee and 2 discount points on a $305,000 loan. What were the total charges?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$9,510",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,105",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,150",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,550",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$305,000 x 3% = $9,150"
+  },
+  {
+    "id": 7,
+    "question": "Harry has a $100,000 interest only loan with 5% interest. How much are monthly interest payments?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$466.66",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$416.66",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$461.06",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$461.16",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 8,
+    "question": "Mark pays a monthly payment of $500 on an interest only at 6%. How much is the total loan?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$110,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$100,100",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$111,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$100,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 9,
+    "question": "If the monthly payment on an interest only loan is $500 and loan is $100,000 what is the interest rate?",
+    "options": [
+      {
+        "id": 1,
+        "value": "5%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "7%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4%",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 10,
+    "question": "What is the formula to find the total interest paid over the life of the loan on an interest only loan ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Loan Term / Rate + Loan Amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Rate + Loan Term + Loan Amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Loan Amount / Loan Term/ Rate",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Loan Amount x Rate x Loan Term",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to find the total interest paid over the life of the loan on an interest only loan is Loan Amount x Rate X Loan Term"
+  },
+  {
+    "id": 11,
+    "question": "Misty gets a 10 year interest only loan for $60,000 at 5 % interest. How much interest will she pay?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$30,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$35,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$20,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$60,000 x .05 x 10 = $30,000"
+  },
+  {
+    "id": 12,
+    "question": "What is the formula to find the total interest of a fully amortized loan?",
+    "options": [
+      {
+        "id": 1,
+        "value": "(Monthly P&I Payment + 12 + Term) x Loan Amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "(Monthly P&I Payment x 12 x Term) x Loan Amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "(Monthly P & I Payment x 12 x Term) - Loan Amount",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Monthly P & I Payments - 12- Term) x Loan Amount",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to find the total interest of a fully amortized loan is (Monthly P & I Payment x 12 x Term) - Loan Amount."
+  },
+  {
+    "id": 13,
+    "question": "What four step formula is used to figure monthly principal and interest payment ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Multiply, Divide, Subtract, Subtract",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Multiply, Multiply, Add, Subtract",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Multiply, Divide, Subtract, Add",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Multiply, Add, Add, Add",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The four step formula that is used to figure monthly principal and interest payment is Multiply, Divide, Subtract, Subtract."
+  },
+  {
+    "id": 14,
+    "question": "If Bob\u2019s commission check is $10,170 and the house sold for $169,500 what was the rate of commission?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "8%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$169,500 x 6% = $10,170"
+  },
+  {
+    "id": 15,
+    "question": "If a property rents for $5,000 and the gross rent multiplier is 89 what is the property value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$440,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$425,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$425,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$445,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$5,000 (Rent) x 89 (GRM) = $445,000"
+  },
+  {
+    "id": 16,
+    "question": "The subject property has a $12,000 outbuilding and a $4,000 deck. A comparable that sold for $199,000 has no outbuilding no deck but has a $7,000 swimming pool. What is the adjusted value of the comparable?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$210,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$215,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$206,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$208,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$199,000 (+$12,000 +$4,000 -$7,000)=$208,000"
+  },
+  {
+    "id": 17,
+    "question": "A buyer obtained a 75% loan on a $255,000 home, and paid $3,825 for points. How many points was he charged?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5 points",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 18,
+    "question": "Kelly sold her home for $212,000 which is 7% more than she paid for it. What did she originally pay for the home?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$226,840",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$198,130",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$197,160",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$196,867",
+        "is_correct": false
+      }
+    ],
+    "remediation": "One hundred percent of the original price of the home is $198,130. The home has appreciated 7%, making the homes new value 107% of the original value. $212,000 / 107% = $198,130 Original Cost"
+  },
+  {
+    "id": 19,
+    "question": "Sally has 4 homes under contract. They are all listed at 6% commission and Sally gets 60% split with her Broker. The contract prices are $69,900, $112,000, 34,800, & $209,000. What commission will she receive on these sales combined?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$15,325",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$14,987",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,268",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "!15,320",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 20,
+    "question": "A lot measuring 100 x 100 has a set back on the sides of 7.5ft and a 10ft set back on the front and rear. What is the buildable area?",
+    "options": [
+      {
+        "id": 1,
+        "value": "6,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6,800 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6,400 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 21,
+    "question": "If a lot is 350\u2019 x 350\u2019 with a front and back setback of 25\u2019 and a 25\u2019 setback on the sides what is the buildable area remaining?",
+    "options": [
+      {
+        "id": 1,
+        "value": "90,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "122,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "80,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "95,000 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 22,
+    "question": "Find the volume of a container 15\u2019H, 12\u2019W, 13\u2019L:",
+    "options": [
+      {
+        "id": 1,
+        "value": "2,300 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2,340 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2,500 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2,200 cu/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 23,
+    "question": "Find the volume of a container 50\u2019D, 25\u2019W, 10\u2019L:",
+    "options": [
+      {
+        "id": 1,
+        "value": "12,000 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "12,400 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "12,200 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "12,500 cu/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 24,
+    "question": "What is 0.0575 converted to a decimal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "575%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "57.5%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "0.575%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5.75%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To convert percentage to a decimal move the decimal to the right two spaces. 0.0575% = 5.75%"
+  },
+  {
+    "id": 25,
+    "question": "What is the square footage of a lot that is a perfect square and measures 190\u2019 on one side ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "36,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "36,100 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "35,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "35,500 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The formula to find the square footage is Length x Width. 190\u2019 x 190\u2019 = 36,100 sq/ft"
+  },
+  {
+    "id": 26,
+    "question": "What is the perimeter of a 4 sided lot with the dimensions of side A-45\u2019, side B-60\u2019, side C-45\u2019 side D-60\u2019 ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "200 feet",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "300 feet",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "210 feet",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "215 feet",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To find the perimeter of a property add the measurements of each side together. 45\u2019 + 60\u2019 + 45\u2019 + 60\u2019= 210 feet"
+  },
+  {
+    "id": 27,
+    "question": "Larry is selling his investment property for $615,000 which brings in $6,000 per month. What is the Gross Rent Multiplier?",
+    "options": [
+      {
+        "id": 1,
+        "value": "105.2",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "102.0",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "102.5",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "102.3",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To find the gross rent multiplier divide the property value by the monthly income. $615,000 / $6,000 = 102.5 GRM"
+  },
+  {
+    "id": 28,
+    "question": "Chad purchased a commercial property 5 years ago for $390,000 which included 10 acres with a $100,000 value. What is the current value of the property using the 40 year straight line depreciation?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$253,750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$353,750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$335,750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$235,750",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 29,
+    "question": "Jerry needs a new roof which cost $12,000. The economic life of the roof is 20 years. Using the straight line depreciation method, what would the roof value be after 4 years?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$9,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$8,800",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,250",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 30,
+    "question": "Lenny\u2019s property is currently valued at $250,000 and expected to appreciate 6% a year for the next 3 years. What will the value be in 3 years?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$297,754",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$279,753",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$280,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$285,900",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 31,
+    "question": "Kasey bought a house 6 years ago for $160,000 and got a 80% loan. After a recent appraisal the home is now valued at $150,000. Her loan balance has been paid down $10,000. What is her equity ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$30,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$32,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$32,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$34,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 32,
+    "question": "Mark was able to buy his dream home last spring for $275,000 he added a $8,000 pool and an outbuilding for $12,000. Over the last year the home has depreciated $5,500. What is Mark's new adjusted basis ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$289,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$279,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$289,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$269,500",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 33,
+    "question": "Jennifer is a first time home buyer and is under contract at $200,000. She obtained a loan of $180,000 and home appraised at $205,000. What is the loan to value ratio?",
+    "options": [
+      {
+        "id": 1,
+        "value": "80%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "85%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "95%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "90%",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 34,
+    "question": "Lacey was able to buy her first home at 21 years old 5 years ago for $79,900 and sold it for $105,000. What are Lacey's capital gains?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$25,100",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,200",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To find capital gains subtract the original price and sale price. $105,000 - $79,900 = $25,100 capital gains"
+  },
+  {
+    "id": 35,
+    "question": "Cathy needs $55,460 after the sale of her home at a 6% commission. What will her house have to sell for?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$58,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$59,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$60,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$57,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 36,
+    "question": "Property taxes are $4,500 and the closing was June 14th. The seller owns the day of closing. Using the 30 day/12month method what is the seller portion of taxes?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,050",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,062",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,125",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 37,
+    "question": "When prorating items paid in arrears use the :",
+    "options": [
+      {
+        "id": 1,
+        "value": "Seller\u2019s Days",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Buyer\u2019s Days",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Closing Day",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Offer Day",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When prorating items paid in arrears use the seller\u2019s day of ownership to determine the prorated amount to debit the seller and credit the buyer."
+  },
+  {
+    "id": 38,
+    "question": "Landlord Tony collects his rent on the 1st of the month. During the month Tony sold the property and $300 of the rent that was collected was due to be paid to the buyer. How should this appear on the settlement statement?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Debit buyer $300 and credit seller $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit the seller $300 credit the buyer $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Credit the seller $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit the buyer $300",
+        "is_correct": false
+      }
+    ],
+    "remediation": "The seller has already collected the rent and is paying a portion at closing to the buyer for the days of the month the buyer will own the property. Debit the $300 of the collected rent and credit it to the buyer."
+  },
+  {
+    "id": 39,
+    "question": "Tonya receives an offer of $88,900 on her property listed for $92,500. What percent of the asking price was the offer?",
+    "options": [
+      {
+        "id": 1,
+        "value": "96.1%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "95.7%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "94%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "91%",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 40,
+    "question": "How many acres are in the SE \u00bc of a section?",
+    "options": [
+      {
+        "id": 1,
+        "value": "80 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "40 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "160 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 41,
+    "question": "How many acres in the W \u00bd of the NE \u00bc ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "40 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "80 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "60 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 42,
+    "question": "How many acres are in the E \u00bd of the NE \u00bc of the NE \u00bc of a section?",
+    "options": [
+      {
+        "id": 1,
+        "value": "60 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "80 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "20 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 43,
+    "question": "A 1/64 of a section equals how many acres?",
+    "options": [
+      {
+        "id": 1,
+        "value": "12 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "15 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "10 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 44,
+    "question": "When charged points a borrower must pay for them at closing. If Janet\u2019s loan is $500,000 and she is charged 3 points how much must she pay at closing for points?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$3,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$15,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$12,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 45,
+    "question": "The W \u00bd of the NE \u00bc of the NW \u00bd of section 10 contains:",
+    "options": [
+      {
+        "id": 1,
+        "value": "64 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "60 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "40 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 46,
+    "question": "Appraiser Kim has a subject property with a $15,000 swimming pool. The comparable property does not have a pool. What adjustment will Kim make to the value?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $15,000 to the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Subtract $15,000 from the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Add $15,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Subtract $15,000 from the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+  },
+  {
+    "id": 47,
+    "question": "Subject property does not have a fireplace, but the comparable has a nice gas log fireplace valued at $8,000 how would the appraiser adjust for this?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Add $8,000 to the value of the comparable",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Subtract $8,000 from the value of the subject",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Add $8,000 to the value of the subject",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Subtract $8,000 from the value of the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When the comparable property has a feature the subject property does not subtract the value of the feature from the comparable properties value to best estimate the market value of the subject property."
+  },
+  {
+    "id": 48,
+    "question": "Rachel has an income goal of $75,000 this year in real estate. She earns 3% per sale. What must her sales volume be to meet her income goal?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,500,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,200,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$75,000 / 0.03% = $2,500,000 in sales required to meet her income goal."
+  },
+  {
+    "id": 49,
+    "question": "Leon is earning $15,000 per year on his apartment building investment. What is his rate of return?",
+    "options": [
+      {
+        "id": 1,
+        "value": "100%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "15%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": ".5%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "15.05%",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 50,
+    "question": "Cindy sold her home for $75,000 and paid off an old loan of $35,000. Her closing costs were $500 and she paid the agent 6% of the sales price for commission. What was the remaining balance Cindy received?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$45,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$35,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$37,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$36,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 51,
+    "question": "Pam\u2019s tax rate is $6.00 per $100 and her home has an assessed valuation of $100,000, what is her tax amount?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$6,600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,250",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 52,
+    "question": "Properties in Franklin County are assessed at 75% of market value. What would a $40,000 property be assessed at?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$40,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$38,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$26,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$30,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Multiply $40,000 x 75% = $30,000 assessed value"
+  },
+  {
+    "id": 53,
+    "question": "Todd\u2019s rental property has a value of $250,000 and a rental income of $4,000. What is the Gross Rent Multiplier (GRM)",
+    "options": [
+      {
+        "id": 1,
+        "value": "60.00",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "78.00",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "69.9",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "62.5",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To find the GRM Divide the property value by the income. $250,000 / $4,000 = 62.5 GRM"
+  },
+  {
+    "id": 54,
+    "question": "Listing agent Sherry will receive 60% and selling agent Connie will receive 40% commission of a listing they just sold for $179,000 at a 7% fee. How much will each agent receive?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Sherry $5,012 / Connie $7,518",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Sherry $7,518 / Connie $5,012",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Connie $5,025 / Sherry $5,580",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Sherry $5,035 / Sherry $5,578",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 55,
+    "question": "Bob is refinancing his home of 10 yrs. The recent appraisal is for $223,450 which is 109% of what he paid 10 years ago. What was the original purchase price?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$200,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$210,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$215,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$205,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "One hundred percent of the original price of the home is $205,000. The home has appreciated 9%, making the homes new value 109% of the original value. $223,450 / 109% = $205,00 Original Cost"
+  },
+  {
+    "id": 56,
+    "question": "A lot measuring 50 ft x 200 ft sold for $1,000 per front foot. What did the lot sell for?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$500,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$5,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$50,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$55,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 57,
+    "question": "A piece of land 120 x 150 sold for $1,500 per front foot. What was the sales price of land?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$187,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$187,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$187,250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$187,010",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 58,
+    "question": "Property tax rate is $4.00 per $100 and the home is assessed at $125,000. What is the tax bill amount ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$1,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$1,250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$5,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 59,
+    "question": "The Property tax rate is $5.00 per $100 and the properties assessed value is $$275,000. What is the tax bill amount?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$13,750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,575",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,725",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,500",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 60,
+    "question": "Homeowners insurance is $0.25 per $100 for a one year policy. How much is a $50,000 policy ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$120",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$125",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$150",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$175",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 61,
+    "question": "A deck measuring 20\u2019 x 25\u2019 is how many sq/ ft ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "250 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "750 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "20\u2019 x 25\u2019 = 500 sq/ft"
+  },
+  {
+    "id": 66,
+    "question": "96\u2019",
+    "options": [
+      {
+        "id": 1,
+        "value": "To find the perimeter of the fence add the measurements of all sides to together. 20\u2019 + 18\u2019 + 22\u2019 + 17\u2019 + 20\u2019 = 97\u2019",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 67,
+    "question": "Agent Megan received a referral from a relocation company who will be paid 25% at closing out of the listing broker\u2019s proceeds prior to paying Megan. The property's price is $130,000 with a 6% commission. Megan\u2019s split with her broker is 60% after the referral fee what will Megan receive?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$3,410",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,510",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,575",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 68,
+    "question": "A 7 acres parcel contains how many sq/ft?",
+    "options": [
+      {
+        "id": 1,
+        "value": "304,920 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "305,550 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "317,520 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "306,890 sq/f",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 69,
+    "question": "When you are given the dimensions of a lot the first number is the:",
+    "options": [
+      {
+        "id": 1,
+        "value": "Length",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Depth",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Side",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Frontage",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When you are given the dimensions of a lot the first number is the Frontage."
+  },
+  {
+    "id": 70,
+    "question": "Don listed a property for $350,000 at a 5% commission. His broker pays him 60%. How much will Don receive after paying for video editing $200 and drone pictures at $350?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$10,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,950",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,900",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 71,
+    "question": "Sharon just closed her first sale of $105,000 at a 6.5% commission. How much will her first check be?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$6,567",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,800",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,835",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,825",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 72,
+    "question": "Andy needs to buy fencing to keep his horses in. His property is a square and 30\u2019 on all four sides. What is the perimeter?",
+    "options": [
+      {
+        "id": 1,
+        "value": "!00\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "200\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "125\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120\u2019",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 73,
+    "question": "Amy is entering her newest listing into the MLS. The lot measures 150 x 175, how would he enter this in acres?",
+    "options": [
+      {
+        "id": 1,
+        "value": "0.60 of an acre +/-",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "0.25 of an acres +/-",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1 acres +/-",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "0.35 of an acres +/-",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 74,
+    "question": "Cooper sold his home and closing took place on March 31st. Property taxes are paid in arrears and are $1,200. Seller owns day of closing and using the 360 day year method, how would the prorated taxes appear on the settlement statement ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Debit buyer $300 Credit seller $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit buyer $600 Credit seller $600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit seller $300 Credit buyer $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit buyer $300 Credit seller $700",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 75,
+    "question": "A property closed on May 31st. Property taxes of $2,000 are paid in arrears. The owner owns the day of closing using the 360 day method how does this appear on the settlement statement?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Debit buyer $833.33 Credit seller $833.33",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit buyer $1,166.67 Credit seller $1,166.67",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit seller $833.33 Credit buyer $833.33",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit seller $1166.67 Credit buyer $300",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 76,
+    "question": "Josh sold his rental house and closed on June 15th. He collected $600 rent on June 1st. At closing how will this be handled on the settlement statement?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Debit buyer $300 Credit seller $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit buyer $600 Credit seller $600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit seller $300 Credit buyer $300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Debit buyer $300 Credit seller $300",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 77,
+    "question": "Given the comparable information, what value would the appraiser give the subject property? Subject 1,500 sq/ft 2 bedroom 2 bath Comp1: 1,400sq/ft 2 bedroom 1 bath Sold $150,000, Comp 2: 1,400 sq/ft 2 bed 2 bath Sold $160,000, Comp 3: 1,500 sq/ft 2 bed 1 bath Sold $155,000",
+    "options": [
+      {
+        "id": 1,
+        "value": "$160,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$159,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$162,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$165,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Appraisers make adjustments to the comparable based on differences or similarities of properties. The comp with 1,500 sq/ft sold for $5,000 more than the home with 1,400 sq/ft. The home with two bathrooms sold for $10,000 more than the home with only one bathroom. The adjustment of an additional $10,00 would be made to Comp 3 to be as similar to the subject as possible and result in a $165,000 appraised value on the subject property."
+  },
+  {
+    "id": 78,
+    "question": "Manny\u2019s lender quoted him $800 closing costs and 2 points on a $450,000 loan. How much does Manny need the day of closing ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$8,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,800",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$8,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,500",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 79,
+    "question": "City zoning calls for building setbacks on commercials lots. A new store coming to town buys a parcel that measures 80\u2019 x 60\u2019. There is a 10\u2019 set back on both sides and a 5 ft setback on the front and rear. What is the store's buildable area in square foot?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4,500 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4,800 sq/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 80,
+    "question": "What is the annual depreciation of a property valued at $500,000 with a $110,000 land value over a 39 year term?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$11,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$20,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$12,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 81,
+    "question": "What is the annual depreciation of a property valued at $420,000 with a land value of $200,000 over a 39 year term?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$5,598",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$5,348",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$5,641",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$5,980",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 82,
+    "question": "Convert 2% into a decimal.",
+    "options": [
+      {
+        "id": 1,
+        "value": "0.002",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "0.02",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2.0",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "20.00",
+        "is_correct": false
+      }
+    ],
+    "remediation": "To convert a percent to a decimal move the decimal point two spaces to the left."
+  },
+  {
+    "id": 83,
+    "question": "What is the area of a triangle shaped piece of land measuring 60\u2019 at the base and 100\u2019 high?",
+    "options": [
+      {
+        "id": 1,
+        "value": "30 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "300 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "3,000 sq/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "None of the above",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 84,
+    "question": "A piece of commercial property is 300\u2019 wide and sold for $150,000. How much is that per front foot?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$5,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$475",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 85,
+    "question": "Johns Tacos has a value of $312,480 and an income of $33,600. What is the Gross Income Multiplier ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "9.2",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "9.3",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "9.5",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "9.9",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 86,
+    "question": "John just closed his biggest sale yet of $2,500,000 at a 3% commission. How much was John\u2019s commission?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$80,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$65,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$75,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$79,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$2,500,000 x 3% = $75,000 Commission"
+  },
+  {
+    "id": 87,
+    "question": "After a couple contracts fell apart Ron will not accept any more offers without earnest money. His agent brought him an offer of $289,000 and he is countering asking for 3% earnest money. How much earnest money is he asking for?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$8,570",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$8,670",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$8,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$8,400",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$289,000 x 3% = $8,670 Earnest money"
+  },
+  {
+    "id": 88,
+    "question": "Taxes paid in arrears are $1,800. What is the seller's share of taxes if closing is April 10th using the 360 day method and the seller owns day of closing?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$450",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$525",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$550",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 89,
+    "question": "Taxes paid in arrears are $1,800. What is the seller's share of taxes if closing is April 10th using the 365 day method and the seller owns the day of closing?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$495",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$594",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$493",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$456",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 90,
+    "question": "A town has a tax rate at 4% and a tax requirement of $7,000,000. What is the tax base?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$175,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$165,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$160,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$168,000,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$7,000,000 / 4% = $175,000,000 Tax Base"
+  },
+  {
+    "id": 91,
+    "question": "Chessville has a 5% tax rate and a $160,000,000 tax base. What is the tax requirement?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$8,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$9,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,000,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$7,000,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$160,000,000 x 5 % = $8,000,000 Tax Requirement"
+  },
+  {
+    "id": 92,
+    "question": "Due to the raise in property taxes John\u2019s landlord is raising his rent 5%. If his current rent is $675 what will his rent be next month?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$705.60",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$706.15",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$708.75",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$710.90",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 93,
+    "question": "If the general store has a lease that calls for 1.5 percent rent and the income is $50,000 how much is rent?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$725",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$650",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$595",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$50,000 x 1.5% = $750 per month rent"
+  },
+  {
+    "id": 94,
+    "question": "A commercial building has an NOI of $100,000 and a debt payment of $50,000. What is the cash flow?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$15,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$50,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$60,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 95,
+    "question": "Mark bought his home for $150,000; it is currently worth $160,000 his current loan balance is $135,000. What is his equity?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$20,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$25,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$15,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 96,
+    "question": "Mary bought her home for $250,000; it is currently worth $275,000 her current loan balance is $155,000. What is her equity?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$125,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$115,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$120,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$119,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 97,
+    "question": "Doug has a loan of $100,000 with a 6.3207 constant. What is Doug's monthly payment?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$575.10",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$645.89",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$789.09",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$632.07",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$100,000 / 1,000 x 6.3207 =$632.07 monthly payment"
+  },
+  {
+    "id": 98,
+    "question": "Davon paid $500 for a $10,000 loan. How many points did he buy?",
+    "options": [
+      {
+        "id": 1,
+        "value": "55",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "25",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "75",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$500 / $100,000 = .05 (5%)"
+  },
+  {
+    "id": 99,
+    "question": "Kris paid 2.5 points on a $10,000 loan. How much did she pay?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$200",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": ["$300", "Points are one percent each of the loan amount."],
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,000 x 2.5 % = $250",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 100,
+    "question": "A subject property has 1 more bathroom than the comparable. The appraiser gives a bathroom a $7,000 value. What adjustment will be made?",
+    "options": [
+      {
+        "id": 1,
+        "value": "None",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Add $7,000 to the subject",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Subtract $7,000 from the subject",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Add $7,000 to the comparable",
+        "is_correct": false
+      }
+    ],
+    "remediation": "When the subject property has a feature the comparable property does not add the value of the feature to the comparable properties value to best estimate the market value of the subject property."
+  },
+  {
+    "id": 101,
+    "question": "What is the volume of an item 6\u2019 H, 11\u2019 W, 20\u2019L ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "1,320 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1,420 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1,560 cu/ft",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "1,450 cu/ft",
+        "is_correct": false
+      }
+    ],
+    "remediation": "6\u2019 H, x 11\u2019 W X 20\u2019L= 1,320 cu/ft"
+  },
+  {
+    "id": 102,
+    "question": "Ben the buyer will receive a power bill for an estimated $150 at the end of the month. At closing, the seller Sam has used an estimated $60 in power. What should appear on the closing statement?",
+    "options": [
+      {
+        "id": 1,
+        "value": "Credit the buyer $90 Debit the seller $90",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Credit the buyer $60 Debit the seller $60",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Credit the seller $90 Debit the buyer $90",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "Credit the seller $60 Debit the buyer $60",
+        "is_correct": false
+      }
+    ],
+    "remediation": "Seller is debited his share and the buyer is given a credit of the same amount."
+  },
+  {
+    "id": 103,
+    "question": "Sara sold a home for $675,000 with a commission of 3.5%. Her broker split is 50/50. How much did Sara make on the sale?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$12,798.90",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$11,812.50",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$13,687.11",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$11,715.76",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 104,
+    "question": "A property with an assessed value of $5,200 has a tax rate of 84 mills what is the monthly tax?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$364.40",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$436.80",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$36.40",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$43.80",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 105,
+    "question": "Tina paid two and a half points when she bought her home. The purchase price was $184,000 and she received a 75% loan How much did Tina pay for points?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$3,450",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,540",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$3,590",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 106,
+    "question": "If farmer Johns field is one quarter mile by one half mile how many acres does he farm?",
+    "options": [
+      {
+        "id": 1,
+        "value": "60 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "120 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "40 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "80 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 107,
+    "question": "Shane needs $141,000 after he pays his agent Kim a 6% commission. What is the lowest offer he could accept?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$149,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$150,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$156,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$153,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 108,
+    "question": "How many acres are in the N \u00bd of the SW \u00bd of the N \u00bc of section 14 range 9 township 3?",
+    "options": [
+      {
+        "id": 1,
+        "value": "60 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "80 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "40 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "20 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 109,
+    "question": "Kerry just closed on a $100,000 mortgage with an 8.5% annual interest rate. Her payments are $950 per month. How much of her first payment will go to principle?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$88.50",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$267.41",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$241.67",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$708.33",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 110,
+    "question": "A lender will only loan up to 80% on a $325,000 home loan. What is the loan amount?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$260.000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$250,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$240,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$225,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$325,000 x 80% = $260,000"
+  },
+  {
+    "id": 111,
+    "question": "Joe gets a loan of $100,000 with a monthly payment of $632.07. Find the loan constant.",
+    "options": [
+      {
+        "id": 1,
+        "value": "6.5567",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.3687",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.3207",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.4908",
+        "is_correct": false
+      }
+    ],
+    "remediation": "($632.07 / $100,000) x 1000 = 6.3207 loan constant"
+  },
+  {
+    "id": 112,
+    "question": "A borrower pays $1,580 for points on a $79,000 loan. How many points did they buy?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "2 points",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "5 points",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$1,580 / $79,000 = 0.02 (2% = 2 points)"
+  },
+  {
+    "id": 113,
+    "question": "Joanna is getting a $100,000 loan at 6% annual interest. What is the annual interest payment ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$5,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,600",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$6,700",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 114,
+    "question": "Find the monthly interest payment on a $100,000 loan with a 6% interest rate?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$550",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$450",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$400",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$500",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 115,
+    "question": "Harper listed a home for $435,000 at 6% after 6 months on the market the home finally sold but the appraisal was short and the owner would not go down in price and Harper dropped the commission to 5% to make the deal work. How much commission did she give up?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$4,250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,450",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,350",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$4,200",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 116,
+    "question": "A house has four bedrooms, three bathrooms, and no pool. Comp 1 has three bedrooms, three bathrooms, and a pool. The comparable house just sold for $260,000. A bedroom is valued at $18,000, and a pool at $15,000. What is the adjusted value of the comparable?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$263,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$280,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$277,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$313,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 117,
+    "question": "A building has 5 offices generating annual potential rent of $6,000 each. Vacancy = 6% and annual expenses are $15,000. Vending machines yield $4,000. What is the NOI?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$16,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$17,300",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$17,200",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$18,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 118,
+    "question": "Travis just inherited 740,520 sq/ft of land from his grandfather. How many acres did Travis get?",
+    "options": [
+      {
+        "id": 1,
+        "value": "22 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "21acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "17 acres",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "19 acres",
+        "is_correct": false
+      }
+    ],
+    "remediation": "740,520 / 43,560 sq/ft in an acre = 17 acres"
+  },
+  {
+    "id": 119,
+    "question": "Find the cap rate of a property that has a net income of $500,000 and sells for $6,000,000.",
+    "options": [
+      {
+        "id": 1,
+        "value": ".88",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": ".85",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": ".83",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": ".89",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$500,000 / $6,000,000 = .83 Cap Rate"
+  },
+  {
+    "id": 120,
+    "question": "Find the GRM of a condominium with a monthly rent of $1,000 and a value of $200,000?",
+    "options": [
+      {
+        "id": 1,
+        "value": "205",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "190",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "200",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "203",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$200,000 value / $1,000 rent = 200 GRM"
+  },
+  {
+    "id": 121,
+    "question": "What is the NOI of an office building that sells for $579,000 at a cap rate of 6.3%?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$35,678",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$36,477",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$35,645",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$37,803",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$579,000 x 6.3% = $36,477"
+  },
+  {
+    "id": 122,
+    "question": "Tom\u2019s commission was $9,275 on a sale of $265,000. What was the commission rate?",
+    "options": [
+      {
+        "id": 1,
+        "value": "3%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "4%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "3.75%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "3.5%",
+        "is_correct": false
+      }
+    ],
+    "remediation": "$9,275 / $265,000 = 3.5%"
+  },
+  {
+    "id": 123,
+    "question": "A house has three bedrooms, two bathrooms, and no fireplace. Comp 1 has three bedrooms, three bathrooms, and a fireplace. The comparable house just sold for $250,000. A bathroom is valued at $10,000, and a fireplace $5,000. What is the adjusted value of the comparable?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$235,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$225,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$260,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$285,000",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 124,
+    "question": "Gary\u2019s lender quoted him $900 closing costs and 4 points on a $250,000 loan. How much does Gary need the day of closing ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$10,250",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,750",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,500",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 125,
+    "question": "Lana bought 20 acres of land from her neighbor. How many sq/ft did she purchase?",
+    "options": [
+      {
+        "id": 1,
+        "value": "872,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "871,200",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "873,900",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "874,980",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 126,
+    "question": "A rental property has a net income of $30,000, interest payments of $15,000, and annual cost recovery of $7,000. The property's tax rate is 25%. What is the property's annual tax liability?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$2,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$200",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,500",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$2,200",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 127,
+    "question": "Tom\u2019s tax rate is $5.00 per $100 and his home has an assessed valuation of $200,000, what is his tax amount?",
+    "options": [
+      {
+        "id": 1,
+        "value": "$$9,995",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$10,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$20,000",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "$15,250",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 128,
+    "question": "Lola has a four sided property that measures 50\u2019, 20\u2019, 50\u2019, 20\u2019 what is the perimeter ?",
+    "options": [
+      {
+        "id": 1,
+        "value": "150\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "140\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "175\u2019",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "190\u2019",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  },
+  {
+    "id": 129,
+    "question": "A commercial property with a net income of $200,000 sells for $3,200,000. Find the rate of return.",
+    "options": [
+      {
+        "id": 1,
+        "value": "6%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.5%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.75%",
+        "is_correct": false
+      },
+      {
+        "id": 1,
+        "value": "6.25%",
+        "is_correct": false
+      }
+    ],
+    "remediation": ""
+  }
+]
