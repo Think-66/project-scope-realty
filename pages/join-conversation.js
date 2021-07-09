@@ -1,11 +1,14 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProtectedLayout from "../components/protectedLayout";
+import ProtectedLayout from "../components/ProtectedLayout";
 
 export default function JoinConversation() {
   const router = useRouter();
 
+  const onSubmit = () => {
+    router.push('client-message')
+  }
   return (
     <ProtectedLayout>
       <section className="single-page-sec">
@@ -23,7 +26,7 @@ export default function JoinConversation() {
                   <p>Simply click the button below to join the conversation</p>
                 </div>
                 <div className="ctl-con-btn-bot">
-                  <input type="submit" defaultValue="Join Conversation" />
+                  <input type="submit" onClick={() => onSubmit()} defaultValue="Join Conversation" />
                 </div>
               </div>
             </div>

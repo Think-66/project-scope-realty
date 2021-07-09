@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import NavBarHeader from '../components/navBarHeader'
+import Footer from '../components/footer'
 
 export default function PracticeExamPageOne() {
   const router = useRouter();
@@ -9,66 +11,8 @@ export default function PracticeExamPageOne() {
     <div>
       <header>
         <div className="b-top">
-          <div className="cen-i-top cmp-nav-cus-bck">
-            <div className="container">
-              <nav className="navbar navbar-expand-lg">
-                <div className="col-lg-2 col-md-2 col-sm-12">
-                  <a className="navbar-brand col-xs-4" href="#">
-                    <img src="/images/logo.svg" />{" "}
-                  </a>
-                  <button
-                    className="navbar-toggler col-xs-2"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarTogglerDemo03"
-                    aria-controls="navbarTogglerDemo03"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <span className="navbar-toggler-icon" />
-                  </button>
-                </div>
-                <div className="col-lg-8 col-md-8 col-sm-12">
-                  <div
-                    className="collapse navbar-collapse login_navbar "
-                    id="navbarTogglerDemo03"
-                  >
-                    <ul className="navbar-nav  ml-auto ">
-                      <li className="nav-item">
-                        <a className=" ctl-nav-lnk-txt" href="#">
-                          Our Team <span className="sr-only">(current)</span>
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className=" ctl-nav-lnk-txt" href="#">
-                          About Us
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className=" ctl-nav-lnk-txt" href="#">
-                          Rent
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className=" ctl-nav-lnk-txt" href="#">
-                          Buy
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className=" ctl-nav-lnk-txt" href="#">
-                          Sell
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="col-lg-2 col-md-2 col-sm-12">
-                  <a href="#" className="clt-sig-lnk">
-                    SIGN IN
-                  </a>
-                </div>
-              </nav>
-            </div>
+          <div className="cen-i-top">
+            <NavBarHeader darkNav={true} />
           </div>
         </div>
       </header>
@@ -1672,61 +1616,7 @@ export default function PracticeExamPageOne() {
           </div>
         </div>
       </section>
-
-      <footer className="main-footer">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-              <h3 className="ft-head">Headquarters</h3>
-              <ul className="ft-list">
-                <li>
-                  68 West 39th Street, 2nd Fl <br />
-                  New York, NY 10018
-                </li>
-                <li>(212) 408-1620</li>
-                <li>(347) 619-6229 fax</li>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-              <h3 className="ft-head">COmpany</h3>
-              <ul className="ft-list">
-                <li>
-                  <a href="#">About Us</a>
-                </li>
-                <li>
-                  <a href="#">Team</a>
-                </li>
-                <li>
-                  <a href="#">Careers</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-              <h3 className="ft-head">More</h3>
-              <ul className="ft-list">
-                <li>
-                  <a href="#">Reviews</a>
-                </li>
-                <li>
-                  <a href="#">Press</a>
-                </li>
-                <li>
-                  <a href="#">ASPCA</a>
-                </li>
-                <li>
-                  <a href="#">St. Jude Children's Research Hospital</a>
-                </li>
-                <li>
-                  <a href="#">Covenant House New York</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="bottom-stripe">
-          <p>© Copyright 2021</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

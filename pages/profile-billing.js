@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProtectedLayout from "../components/protectedLayout";
+import ProtectedLayout from "../components/ProtectedLayout";
 import { session } from "next-auth/client";
 
 export default function ProfileBilling() {

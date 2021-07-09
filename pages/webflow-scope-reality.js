@@ -1,10 +1,124 @@
-import React from "react";
-import Head from "next/head";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import ProtectedLayout from "../components/protectedLayout";
+import ProtectedLayout from "../components/ProtectedLayout";
+import Link from "next/link";
+import NavBarHeader from '../components/navBarHeader'
+import Footer from '../components/footer'
+import { getListingsDataa, getListingsRealtym } from '../services/listingApiService'
 
-export default function PracticeExamPageOne() {
+export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   const router = useRouter();
+  const [items, setItems] = useState([]);
+  const [itemsCount, setItemsCount] = useState(0);
+  const [showAdvanceFilter, setShowAdvanceFilter] = useState(false);
+  const [filters, setFilters] = useState({
+    pets: false,
+    house: false,
+    new_listing: false,
+    listing: "listing_rent",
+    searchBy: "location",
+    searchText: ""
+  });
+
+  const onSelectProperty = () => {
+    router.push('listing-interface')
+  }
+
+  useEffect(() => {
+    (mapData(listingDataa, listingRealtym))
+  }, []);
+
+  const onSearch = async () => {
+    const tempListingDataa = await getListingsDataa()
+    const tempListingRealtym = await getListingsRealtym()
+    mapData(tempListingDataa, tempListingRealtym)
+
+  }
+
+  const mapData = (tempListingDataa, tempListingRealtym) => {
+    let tempItems = [];
+    let itemCount = 0;
+
+    itemCount += (tempListingRealtym?.TOTAL_COUNT && tempListingRealtym.TOTAL_COUNT > 0) ? tempListingRealtym.TOTAL_COUNT : 0;
+    itemCount += (tempListingDataa?.TOTAL_COUNT && tempListingDataa.TOTAL_COUNT > 0) ? tempListingDataa.TOTAL_COUNT : 0;
+    setItemsCount(itemCount);
+
+    tempListingDataa?.LISTINGS.map(x => {
+      tempItems.push({
+        building: {
+          address: x.ADDRESS,
+          buildingId: x.BUILDING_ID,
+          zipCode: x.ZIP_CODE
+        },
+        unit: x.UNIT_NUMBER,
+        location: {
+          neighborhoods: x.NEIGHBORHOODS,
+          neighborhoodId: x.NEIGHBORHOOD_ID,
+          city: x.CITY
+        },
+        price: x.PRICE,
+        layout: {
+          bathrooms: x.BATHROOMS,
+          bedRooms: x.BEDROOMS,
+          squareFootage: x.SQUARE_FOOTAGE,
+        },
+        availability: x.DATE_AVAILABLE,
+        image: (x.PHOTOS && x.PHOTOS.length > 0) ? x.PHOTOS[0].PHOTO_URL : ''
+      })
+    })
+
+    tempListingRealtym?.LISTINGS.map(x => {
+      tempItems.push({
+        building: {
+          address: x.main_address,
+          street: x.main_street,
+          house: x.main_house,
+          zipCode: x.main_zipcode
+        },
+        unit: x.main_id,
+        location: {
+          neighborhoods: x.main_neighborhood,
+          city: x.city
+        },
+        price: x.financials_price,
+        layout: {
+          bathrooms: x.essentials_bath,
+          bedRooms: x.essentials_beds,
+          rooms: x.essentials_rooms,
+        },
+        availability: x.available_date,
+        image: x.main_image
+      })
+    })
+
+    setItems(tempItems)
+  }
+
+  const onChange = (e) => {
+    console.log(e.target.value)
+    e.persist()
+    setFilters({
+      ...filters,
+      [e.target.name]: e.target.value
+    })
+  }
+
+  const onCheck = (e) => {
+    console.log(e.target.checked)
+    e.persist()
+    setFilters({
+      ...filters,
+      [e.target.name]: e.target.checked
+    })
+  }
+
+  const onClick = (name, value) => {
+    console.log(name, value)
+    setFilters({
+      ...filters,
+      [name]: value
+    })
+  }
 
   return (
     <div>
@@ -16,68 +130,7 @@ export default function PracticeExamPageOne() {
         <section>
           <div className="b-cen c-bac">
             <div className="cen-i-top">
-              <div className="cmp-nav-shw-blo">
-                <div className="container">
-                  <nav className="navbar navbar-expand-lg">
-                    <div className="col-lg-2 col-md-2 col-sm-12">
-                      <a className="navbar-brand col-xs-4" href="#">
-                        <img src="/images/logo.svg" />{" "}
-                      </a>
-                      <button
-                        className="navbar-toggler col-xs-2"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarTogglerDemo03"
-                        aria-controls="navbarTogglerDemo03"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span className="navbar-toggler-icon" />
-                      </button>
-                    </div>
-                    <div className="col-lg-8 col-md-8 col-sm-12">
-                      <div
-                        className="collapse navbar-collapse login_navbar "
-                        id="navbarTogglerDemo03"
-                      >
-                        <ul className="navbar-nav  ml-auto ">
-                          <li className="nav-item">
-                            <a className=" ctl-nav-lnk-txt" href="#">
-                              Our Team{" "}
-                              <span className="sr-only">(current)</span>
-                            </a>
-                          </li>
-                          <li className="nav-item">
-                            <a className=" ctl-nav-lnk-txt" href="#">
-                              About Us
-                            </a>
-                          </li>
-                          <li className="nav-item">
-                            <a className=" ctl-nav-lnk-txt" href="#">
-                              Rent
-                            </a>
-                          </li>
-                          <li className="nav-item">
-                            <a className=" ctl-nav-lnk-txt" href="#">
-                              Buy
-                            </a>
-                          </li>
-                          <li className="nav-item">
-                            <a className=" ctl-nav-lnk-txt" href="#">
-                              Sell
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div className="col-lg-2 col-md-2 col-sm-12">
-                      <a href="#" className="clt-sig-lnk">
-                        SIGN IN
-                      </a>
-                    </div>
-                  </nav>
-                </div>
-              </div>
+              <NavBarHeader />
             </div>
             <div className="cen-i-cen">
               <div className="container">
@@ -93,8 +146,11 @@ export default function PracticeExamPageOne() {
                             <div className="ctl-lis-btn">
                               <input
                                 type="radio"
-                                id="listing_type"
+                                id="listing_rent"
+                                value="listing_rent"
+                                checked={filters.listing == "listing_rent"}
                                 name="listing"
+                                onChange={onChange}
                               />
                               <label htmlFor="listing_type">For Rent</label>
                             </div>
@@ -104,7 +160,10 @@ export default function PracticeExamPageOne() {
                               <input
                                 type="radio"
                                 id="listing_sale"
+                                value="listing_sale"
+                                checked={filters.listing == "listing_sale"}
                                 name="listing"
+                                onChange={onChange}
                               />
                               <label htmlFor="listing_sale">For Sale</label>
                             </div>
@@ -121,19 +180,19 @@ export default function PracticeExamPageOne() {
                         <ul className="ctl-ulo-lis">
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="pets" />
+                              <input type="checkbox" id="pets" name="pets" checked={filters.pets} onChange={onCheck} />
                               <label htmlFor="pets">Pets Ok</label>
                             </div>
                           </li>
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="house" />
+                              <input type="checkbox" id="house" name="house" checked={filters.house} onChange={onCheck} />
                               <label htmlFor="house">Has Open House</label>
                             </div>
                           </li>
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="new_listing" />
+                              <input type="checkbox" id="new_listing" name="new_listing" checked={filters.new_listing} onChange={onCheck} />
                               <label htmlFor="new_listing">New Listing</label>
                             </div>
                           </li>
@@ -154,37 +213,27 @@ export default function PracticeExamPageOne() {
                           >
                             <li className="nav-item waves-effect waves-light">
                               <a
-                                className="active"
-                                id="first-tab"
-                                data-toggle="tab"
-                                href="#tab-first"
-                                role="tab"
-                                aria-controls="tab-first"
-                                aria-selected="true"
+                                className={filters.searchBy == "location" ? "active" : ""}
+                                id="location-tab"
+                                onClick={() => onClick("searchBy", "location")}
                               >
                                 Location
                               </a>
                             </li>
                             <li className="nav-item waves-effect waves-light">
                               <a
-                                id="second-tab"
-                                data-toggle="tab"
-                                href="#tab-second"
-                                role="tab"
-                                aria-controls="tab-second"
-                                aria-selected="false"
+                                className={filters.searchBy == "zinCode" ? "active" : ""}
+                                onClick={() => onClick("searchBy", "zinCode")}
+                                id="zinCode-tab"
                               >
                                 Zip Code
                               </a>
                             </li>
                             <li className="nav-item waves-effect waves-light">
                               <a
-                                id="third-tab"
-                                data-toggle="tab"
-                                href="#tab-third"
-                                role="tab"
-                                aria-controls="tab-third"
-                                aria-selected="false"
+                                id="bedrooms-tab"
+                                className={filters.searchBy == "bedrooms" ? "active" : ""}
+                                onClick={() => onClick("searchBy", "bedrooms")}
                               >
                                 Bedrooms
                               </a>
@@ -209,7 +258,10 @@ export default function PracticeExamPageOne() {
                                 <label htmlFor="location" />
                                 <input
                                   type="search"
-                                  id="location"
+                                  id="search"
+                                  name="searchText"
+                                  onChange={onChange}
+                                  value={filters.searchText}
                                   className="ctl-pot-inp-box"
                                   placeholder="Type location"
                                   required
@@ -344,51 +396,226 @@ export default function PracticeExamPageOne() {
                     </div>
                   </div>
                 </div>
-                <div className="cmp-pad-bot-pad">
+                {showAdvanceFilter && <div className="cmp-pad-cen-pad">
                   <div className="row">
-                    <div className="col-lg-8 ml-auto">
+                    <div className="col-sm-12 col-md-12 col-lg-2">
+                      <div className="cmp-lis-hdr">
+                        <h3>Date</h3>
+                      </div>
+                      <div className="ctl-tab-eso-top">
+                        <div className="ctl-frm-pot-box">
+                          <label htmlFor="dmy"></label>
+                          <input type="text" id="dmy" className="ctl-pot-inp-box" placeholder="DD/MM/YYYY" required="" />
+                        </div>
+                        <div className="ctl-pot-btn-bot">
+                          <button type="submit">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fillRule="evenodd" clipRule="evenodd" d="M11.462 0.0244141L12.7879 1.35024L6.49995 7.63815L0.212036 1.35024L1.53786 0.0244141L6.49995 4.9865L11.462 0.0244141Z" fill="black" />
+                            </svg>
+                          </button>
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-2">
+                      <div className="cmp-lis-hdr">
+                        <h3>BED</h3>
+                      </div>
+                      <div className="ctl-tab-eso-top">
+                        <div className="ctl-frm-pot-box">
+                          <label htmlFor=""></label>
+                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                        </div>
+                        <div className="ctl-pot-btn-bot">
+                          <button type="submit">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fillRule="evenodd" clipRule="evenodd" d="M11.462 0.0244141L12.7879 1.35024L6.49995 7.63815L0.212036 1.35024L1.53786 0.0244141L6.49995 4.9865L11.462 0.0244141Z" fill="black" />
+                            </svg>
+                          </button>
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-2">
+                      <div className="cmp-lis-hdr">
+                        <h3>Bath</h3>
+                      </div>
+                      <div className="ctl-tab-eso-top">
+                        <div className="ctl-frm-pot-box">
+                          <label htmlFor=""></label>
+                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                        </div>
+                        <div className="ctl-pot-btn-bot">
+                          <button type="submit">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fillRule="evenodd" clipRule="evenodd" d="M11.462 0.0244141L12.7879 1.35024L6.49995 7.63815L0.212036 1.35024L1.53786 0.0244141L6.49995 4.9865L11.462 0.0244141Z" fill="black" />
+                            </svg>
+
+                          </button>
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-4">
+                      <div className="cmp-lis-hdr">
+                        <h3>Price</h3>
+                      </div>
+                      <div className="ctl-tab-eso-top">
+                        <div className="ctl-frm-pot-box">
+                          <label htmlFor=""></label>
+                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-2">
+                      <div className="cmp-lis-hdr">
+                        <h3>Parking</h3>
+                      </div>
+                      <div className="ctl-tab-eso-top">
+                        <div className="ctl-frm-pot-box">
+                          <label htmlFor=""></label>
+                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="Garage" required="" />
+                        </div>
+                        <div className="ctl-pot-btn-bot">
+                          <button type="submit">
+                            <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fillRule="evenodd" clipRule="evenodd" d="M11.462 0.0244141L12.7879 1.35024L6.49995 7.63815L0.212036 1.35024L1.53786 0.0244141L6.49995 4.9865L11.462 0.0244141Z" fill="black" />
+                            </svg>
+
+                          </button>
+                        </div>
+                        <div className="clearfix"></div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>
+                  </div>
+                </div>}
+                <div className="cmp-pad-bot-pad">
+                  <div className="row justify-content-end">
+                    {showAdvanceFilter && <div className="col-sm-12 col-md-12 col-lg-8">
+                      <div className="cmp-lis-hdr">
+                        <h3>Features</h3>
+                      </div>
+                      <div className="cmp-lis-typ">
+                        <div className="row">
+                          <div className="col-sm-12 col-md-12 col-lg-3">
+                            <ul className="ctl-ulo-lis">
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Single</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Multi Family</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Condo</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Coop</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Land</label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-sm-12 col-md-12 col-lg-3">
+                            <ul className="ctl-ulo-lis">
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Attached</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Detached</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Semi Attached</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Brick</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Frame</label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                          <div className="col-sm-12 col-md-12 col-lg-3">
+                            <ul className="ctl-ulo-lis">
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Basement</label>
+                                </div>
+                              </li>
+                              <li>
+                                <div className="ctl-lis-btn">
+                                  <input type="checkbox" id="" name="" />
+                                  <label htmlFor="">Square Footage</label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="clearfix"></div>
+                    </div>}
+                    <div className="col-sm-12 col-md-12 col-lg-4 align-self-end">
                       <div className="ctl-cmp-flx-blo">
                         <div className="cmp-sho-adv-lft">
-                          <div className="ctl-adv-ser-blo">
-                            <h3>SHOW ADVANCE SEARCH</h3>
+                          <div className="ctl-adv-ser-blo" style={{ cursor: 'pointer' }} onClick={() => setShowAdvanceFilter(!showAdvanceFilter)}>
+                            <h3>{`${showAdvanceFilter ? 'HIDE' : 'SHOW'}`} ADVANCE SEARCH</h3>
                           </div>
                         </div>
                         <div className="cmp-sho-adv-rit">
                           <div className="ctl-com-flx-blo">
                             <div className="ctl-frn-pot-box " id="ctlInputBox">
-                              <label htmlFor="search" />
-                              <input
-                                type="text"
-                                id="search"
-                                className="ctl-pot-inp-box"
-                                placeholder="Type Zipcode"
-                                required
-                              />
+                              <label htmlFor="search"></label>
+                              <input type="text" id="search" className="ctl-pot-inp-box" placeholder="Type Zipcode" required="" />
                             </div>
                             <div className="ctl-poa-inp-box">
-                              <button type="submit" id="ctlSubmit">
-                                {" "}
-                                SEARCH
-                                <svg
-                                  width={21}
-                                  height={21}
-                                  viewBox="0 0 21 21"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    d="M8.75 15.75C4.88401 15.75 1.75 12.616 1.75 8.75C1.75 4.88401 4.88401 1.75 8.75 1.75C12.616 1.75 15.75 4.88401 15.75 8.75C15.75 10.3676 15.2013 11.8571 14.2799 13.0424L18.9937 17.7563L17.7563 18.9937L13.0424 14.2799C11.8571 15.2013 10.3676 15.75 8.75 15.75ZM14 8.75C14 11.6495 11.6495 14 8.75 14C5.8505 14 3.5 11.6495 3.5 8.75C3.5 5.8505 5.8505 3.5 8.75 3.5C11.6495 3.5 14 5.8505 14 8.75Z"
-                                    fill="black"
-                                  />
+                              <button type="submit" id="ctlSubmit" onClick={() => onSearch()}> SEARCH
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path fillRule="evenodd" clipRule="evenodd" d="M8.75 15.75C4.88401 15.75 1.75 12.616 1.75 8.75C1.75 4.88401 4.88401 1.75 8.75 1.75C12.616 1.75 15.75 4.88401 15.75 8.75C15.75 10.3676 15.2013 11.8571 14.2799 13.0424L18.9937 17.7563L17.7563 18.9937L13.0424 14.2799C11.8571 15.2013 10.3676 15.75 8.75 15.75ZM14 8.75C14 11.6495 11.6495 14 8.75 14C5.8505 14 3.5 11.6495 3.5 8.75C3.5 5.8505 5.8505 3.5 8.75 3.5C11.6495 3.5 14 5.8505 14 8.75Z" fill="black" />
                                 </svg>
+
                               </button>
                             </div>
-                            <div className="clearfix" />
+                            <div className="clearfix"></div>
                           </div>
                         </div>
-                        <div className="clearfix" />
+                        <div className="clearfix"></div>
                       </div>
                     </div>
                   </div>
@@ -406,7 +633,7 @@ export default function PracticeExamPageOne() {
                     <div className="row">
                       <div className="col-sm-12 col-md-4 col-lg-7">
                         <div className="cmp-num-lis-hdr">
-                          <h3>6 Listing</h3>
+                          <h3>{itemsCount} Listing</h3>
                         </div>
                       </div>
                       <div className="col-sm-12 col-md-8 col-lg-5">
@@ -430,894 +657,120 @@ export default function PracticeExamPageOne() {
                   </div>
                   <div className="cmp-lis-hdr-cen">
                     <ul className="cmp-mar-cus-bot">
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo1.png" alt="" />
+                      {items && items.length > 0 &&
+                        items.map((item, index) => {
+                          return (<li key={index}>
+                            <div className="cmp-lis-flx-inf">
+                              <div className="ctl-inf-com-con">
+                                <div className="ctl-lis-pic-lft cursor-pointer" onClick={() => onSelectProperty()}>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-lis-pic-con">
+                                        <img src={item.image} alt="" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="ctl-lis-inf-rit">
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Heading</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <h3>{item.building?.address}</h3>
+                                        <p>{item.building?.house}</p>
+                                        <p>{item.building?.street}</p>
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Heading</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <p>{item.unit}</p>
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Location</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <p>{item.location?.neighborhoods}, {item.location?.city}</p>
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Price</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <p>${item.price}</p>
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Layout</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <p>{item.layout?.bedRooms} Bed</p>
+                                        <p>{item.layout?.bathrooms}  Baths</p>
+                                        {item.layout?.squareFootage && <p>{item.layout?.squareFootage}  SQFT </p>}
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div className="ctl-com-inf-con">
+                                      <div className="ctl-bui-com-hdr">
+                                        <div className="ctl-lis-sel-inf">
+                                          <select>
+                                            <option value>Date Available</option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div className="ctl-bui-com-des">
+                                        <p>{item.availability}</p>
+                                      </div>
+                                      <div className="clearfix" />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo2.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo1.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo2.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo1.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo2.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo1.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div className="cmp-lis-flx-inf">
-                          <div className="ctl-inf-com-con">
-                            <div className="ctl-lis-pic-lft">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-lis-pic-con">
-                                    <img src="/images/list-photo2.png" alt="" />
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div className="ctl-lis-inf-rit">
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <h3>The Vanderbil </h3>
-                                    <p>235 East 40th Street </p>
-                                    <p> 40b Scope REality </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Heading</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>40b </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Location</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Murray Hill New York, NY </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Price</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>$1,007,777</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Layout</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>1 Bed</p>
-                                    <p>1.5 Baths</p>
-                                    <p>791 SQFT </p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                              <div>
-                                <div className="ctl-com-inf-con">
-                                  <div className="ctl-bui-com-hdr">
-                                    <div className="ctl-lis-sel-inf">
-                                      <select>
-                                        <option value>Date Available</option>
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className="ctl-bui-com-des">
-                                    <p>Immediate</p>
-                                  </div>
-                                  <div className="clearfix" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </li>
+                          </li>)
+                        })}
                     </ul>
                   </div>
                   <div className="clearfix" />
@@ -1326,62 +779,14 @@ export default function PracticeExamPageOne() {
             </div>
           </div>
         </section>
-        {/* *************** Footer ******************* */}
-        <footer className="main-footer">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-                <h3 className="ft-head">Headquarters</h3>
-                <ul className="ft-list">
-                  <li>
-                    68 West 39th Street, 2nd Fl <br />
-                    New York, NY 10018
-                  </li>
-                  <li>(212) 408-1620</li>
-                  <li>(347) 619-6229 fax</li>
-                </ul>
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-                <h3 className="ft-head">COmpany</h3>
-                <ul className="ft-list">
-                  <li>
-                    <a href="#">About Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Team</a>
-                  </li>
-                  <li>
-                    <a href="#">Careers</a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-4 col-md-4 col-sm-12 col-12">
-                <h3 className="ft-head">More</h3>
-                <ul className="ft-list">
-                  <li>
-                    <a href="#">Reviews</a>
-                  </li>
-                  <li>
-                    <a href="#">Press</a>
-                  </li>
-                  <li>
-                    <a href="#">ASPCA</a>
-                  </li>
-                  <li>
-                    <a href="#">St. Jude Children's Research Hospital</a>
-                  </li>
-                  <li>
-                    <a href="#">Covenant House New York</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="bottom-stripe">
-            <p>© Copyright 2021</p>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   );
+}
+
+export async function getServerSideProps(context) {
+  const listingDataa = await getListingsDataa()
+  const listingRealtym = await getListingsRealtym()
+  return { props: { listingDataa, listingRealtym } }
 }

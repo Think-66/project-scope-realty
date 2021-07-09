@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Layout from "../components/appLayout";
+import Layout from "../components/layout";
 import { signIn, csrfToken } from "next-auth/client";
 
 Login.getInitialProps = async (context) => {

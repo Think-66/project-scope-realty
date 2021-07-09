@@ -4,6 +4,7 @@ import "../public/css/vendors/bootstrap.min.css";
 import "../public/css/main.css";
 import "../public/css/responsive.css";
 import "../public/css/core.css";
+import "../public/css/custom.css";
 
 export default function App({ Component, pageProps }) {
   return (

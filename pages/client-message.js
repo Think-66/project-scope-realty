@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Layout from "../components/appLayout";
+import Layout from "../components/Layout";
 
 export default function ClientMessage() {
   return (
