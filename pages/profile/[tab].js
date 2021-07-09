@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { toast } from "react-nextjs-toast";
 import { session, useSession, getSession } from "next-auth/client";
-import ProtectedLayout from "../../components/protectedLayout";
+import ProtectedLayout from "../../components/ProtectedLayout";
 import Profile from "../../models/Profile";
 import dbConnect from "../../utils/dbConnect";
 
