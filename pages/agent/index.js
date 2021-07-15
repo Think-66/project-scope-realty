@@ -1,7 +1,42 @@
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import ClientLayout from "../../components/client-layout";
+import { getAgents } from "../../services/agentAPIService";
+import ReactPaginate from "react-paginate";
 
-function Index({ data }) {
+function Index() {
+  const [perPage] = useState(10);
+  const [offset, setOffset] = useState(0);
+  const [pageCount, setPageCount] = useState(0);
+  const [agentList, setAgentList] = useState([]);
+  const [currentAgentList, setCurrentAgentList] = useState([]);
+
+  useEffect(() => {
+    getAgentsInitial();
+  }, []);
+
+  const getAgentsInitial = async () => {
+    const agents = await getAgents();
+    console.log(agents);
+    setAgentList(agents);
+    getCurrentPageData(agents, 0);
+
+    if (agents !== undefined && agents.length > 0) {
+      setPageCount(Math.ceil(agents.length / perPage));
+    }
+  };
+
+  const handlePageClick = (e) => {
+    const selectedPage = e.selected;
+    setOffset(selectedPage + 1);
+    getCurrentPageData(agentList, e.selected * perPage);
+  };
+
+  const getCurrentPageData = (dataList, skip) => {
+    const data = dataList.slice(skip, perPage + skip);
+    setCurrentAgentList(data);
+  };
+
   return (
     <ClientLayout title="Agents">
       <div className="b-bot">
@@ -10,7 +45,7 @@ function Index({ data }) {
             <div className="cmp-lad-com-pad">
               <div className="cmp-rev-inf-cen">
                 <div className="row">
-                  {data.map((agent, index) => (
+                  {currentAgentList.map((agent, index) => (
                     <div
                       key={index}
                       className="col-sm-12 col-md-6 col-lg-6 mb-4"
@@ -30,7 +65,9 @@ function Index({ data }) {
                                 <div className="ctl-agt-nam-top">
                                   <Link href={`agent/${agent.id}`}>
                                     <a>
-                                      <h4>Paul Reisner</h4>
+                                      <h4>
+                                        {agent.firstname + " " + agent.lastname}
+                                      </h4>
                                     </a>
                                   </Link>
                                 </div>
@@ -50,7 +87,8 @@ function Index({ data }) {
                                         fill="black"
                                       />
                                     </svg>
-                                    President / CEO / Broker
+                                    {/* President / CEO / Broker */}
+                                    {agent.title}
                                   </h4>
                                 </div>
                                 <div className="clearfix" />
@@ -590,6 +628,7 @@ function Index({ data }) {
                   ))}
                 </div>
               </div>
+
               <div className="cmp-rev-inf-bot">
                 <div className="cmp-rev-pag-blo">
                   <nav
@@ -646,6 +685,21 @@ function Index({ data }) {
                   </nav>
                 </div>
               </div>
+
+              <ReactPaginate
+                previousLabel={"<"}
+                nextLabel={">"}
+                breakLabel={"..."}
+                breakClassName={"break-me"}
+                pageCount={pageCount}
+                marginPagesDisplayed={2}
+                pageRangeDisplayed={5}
+                onPageChange={handlePageClick}
+                containerClassName={"pagination"}
+                subContainerClassName={"pages pagination"}
+                activeClassName={"active"}
+              />
+
               <div className="clearfix" />
             </div>
           </div>
@@ -655,39 +709,40 @@ function Index({ data }) {
   );
 }
 
-export const getServerSideProps = async ({ req, res }) => {
-  const data = [
-    {
-      id: 1,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 2,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 13,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 4,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 5,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 6,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-    {
-      id: 7,
-      heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
-    },
-  ];
+// export const getServerSideProps = async ({ req, res }) => {
+//   const agentList = await getAgents();
+//   const data = [
+//     {
+//       id: 1,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 2,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 13,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 4,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 5,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 6,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 7,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//   ];
 
-  return { props: { data } };
-};
+//   return { props: { data, agentList } };
+// };
 
 export default Index;
