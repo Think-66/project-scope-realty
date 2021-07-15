@@ -63,13 +63,13 @@ function Index() {
                             <div className="cmp-cel-agt-blo">
                               <div className="ctl-rit-agt-top">
                                 <div className="ctl-agt-nam-top">
-//                                   <Link href={`agent/${agent.id}`}>
-//                                     <a>
-                                      <h4>
-                                        {agent.firstname + " " + agent.lastname}
-                                      </h4>
-//                                     </a>
-//                                   </Link>
+                                  {/* <Link href={`agent/${agent.id}`}>
+                                    <a> */}
+                                  <h4>
+                                    {agent.firstname + " " + agent.lastname}
+                                  </h4>
+                                  {/* </a>
+                                  </Link> */}                               
                                 </div>
                                 <div className="ctl-agt-des-bot">
                                   <h4>
