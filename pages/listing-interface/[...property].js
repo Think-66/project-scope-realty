@@ -4,22 +4,21 @@ import { useRouter } from "next/router";
 import ProtectedLayout from "../../components/ProtectedLayout";
 import { getListingsDataaById, getListingsRealtymById } from '../../services/listingApiService'
 
-export default function ListingInterface() {
+export default function ListingInterface({ property }) {
   const router = useRouter();
-
   return (
     <ProtectedLayout>
       <section className="single-page-sec">
         <div className="container">
           <div className="row">
             <div className="col-12 ">
-              <h2 className="big-head">420 East 80th Street PH</h2>
+              <h2 className="big-head">{property?.address}</h2>
             </div>
             <div className="col-lg-8 col-md-12 col-sm-12 col-12">
               <div className="single-carousel-wrapper mt-20">
                 <div className="owl-carousel owl-theme single-inner-carousel">
                   <div className="item">
-                    <img src="/images/slide-1.jpg" alt="slide" />
+                    <img src={property?.image} alt="slide" style={{ maxHeight: "450px" }} />
                   </div>
                 </div>
               </div>
@@ -28,52 +27,52 @@ export default function ListingInterface() {
               <div className="sidebar-single mt-20">
                 <div className="single-side-bar-wrapper">
                   <div className="sidebar-header">
-                    <h3 className="price">$10,250</h3>
+                    <h3 className="price">${property?.price}</h3>
                     <p className="ammenities">
-                      5 rooms | 3 beds | 1 bath | 2,137 SQFT
+                      {property?.rooms && `${property?.rooms} rooms |`} {property?.rooms && `${property?.bedRooms} beds |`} {property?.rooms && `${property?.bathRooms} bath`}
                     </p>
-                    <p>Upper East Side Apartment</p>
+                    <p>{property?.neighborhood}</p>
                   </div>
                   <ul className="side-bar-list">
                     <li>
                       <p>Listing ID</p>
-                      <p>196035</p>
+                      <p>{property?.id}</p>
                     </li>
                     <li>
                       <p>Listed By</p>
-                      <p>The Ashford</p>
+                      <p>{property?.agent}</p>
                     </li>
                     <li>
                       <p>Floor</p>
-                      <p>Unknown</p>
+                      <p>{property?.floor}</p>
                     </li>
                     <li>
                       <p>Date Listed</p>
-                      <p>5/16/2019</p>
+                      <p>{property?.date}</p>
                     </li>
                     <li>
                       <p>Date Available</p>
-                      <p>TBD</p>
+                      <p>{property?.available}</p>
                     </li>
                     <li>
                       <p>Min. Lease Term</p>
-                      <p>12</p>
+                      <p>{property?.minLease}</p>
                     </li>
                     <li>
                       <p>Max. Lease Term</p>
-                      <p>12</p>
+                      <p>{property?.maxLease}</p>
                     </li>
                     <li>
                       <p>Pet Policy</p>
-                      <p>Pets OK</p>
+                      <p>{property?.pet}</p>
                     </li>
                     <li>
                       <p>Exposure</p>
-                      <p>Unknown</p>
+                      <p>{property?.exposure}</p>
                     </li>
                     <li>
                       <p>Condition</p>
-                      <p>Unknown</p>
+                      <p>{property?.condition}</p>
                     </li>
                   </ul>
                 </div>
@@ -88,17 +87,7 @@ export default function ListingInterface() {
                 <div className="single-desc mt-20">
                   <h3 className="head">Description</h3>
                   <p className="para">
-                    NO BROKER FEES. 420 East 80th Street apartments are ideally
-                    located in the Upper East Side of Manhattan between York
-                    Avenue and 1st Avenue. They are also within walking distance
-                    of the 77th Street Station. Surrounding your new 420 East
-                    80th Street apartments home, you will find upscale dining
-                    and shopping as well as prominent theatres and nightlife.
-                    Exclusive Upper East Side location and 420 East 80th Street
-                    apartments are less than a mile from MET. Air Conditioner,
-                    Dishwasher, Large Closets, Microwave, Balcony, Patio, View,
-                    Doorman, Concierge, Cover Park, Laundry, Receiving Room,
-                    Transportation
+                    {property?.description}
                   </p>
                 </div>
                 <div className="features mt-60">
@@ -193,32 +182,31 @@ export default function ListingInterface() {
 }
 
 export async function getServerSideProps(context) {
-  let res = null;
   let tempRes = {};
   if (context?.query?.property?.length > 1 && context.query.property[0] == "1") {
-    res = await getListingsDataaById(context.query.property[1])
-    if (res?.LISTINGS > 0) {
-      tempRes.price = res.LISTINGS.PRICE
-      tempRes.rooms = res.LISTINGS.TOTAL_ROOMS
-      tempRes.bathRooms = res.LISTINGS.BATHROOMS
-      tempRes.bedRooms = res.LISTINGS.BEDROOMS
-      tempRes.neighborhood = res.LISTINGS.NEIGHBORHOODS
-      tempRes.id = res.LISTINGS.ID
-      tempRes.agent = res.LISTINGS.MANAGEMENT_COMPANY
-      tempRes.floor = res.LISTINGS.FLOOR_NUMBER
-      tempRes.date = res.LISTINGS.DATE_CREATE
-      tempRes.available = res.LISTINGS.DATE_AVAILABLE
-      tempRes.minLease = res.LISTINGS.MIN_LEASE_TERM
-      tempRes.maxLease = res.LISTINGS.MAX_LEASE_TERM
-      tempRes.pet = res.LISTINGS.PETS_POLICY
-      tempRes.exposure = res.LISTINGS.EXPOSURE_REMARK
-      tempRes.condition = res.LISTINGS.CONDITION
-      tempRes.description = res.LISTINGS.DESCRIPTION
-      tempRes.image = (res.LISTINGS?.PHOTOS?.length > 0) ? res.LISTINGS.PHOTOS[0].PHOTO_URL : ''
-      tempRes.address = res.LISTINGS.ADDRESS
+    const res = await getListingsDataaById(context.query.property[1])
+    if (res?.LISTINGS?.length > 0) {
+      tempRes.price = res.LISTINGS[0].PRICE
+      tempRes.rooms = res.LISTINGS[0].TOTAL_ROOMS
+      tempRes.bathRooms = res.LISTINGS[0].BATHROOMS
+      tempRes.bedRooms = res.LISTINGS[0].BEDROOMS
+      tempRes.neighborhood = res.LISTINGS[0].NEIGHBORHOODS
+      tempRes.id = res.LISTINGS[0].ID
+      tempRes.agent = res.LISTINGS[0].MANAGEMENT_COMPANY
+      tempRes.floor = res.LISTINGS[0].FLOOR_NUMBER
+      tempRes.date = res.LISTINGS[0].DATE_CREATE
+      tempRes.available = res.LISTINGS[0].DATE_AVAILABLE
+      tempRes.minLease = res.LISTINGS[0].MIN_LEASE_TERM
+      tempRes.maxLease = res.LISTINGS[0].MAX_LEASE_TERM
+      tempRes.pet = res.LISTINGS[0].PETS_POLICY
+      tempRes.exposure = res.LISTINGS[0].EXPOSURE_REMARK
+      tempRes.condition = res.LISTINGS[0].CONDITION
+      tempRes.description = res.LISTINGS[0].DESCRIPTION
+      tempRes.image = (res.LISTINGS[0]?.PHOTOS?.length > 0) ? res.LISTINGS[0].PHOTOS[0].PHOTO_URL : ''
+      tempRes.address = res.LISTINGS[0].ADDRESS
     }
   } else {
-    res = await getListingsRealtymById(context.query.property[1])
+    const res = await getListingsRealtymById(context.query.property[1])
     if (res?.length > 0) {
       tempRes.price = res[0].financials_price
       tempRes.rooms = res[0].essentials_rooms
@@ -237,5 +225,5 @@ export async function getServerSideProps(context) {
       tempRes.address = res[0].main_address
     }
   }
-  return { props: { res } }
+  return { props: { property: tempRes } }
 }
