@@ -9,6 +9,7 @@ import { getListingsDataa, getListingsRealtym } from '../services/listingApiServ
 export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   const router = useRouter();
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const [itemsCount, setItemsCount] = useState(0);
   const [showAdvanceFilter, setShowAdvanceFilter] = useState(false);
   const [filters, setFilters] = useState({
@@ -18,6 +19,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
     listingType: "listingRent",
     searchBy: "location",
     searchText: "",
+    freeTextSearch: "",
     date: "",
     bed: 0,
     bath: 0,
@@ -46,6 +48,8 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }, []);
 
   const onSearch = async () => {
+    setIsLoading(true)
+
     const dataaReq = {
       amenities: "",
       extras: "",
@@ -58,7 +62,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
       type: "",
     }
     if (filters.listingType) {
-      realtymReq.status = listingType == "listingRent" ? 2 : 1
+      realtymReq.status = filters.listingType == "listingRent" ? 2 : 1
     }
     if (filters.featurePets) {
       realtymReq.amenities = "pets"
@@ -82,13 +86,29 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
       realtymReq.pets = filters.featurePets ? 3 : 99
     }
     if (filters.featureCondo) {
-      realtymReq.type = realtymReq.type == "" ? "Condo" : realtymReq.type + ",Condo"
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Condo" : "Condo"
     }
     if (filters.featureCoop) {
-      realtymReq.type = realtymReq.type == "" ? "Coop" : realtymReq.type + ",Coop"
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Coop" : "Coop"
     }
     if (filters.featureLand) {
-      realtymReq.type = realtymReq.type == "" ? "Land" : realtymReq.type + ",Land"
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Land" : "Land"
+    }
+    if (filters.searchBy == "location" && filters.searchText) {
+      realtymReq.address = filters.searchText
+      realtymReq.city = filters.searchText
+    }
+    if (filters.searchBy == "zipCode" && filters.searchText) {
+      realtymReq.zipcode = filters.searchText
+    }
+    if (filters.searchBy == "bedrooms" && filters.searchText) {
+      realtymReq.bedsMin = filters.searchText
+    }
+    if (filters.freeTextSearch) {
+      realtymReq.label = realtymReq.freeTextSearch
+      realtymReq.address = filters.searchText
+      realtymReq.city = filters.searchText
+      realtymReq.zipcode = filters.searchText
     }
     const tempListingRealtym = await getListingsRealtym(realtymReq)
     mapData(tempListingDataa, tempListingRealtym)
@@ -155,6 +175,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
     })
 
     setItems(tempItems)
+    setIsLoading(false)
   }
 
   const onChange = (e) => {
@@ -187,6 +208,13 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 
   return (
     <div>
+      {isLoading && <div className="overlay-sub-area" >
+        <div className="spinner"></div>
+        <br />
+        <div class="spinner-grow text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>}
       <div>
         <header>
           <div className="b-top" />
@@ -287,9 +315,9 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             </li>
                             <li className="nav-item waves-effect waves-light">
                               <a
-                                className={filters.searchBy == "zinCode" ? "active" : ""}
-                                onClick={() => onClick("searchBy", "zinCode")}
-                                id="zinCode-tab"
+                                className={filters.searchBy == "zipCode" ? "active" : ""}
+                                onClick={() => onClick("searchBy", "zipCode")}
+                                id="zipCode-tab"
                               >
                                 Zip Code
                               </a>
@@ -316,7 +344,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             aria-labelledby="first-tab"
                           >
                             <div className="cmp-lis-hdr">
-                              <h3>Location</h3>
+                              <h3>{filters.searchBy}</h3>
                             </div>
                             <div className="ctl-tab-eso-top">
                               <div className="ctl-frm-pot-box">
@@ -328,7 +356,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                   onChange={onChange}
                                   value={filters.searchText}
                                   className="ctl-pot-inp-box"
-                                  placeholder="Type location"
+                                  placeholder={`Type ${filters.searchBy}`}
                                   required
                                 />
                               </div>
@@ -709,11 +737,14 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                               type="search"
                               id="keyword"
                               className="ctl-key-inp-box"
+                              name="freeTextSearch"
+                              onChange={onChange}
+                              value={filters.freeTextSearch}
                               placeholder="Search by keywords"
                             />
                           </div>
                           <div className="ctl-key-btn-box">
-                            <button type="submit"> Search</button>
+                            <button type="submit" onClick={() => onSearch()}> Search</button>
                           </div>
                           <div className="clearfix" />
                         </div>

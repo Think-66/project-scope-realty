@@ -69,7 +69,7 @@ function Index() {
                                     {agent.firstname + " " + agent.lastname}
                                   </h4>
                                   {/* </a>
-                                  </Link> */}                               
+                                  </Link> */}
                                 </div>
                                 <div className="ctl-agt-des-bot">
                                   <h4>
@@ -708,5 +708,41 @@ function Index() {
     </ClientLayout>
   );
 }
+
+// export const getServerSideProps = async ({ req, res }) => {
+//   const agentList = await getAgents();
+//   const data = [
+//     {
+//       id: 1,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 2,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 13,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 4,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 5,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 6,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//     {
+//       id: 7,
+//       heading: "THE VANDERBIL ,235 East 40th Street 0b Scope REality",
+//     },
+//   ];
+
+//   return { props: { data, agentList } };
+// };
 
 export default Index;
