@@ -39,3 +39,17 @@
 .pagination > li:last-child > span {
   border-radius: unset;
 }
+
+.overlay-sub-area {
+  background: #ffffff;
+  color: #666666;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  left: 0;
+  float: left;
+  text-align: center;
+  padding-top: 25%;
+  opacity: .80;
+}
