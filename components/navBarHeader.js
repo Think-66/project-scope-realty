@@ -73,7 +73,7 @@ export default function NavBarHeader({
                   </OverlayTrigger>
                 </li>
                 <li className="nav-item">
-                  <Link href="/webflow-scope-reality" passHref>
+                  <Link href="/rent" passHref>
                     <a className="ctl-nav-lnk-txt" href="#">
                       Rent
                     </a>
@@ -87,7 +87,7 @@ export default function NavBarHeader({
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/webflow-scope-reality" passHref>
+                  <Link href="/sell" passHref>
                     <a className="ctl-nav-lnk-txt" href="#">
                       Sell
                     </a>
