@@ -26,7 +26,7 @@ function Index({ featured }) {
                     <div className="col-sm-12 col-md-10 col-lg-11 m-auto">
                       <div className="cmp-lad-lis-hdr">
                         <div className="ctl-web-lan-top">
-                          <h3>
+                          <h3 className="alex-custom">
                             Enjoy a Stress-Free and Smooth Property Buying
                             Experience with us.
                           </h3>
