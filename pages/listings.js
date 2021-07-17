@@ -9,19 +9,38 @@ import { getListingsDataa, getListingsRealtym } from '../services/listingApiServ
 export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   const router = useRouter();
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
   const [itemsCount, setItemsCount] = useState(0);
   const [showAdvanceFilter, setShowAdvanceFilter] = useState(false);
   const [filters, setFilters] = useState({
-    pets: false,
-    house: false,
-    new_listing: false,
-    listing: "listing_rent",
+    featurePets: false,
+    featureHasOpenHouse: false,
+    featureNewListing: false,
+    listingType: "listingRent",
     searchBy: "location",
-    searchText: ""
+    searchText: "",
+    freeTextSearch: "",
+    date: "",
+    bed: 0,
+    bath: 0,
+    price: 0,
+    parking: 0,
+    featureSingle: false,
+    featureSquareFootage: false,
+    featureBasement: false,
+    featureFrame: false,
+    featureBrick: false,
+    featureSemiAttached: false,
+    featureDetached: false,
+    featureAttached: false,
+    featureLand: false,
+    featureCoop: false,
+    featureCondo: false,
+    featureMultiFamily: false,
   });
 
-  const onSelectProperty = () => {
-    router.push('listing-interface')
+  const onSelectProperty = (api, id) => {
+    router.push(`listing-interface/${api}/${id}`)
   }
 
   useEffect(() => {
@@ -29,10 +48,70 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }, []);
 
   const onSearch = async () => {
-    const tempListingDataa = await getListingsDataa()
-    const tempListingRealtym = await getListingsRealtym()
-    mapData(tempListingDataa, tempListingRealtym)
+    setIsLoading(true)
 
+    const dataaReq = {
+      amenities: "",
+      extras: "",
+    }
+    const tempListingDataa = await getListingsDataa(dataaReq)
+
+    const realtymReq = {
+      amenities: "",
+      extras: "",
+      type: "",
+    }
+    if (filters.listingType) {
+      realtymReq.status = filters.listingType == "listingRent" ? 2 : 1
+    }
+    if (filters.featurePets) {
+      realtymReq.amenities = "pets"
+    }
+    if (filters.featureHasOpenHouse) {
+      realtymReq.extras = "openhouse"
+    }
+    if (filters.featureNewListing) {
+      realtymReq.amenities = "newConstruction "
+    }
+    if (filters.bed) {
+      realtymReq.bedsMin = filters.bed
+    }
+    if (filters.bath) {
+      realtymReq.bathMin = filters.bath
+    }
+    if (filters.price) {
+      realtymReq.priceMax = filters.price
+    }
+    if (filters.featurePets) {
+      realtymReq.pets = filters.featurePets ? 3 : 99
+    }
+    if (filters.featureCondo) {
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Condo" : "Condo"
+    }
+    if (filters.featureCoop) {
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Coop" : "Coop"
+    }
+    if (filters.featureLand) {
+      realtymReq.type = realtymReq.type ? realtymReq.type + ",Land" : "Land"
+    }
+    if (filters.searchBy == "location" && filters.searchText) {
+      realtymReq.address = filters.searchText
+      realtymReq.city = filters.searchText
+    }
+    if (filters.searchBy == "zipCode" && filters.searchText) {
+      realtymReq.zipcode = filters.searchText
+    }
+    if (filters.searchBy == "bedrooms" && filters.searchText) {
+      realtymReq.bedsMin = filters.searchText
+    }
+    if (filters.freeTextSearch) {
+      realtymReq.label = realtymReq.freeTextSearch
+      realtymReq.address = filters.searchText
+      realtymReq.city = filters.searchText
+      realtymReq.zipcode = filters.searchText
+    }
+    const tempListingRealtym = await getListingsRealtym(realtymReq)
+    mapData(tempListingDataa, tempListingRealtym)
   }
 
   const mapData = (tempListingDataa, tempListingRealtym) => {
@@ -45,6 +124,8 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 
     tempListingDataa?.LISTINGS.map(x => {
       tempItems.push({
+        api: 1,
+        id: x.ID,
         building: {
           address: x.ADDRESS,
           buildingId: x.BUILDING_ID,
@@ -69,6 +150,8 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 
     tempListingRealtym?.LISTINGS.map(x => {
       tempItems.push({
+        api: 2,
+        id: x.main_id,
         building: {
           address: x.main_address,
           street: x.main_street,
@@ -92,10 +175,12 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
     })
 
     setItems(tempItems)
+    setIsLoading(false)
   }
 
   const onChange = (e) => {
     console.log(e.target.value)
+    console.log(filters)
     e.persist()
     setFilters({
       ...filters,
@@ -105,6 +190,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 
   const onCheck = (e) => {
     console.log(e.target.checked)
+    console.log(filters)
     e.persist()
     setFilters({
       ...filters,
@@ -122,6 +208,13 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 
   return (
     <div>
+      {isLoading && <div className="overlay-sub-area" >
+        <div className="spinner"></div>
+        <br />
+        <div class="spinner-grow text-primary" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>}
       <div>
         <header>
           <div className="b-top" />
@@ -146,26 +239,26 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             <div className="ctl-lis-btn">
                               <input
                                 type="radio"
-                                id="listing_rent"
-                                value="listing_rent"
-                                checked={filters.listing == "listing_rent"}
-                                name="listing"
+                                id="listingRent"
+                                value="listingRent"
+                                checked={filters.listingType == "listingRent"}
+                                name="listingType"
                                 onChange={onChange}
                               />
-                              <label htmlFor="listing_type">For Rent</label>
+                              <label htmlFor="listingType">For Rent</label>
                             </div>
                           </li>
                           <li>
                             <div className="ctl-lis-btn">
                               <input
                                 type="radio"
-                                id="listing_sale"
-                                value="listing_sale"
-                                checked={filters.listing == "listing_sale"}
-                                name="listing"
+                                id="listingSale"
+                                value="listingSale"
+                                checked={filters.listingType == "listingSale"}
+                                name="listingType"
                                 onChange={onChange}
                               />
-                              <label htmlFor="listing_sale">For Sale</label>
+                              <label htmlFor="listingType">For Sale</label>
                             </div>
                           </li>
                         </ul>
@@ -180,20 +273,20 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                         <ul className="ctl-ulo-lis">
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="pets" name="pets" checked={filters.pets} onChange={onCheck} />
-                              <label htmlFor="pets">Pets Ok</label>
+                              <input type="checkbox" id="featurePets" name="featurePets" checked={filters.featurePets} onChange={onCheck} />
+                              <label htmlFor="featurePets">Pets Ok</label>
                             </div>
                           </li>
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="house" name="house" checked={filters.house} onChange={onCheck} />
-                              <label htmlFor="house">Has Open House</label>
+                              <input type="checkbox" id="featureHasOpenHouse" name="featureHasOpenHouse" checked={filters.featureHasOpenHouse} onChange={onCheck} />
+                              <label htmlFor="featureHasOpenHouse">Has Open House</label>
                             </div>
                           </li>
                           <li>
                             <div className="ctl-lis-btn">
-                              <input type="checkbox" id="new_listing" name="new_listing" checked={filters.new_listing} onChange={onCheck} />
-                              <label htmlFor="new_listing">New Listing</label>
+                              <input type="checkbox" id="featureNewListing" name="featureNewListing" checked={filters.featureNewListing} onChange={onCheck} />
+                              <label htmlFor="featureNewListing">New Listing</label>
                             </div>
                           </li>
                         </ul>
@@ -222,9 +315,9 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             </li>
                             <li className="nav-item waves-effect waves-light">
                               <a
-                                className={filters.searchBy == "zinCode" ? "active" : ""}
-                                onClick={() => onClick("searchBy", "zinCode")}
-                                id="zinCode-tab"
+                                className={filters.searchBy == "zipCode" ? "active" : ""}
+                                onClick={() => onClick("searchBy", "zipCode")}
+                                id="zipCode-tab"
                               >
                                 Zip Code
                               </a>
@@ -251,7 +344,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             aria-labelledby="first-tab"
                           >
                             <div className="cmp-lis-hdr">
-                              <h3>Location</h3>
+                              <h3>{filters.searchBy}</h3>
                             </div>
                             <div className="ctl-tab-eso-top">
                               <div className="ctl-frm-pot-box">
@@ -263,7 +356,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                   onChange={onChange}
                                   value={filters.searchText}
                                   className="ctl-pot-inp-box"
-                                  placeholder="Type location"
+                                  placeholder={`Type ${filters.searchBy}`}
                                   required
                                 />
                               </div>
@@ -398,22 +491,22 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                 </div>
                 {showAdvanceFilter && <div className="cmp-pad-cen-pad">
                   <div className="row">
-                    <div className="col-sm-12 col-md-12 col-lg-2">
+                    <div className="col-sm-12 col-md-12 col-lg-3">
                       <div className="cmp-lis-hdr">
                         <h3>Date</h3>
                       </div>
                       <div className="ctl-tab-eso-top">
                         <div className="ctl-frm-pot-box">
                           <label htmlFor="dmy"></label>
-                          <input type="text" id="dmy" className="ctl-pot-inp-box" placeholder="DD/MM/YYYY" required="" />
+                          <input type="date" id="dmy" name="date" className="ctl-pot-inp-box" placeholder="DD/MM/YYYY" required="" onChange={onChange} />
                         </div>
-                        <div className="ctl-pot-btn-bot">
+                        {/* <div className="ctl-pot-btn-bot">
                           <button type="submit">
                             <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path fillRule="evenodd" clipRule="evenodd" d="M11.462 0.0244141L12.7879 1.35024L6.49995 7.63815L0.212036 1.35024L1.53786 0.0244141L6.49995 4.9865L11.462 0.0244141Z" fill="black" />
                             </svg>
                           </button>
-                        </div>
+                        </div> */}
                         <div className="clearfix"></div>
                       </div>
                       <div className="clearfix"></div>
@@ -425,7 +518,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                       <div className="ctl-tab-eso-top">
                         <div className="ctl-frm-pot-box">
                           <label htmlFor=""></label>
-                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                          <input type="number" id="bed" name="bed" className="ctl-pot-inp-box" placeholder="0" required="" onChange={onChange} />
                         </div>
                         <div className="ctl-pot-btn-bot">
                           <button type="submit">
@@ -445,7 +538,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                       <div className="ctl-tab-eso-top">
                         <div className="ctl-frm-pot-box">
                           <label htmlFor=""></label>
-                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                          <input type="number" id="bath" name="bath" className="ctl-pot-inp-box" placeholder="0" required="" onChange={onChange} />
                         </div>
                         <div className="ctl-pot-btn-bot">
                           <button type="submit">
@@ -459,14 +552,14 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                       </div>
                       <div className="clearfix"></div>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-4">
+                    <div className="col-sm-12 col-md-12 col-lg-3">
                       <div className="cmp-lis-hdr">
                         <h3>Price</h3>
                       </div>
                       <div className="ctl-tab-eso-top">
                         <div className="ctl-frm-pot-box">
                           <label htmlFor=""></label>
-                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="0" required="" />
+                          <input type="number" id="price" name="price" className="ctl-pot-inp-box" placeholder="0" required="" onChange={onChange} />
                         </div>
                         <div className="clearfix"></div>
                       </div>
@@ -479,7 +572,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                       <div className="ctl-tab-eso-top">
                         <div className="ctl-frm-pot-box">
                           <label htmlFor=""></label>
-                          <input type="number" id="" className="ctl-pot-inp-box" placeholder="Garage" required="" />
+                          <input type="number" id="parking" name="parking" className="ctl-pot-inp-box" placeholder="Garage" required="" onChange={onChange} />
                         </div>
                         <div className="ctl-pot-btn-bot">
                           <button type="submit">
@@ -507,31 +600,31 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             <ul className="ctl-ulo-lis">
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureSingle" name="featureSingle" checked={filters.featureSingle} onChange={onCheck} />
                                   <label htmlFor="">Single</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureMultiFamily" name="featureMultiFamily" checked={filters.featureMultiFamily} onChange={onCheck} />
                                   <label htmlFor="">Multi Family</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureCondo" name="featureCondo" checked={filters.featureCondo} onChange={onCheck} />
                                   <label htmlFor="">Condo</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureCoop" name="featureCoop" checked={filters.featureCoop} onChange={onCheck} />
                                   <label htmlFor="">Coop</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureLand" name="featureLand" checked={filters.featureLand} onChange={onCheck} />
                                   <label htmlFor="">Land</label>
                                 </div>
                               </li>
@@ -541,31 +634,31 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             <ul className="ctl-ulo-lis">
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureAttached" name="featureAttached" checked={filters.featureAttached} onChange={onCheck} />
                                   <label htmlFor="">Attached</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureDetached" name="featureDetached" checked={filters.featureDetached} onChange={onCheck} />
                                   <label htmlFor="">Detached</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureSemiAttached" name="featureSemiAttached" checked={filters.featureSemiAttached} onChange={onCheck} />
                                   <label htmlFor="">Semi Attached</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureBrick" name="featureBrick" checked={filters.featureBrick} onChange={onCheck} />
                                   <label htmlFor="">Brick</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureFrame" name="featureFrame" checked={filters.featureFrame} onChange={onCheck} />
                                   <label htmlFor="">Frame</label>
                                 </div>
                               </li>
@@ -575,13 +668,13 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                             <ul className="ctl-ulo-lis">
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureBasement" name="featureBasement" checked={filters.featureBasement} onChange={onCheck} />
                                   <label htmlFor="">Basement</label>
                                 </div>
                               </li>
                               <li>
                                 <div className="ctl-lis-btn">
-                                  <input type="checkbox" id="" name="" />
+                                  <input type="checkbox" id="featureSquareFootage" name="featureSquareFootage" checked={filters.featureSquareFootage} onChange={onCheck} />
                                   <label htmlFor="">Square Footage</label>
                                 </div>
                               </li>
@@ -644,11 +737,14 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                               type="search"
                               id="keyword"
                               className="ctl-key-inp-box"
+                              name="freeTextSearch"
+                              onChange={onChange}
+                              value={filters.freeTextSearch}
                               placeholder="Search by keywords"
                             />
                           </div>
                           <div className="ctl-key-btn-box">
-                            <button type="submit"> Search</button>
+                            <button type="submit" onClick={() => onSearch()}> Search</button>
                           </div>
                           <div className="clearfix" />
                         </div>
@@ -662,7 +758,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                           return (<li key={index}>
                             <div className="cmp-lis-flx-inf">
                               <div className="ctl-inf-com-con">
-                                <div className="ctl-lis-pic-lft cursor-pointer" onClick={() => onSelectProperty()}>
+                                <div className="ctl-lis-pic-lft cursor-pointer" onClick={() => onSelectProperty(item.api, item.id)}>
                                   <div>
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-lis-pic-con">
@@ -676,9 +772,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Heading</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Building</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
@@ -693,9 +787,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Heading</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Unit</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
@@ -708,9 +800,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Location</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Location</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
@@ -723,9 +813,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Price</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Price</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
@@ -738,9 +826,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Layout</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Layout</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
@@ -755,9 +841,7 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
                                     <div className="ctl-com-inf-con">
                                       <div className="ctl-bui-com-hdr">
                                         <div className="ctl-lis-sel-inf">
-                                          <select>
-                                            <option value>Date Available</option>
-                                          </select>
+                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Date Available</div>
                                         </div>
                                       </div>
                                       <div className="ctl-bui-com-des">
