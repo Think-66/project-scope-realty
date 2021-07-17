@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProtectedLayout from "../components/ProtectedLayout";
 
 export default function ListingInterface() {
   const router = useRouter();
