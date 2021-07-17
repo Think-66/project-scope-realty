@@ -6,7 +6,7 @@ export default function ListingInterface() {
   const router = useRouter();
 
   return (
-    <ProtectedLayout>
+    <div>
       <section className="single-page-sec">
         <div className="container">
           <div className="row">
@@ -186,6 +186,6 @@ export default function ListingInterface() {
           </div>
         </div>
       </section>
-    </ProtectedLayout>
+    </div>
   );
 }
