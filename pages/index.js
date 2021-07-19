@@ -8,7 +8,7 @@ function Index({ featured }) {
   const router = useRouter();
 
   const onSearch = () => {
-    router.push('listings')
+    router.push('webflow-scope-reality')
   }
 
   return (

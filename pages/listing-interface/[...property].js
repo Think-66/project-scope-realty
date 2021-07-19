@@ -1,13 +1,13 @@
 import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import ProtectedLayout from "../../components/ProtectedLayout";
+import ClientLayout from "../../components/client-layout";
 import { getListingsDataaById, getListingsRealtymById } from '../../services/listingApiService'
 
 export default function ListingInterface({ property }) {
   const router = useRouter();
   return (
-    <ProtectedLayout>
+    <ClientLayout>
       <section className="single-page-sec">
         <div className="container">
           <div className="row">
@@ -177,7 +177,7 @@ export default function ListingInterface({ property }) {
           </div>
         </div>
       </section>
-    </ProtectedLayout>
+    </ClientLayout>
   );
 }
 

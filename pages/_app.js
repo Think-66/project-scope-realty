@@ -1,6 +1,8 @@
 import { Provider } from "next-auth/client";
 
 import "../public/css/vendors/bootstrap.min.css";
+import "../public/css/vendors/calender-style.css";
+import "../public/css/vendors/calender-theme.css";
 import "../public/css/main.css";
 import "../public/css/responsive.css";
 import "../public/css/core.css";

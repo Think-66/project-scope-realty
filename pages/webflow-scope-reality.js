@@ -6,7 +6,7 @@ import NavBarHeader from '../components/navBarHeader'
 import Footer from '../components/footer'
 import { getListingsDataa, getListingsRealtym } from '../services/listingApiService'
 
-export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
+export default function PracticeExamPageOne({ listingType }) {
   const router = useRouter();
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -44,8 +44,12 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }
 
   useEffect(() => {
-    (mapData(listingDataa, listingRealtym))
-  }, []);
+    setFilters({
+      ...filters,
+      listingType: listingType
+    })
+    onSearch()
+  }, [listingType]);
 
   const onSearch = async () => {
     setIsLoading(true)
@@ -179,8 +183,6 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }
 
   const onChange = (e) => {
-    console.log(e.target.value)
-    console.log(filters)
     e.persist()
     setFilters({
       ...filters,
@@ -189,8 +191,6 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }
 
   const onCheck = (e) => {
-    console.log(e.target.checked)
-    console.log(filters)
     e.persist()
     setFilters({
       ...filters,
@@ -199,7 +199,6 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
   }
 
   const onClick = (name, value) => {
-    console.log(name, value)
     setFilters({
       ...filters,
       [name]: value
@@ -211,8 +210,8 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
       {isLoading && <div className="overlay-sub-area" >
         <div className="spinner"></div>
         <br />
-        <div class="spinner-grow text-primary" role="status">
-          <span class="sr-only">Loading...</span>
+        <div className="spinner-grow text-primary" role="status">
+          <span className="sr-only">Loading...</span>
         </div>
       </div>}
       <div>
@@ -870,7 +869,5 @@ export default function PracticeExamPageOne({ listingDataa, listingRealtym }) {
 }
 
 export async function getServerSideProps(context) {
-  const listingDataa = await getListingsDataa()
-  const listingRealtym = await getListingsRealtym()
-  return { props: { listingDataa, listingRealtym } }
+  return { props: { listingType: context?.query?.listingType || "listingRent" } }
 }
