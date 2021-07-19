@@ -8,28 +8,94 @@
         margin-top: 0px;
     }
 }
+
+
+@media(max-width: 991px){
+    
+
+button.navbar-toggler {
+    color: #fff !important;
+	
+	}
+    .navbar-toggler {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+         right: 0;
+        top: 16px;
+        box-shadow: 0px 10px 20px rgba(52, 73, 94, 0.15);
+        border-radius: 22.5px;
+		
+	}
+	.clt-sig-lnk{
+		display:none;
+	
+	
+	
+    }
+}
+
 @media(max-width: 780px){
     .main-nav{
         padding: 0px 1.5rem;
     }
     .main-nav .nav-wrapper .profile-wrape{
         margin-right: 0;
-    }
-}
-@media(max-width: 640px){
-    .main-nav{
-        padding: 0px 1.5rem;
-    }
-    .main-nav .nav-wrapper .profile-wrape .profile-name{
-        display: none;
-    }
-}
+		
+		}
 
-@media only screen and (min-width: 320px) and (max-width: 575px) {
-    .alex-custom{
-        font-size: 32px !important;
+    .navbar-toggler {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+         right: 0;
+        top: 16px;
+        box-shadow: 0px 10px 20px rgba(52, 73, 94, 0.15);
+        border-radius: 22.5px;
+		
+		}
+.main-nav .nav-wrapper .logo-wrapper {
+  width: 90px;
+		
+    
+    }
+    .clt-sig-lnk{display: none;}
+
+    .cmp-lan-pad-box {
+        padding-top: 100px;
     }
     
+    .cmp-lad-flx-box {
+        display: block !important;
+    }
+    .ctl-web-lan-top h3 {
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+    }
+
+    .ctl-lad-key-box, .ctl-lan-btn-box {
+        width: 100% !important;
+    }
+    .ctl-lan-btn-box {
+        margin: 10px 0 0;
+    }
+
+    .ctl-lan-btn-box button{
+        width: 100% !important;
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
     .ctl-cli-mar-aut{
         margin: auto;
     }
@@ -50,9 +116,131 @@
     .cmp-cus-des-pad{
         padding-left: 15px !important;
     }
+
+    .media-list{display: none;}
     .ctl-msg-det-txt{
         margin-top: 10px;
     }
+
+    .cmp-lan-lis-fir {
+        position: relative;
+        top: 20px;
+        margin-bottom: 0px !important;
+    }
+
+    .cmp-lan-lis-fir, .cmp-lan-lis-sec, .cmp-lan-lis-thi, .cmp-lan-lis-fou, .cmp-lan-lis-fiv {
+        margin-bottom: 0;
+    }
+
+    .cmp-lan-lis-fou {
+        padding: 30px 15px;
+    }
+}
+@media(max-width: 640px){
+    .main-nav{
+        padding: 0px 1.5rem;
+    }
+    .main-nav .nav-wrapper .profile-wrape .profile-name{
+        display: none;
+    }
+}
+.ctl-lan-btn-box button{
+    text-transform: uppercase;
+}
+.fa-search {
+    color: #2b2525;
+    margin: 0px 0 0 10px;
+}
+@media only screen and (min-width: 320px) and (max-width: 667px) {
+    .alex-custom{
+        font-size: 32px !important;
+    }
+   .navbar-toggler {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        right: 0;
+        top: 16px;
+        box-shadow: 0px 10px 20px rgba(52, 73, 94, 0.15);
+        border-radius: 22.5px;
+    }
+    .clt-sig-lnk{display: none;}
+
+    .cmp-lan-pad-box {
+        padding-top: 100px;
+    }
+    
+    .cmp-lad-flx-box {
+        display: block !important;
+    }
+    .ctl-web-lan-top h3 {
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 47px;
+        text-align: center;
+    }
+
+    .ctl-lad-key-box, .ctl-lan-btn-box {
+        width: 100% !important;
+    }
+    .ctl-lan-btn-box {
+        margin: 10px 0 0;
+    }
+
+    .ctl-lan-btn-box button{
+        width: 100% !important;
+        font-family: Abel;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+
+    .ctl-cli-mar-aut{
+        margin: auto;
+    }
+    .ctl-cli-mem-txt h3{
+        font-size: 21px !important;
+        text-align: center!important;
+        padding-left:0 !important;
+        padding-top: 10px;
+    }
+    .ctl-onl-mem-txt{
+        margin-top: 10px;
+        padding-left: 0 !important;
+    }
+    .ctl-bak-cus-btn a {
+        display: block !important;
+        text-align: center !important;
+    }
+    .cmp-cus-des-pad{
+        padding-left: 15px !important;
+    }
+
+    .media-list{display: none;}
+    .ctl-msg-det-txt{
+        margin-top: 10px;
+    }
+
+    .cmp-lan-lis-fir {
+        position: relative;
+        top: 20px;
+        margin-bottom: 0px !important;
+    }
+
+    .cmp-lan-lis-fir, .cmp-lan-lis-sec, .cmp-lan-lis-thi, .cmp-lan-lis-fou, .cmp-lan-lis-fiv {
+        margin-bottom: 0;
+    }
+
+    .cmp-lan-lis-fou {
+        padding: 30px 15px;
+    }
+
     .ctl-out-goi-mes{
         display: -webkit-flex;
         display: -moz-flex;
@@ -100,7 +288,85 @@
         padding: 25px 15px !important;
     }
     .ctl-dow-cus-btn a{
-        width: 100% !important;
+        width: 80% !important;
+    }
+
+
+    /* ESR VALUE */
+    .esr-cen {
+        background-image: url(../images/esr-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+        padding: 60px 0 320px 0px;
+    }
+    
+    .esr-value {
+        background-color: #f7f7f8;
+        padding: 25px;
+        max-width: 470px;
+        margin: auto;
+    }
+    
+    
+    .header {
+        background: #56B9F1;
+        padding: 15px 5px 5px;
+    }
+    
+    .header h3 {
+        font-size: 20px;
+    }
+    
+    .title-area {
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    
+    .title-area .title{
+        font-size: 26px;
+    }
+    
+    .title-area .sub{
+        font-size: 18px;
+    }
+    
+    .content-area .title{
+        font-size: 18px;
+        line-height: 20px;
+        color: #5F5F5F;
+        text-align: center;
+    }
+    
+    .content-area .price{
+        font-size: 40px;
+        line-height: 60px;
+    }
+    
+    .content-area .offer{
+        font-size: 13px;
+    }
+    
+    .esr-value .ctl-con-btn {
+        text-align: center;
+        position: static;
+        margin-top: 7.57%;
+    }
+    
+    .esr-value .ctl-con-btn input{
+        background: #56B9F1;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 17px 25px;
+        color: #FFFFFF;
+        border: 0;
+    }
+    
+    .top-bar,.bottom-bar{
+        width: 100%;
     }
 }
 
@@ -176,6 +442,9 @@
     .ctl-hdr-fil-bot{
         padding: 30px 15px !important;
     }
+
+
+    
 
 }
 /*end of 576 X 767 resolution screen*/
