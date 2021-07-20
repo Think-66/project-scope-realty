@@ -53,3 +53,9 @@
   padding-top: 25%;
   opacity: .80;
 }
+
+.product-details-left-background {
+background: #3A4A5410;
+mix-blend-mode: normal;
+border-radius: 2px;
+}
