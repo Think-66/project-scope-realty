@@ -210,39 +210,39 @@ export default function ListingInterface({ property }) {
                               </li>
                               <li>
                                 <p>Listed By</p>
-                                <p>{property?.agent || "Unknown"}</p>
+                                <p>{property?.agent || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Floor</p>
-                                <p>{property?.floor || "Unknown"}</p>
+                                <p>{property?.floor || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Date Listed</p>
-                                <p>{property?.date || "Unknown"}</p>
+                                <p>{property?.date || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Date Available</p>
-                                <p>{property?.available || "Unknown"}</p>
+                                <p>{property?.available || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Min. Lease Term</p>
-                                <p>{property?.minLease || "Unknown"}</p>
+                                <p>{property?.minLease || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Max. Lease Term</p>
-                                <p>{property?.maxLease || "Unknown"}</p>
+                                <p>{property?.maxLease || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Pet Policy</p>
-                                <p>{property?.pet || "Unknown"}</p>
+                                <p>{property?.pet || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Exposure</p>
-                                <p>{property?.exposure || "Unknown"}</p>
+                                <p>{property?.exposure || "Not Available"}</p>
                               </li>
                               <li>
                                 <p>Condition</p>
-                                <p>{property.condition || "Unknown"}</p>
+                                <p>{property.condition || "Not Available"}</p>
                               </li>
                             </ul>
                           </div>
