@@ -1,4 +1,5 @@
 import { Provider } from "next-auth/client";
+import Head from 'next/head'
 
 import "../public/css/vendors/bootstrap.min.css";
 import "../public/css/vendors/calender-style.css";
@@ -17,6 +18,16 @@ export default function App({ Component, pageProps }) {
       }}
       session={pageProps.session}
     >
+      <Head>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/calendar.min.js"></script>
+        {/* <script src="/js/main.js"></script> */}
+        <script src="/js/owl.carousel.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="/js/app.js"></script>
+      </Head>
       <Component {...pageProps} />
     </Provider>
   );

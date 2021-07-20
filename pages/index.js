@@ -2,6 +2,7 @@ import Link from "next/link";
 import ClientLayout from "../components/client-layout";
 import { useRouter } from "next/router";
 import NavBarHeader from '../components/navBarHeader'
+import BootstrapNavBar from '../components/BootstrapNavBar'
 
 function Index({ featured }) {
 
@@ -16,7 +17,7 @@ function Index({ featured }) {
       <section>
         <div className="b-cen a-bac">
           <div className="cen-i-top">
-            <NavBarHeader />
+            <BootstrapNavBar />
           </div>
           <div className="cen-i-cen">
             <div className="container">

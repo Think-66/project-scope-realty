@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ClientLayout from "../../../components/client-layout";
 import AgentDetails from "../../../components/agent/agent-details";
 import AgentMenu from "../../../components/agent/agent-menu";
+// import { useParams } from "react-router-dom";
+import { useRouter } from "next/router";
+import { getAgentById } from "../../../services/agentAPIService";
 
 function Index({ listings, transactions, testimonials, press }) {
+  const router = useRouter();
+  const { id } = router.query;
+  const [agent, setAgent] = useState({});
+
   const [activeTab, setActiveTab] = useState("listing");
+
+  useEffect(() => {
+    console.log("id: ", id);
+    getAgentDetails();
+  }, []);
+
+  const getAgentDetails = async () => {
+    const agent = await getAgentById(id);
+    setAgent(agent[0]);
+    console.log("agent: ", agent);
+  };
 
   return (
     <ClientLayout darkNav={true}>
@@ -14,7 +32,7 @@ function Index({ listings, transactions, testimonials, press }) {
             <div className="cmp-bck-gry-blo">
               <div className="ctl-all-pad-blo">
                 <div className="container">
-                  <AgentDetails />
+                  <AgentDetails details={agent} />
 
                   <div className="ctl-tab-lnk-bot py-4">
                     <ul>

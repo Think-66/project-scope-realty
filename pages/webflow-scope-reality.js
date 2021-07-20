@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import ProtectedLayout from "../components/ProtectedLayout";
 import Link from "next/link";
-import NavBarHeader from '../components/navBarHeader'
+import NavBarHeader from '../components/navBarHeader';
+import BootstrapNavBar from '../components/BootstrapNavBar'
 import Footer from '../components/footer'
 import { getListingsDataa, getListingsRealtym } from '../services/listingApiService'
 
@@ -222,7 +223,7 @@ export default function PracticeExamPageOne({ listingType }) {
         <section>
           <div className="b-cen c-bac">
             <div className="cen-i-top">
-              <NavBarHeader />
+              <BootstrapNavBar />
             </div>
             <div className="cen-i-cen">
               <div className="container">

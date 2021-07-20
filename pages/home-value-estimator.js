@@ -2,6 +2,7 @@ import ClientLayout from "../components/client-layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import NavBarHeader from '../components/navBarHeader'
+import BootstrapNavBar from '../componentsBootstrapNavBar';
 
 function HomeValueEstimator() {
 
@@ -16,7 +17,7 @@ function HomeValueEstimator() {
             <section>
                 <div className="b-cen e-bac">
                     <div className="cen-i-top">
-                        <NavBarHeader />
+                        <BootstrapNavBar />
                     </div>
                     <div className="cen-i-cen">
                         <div className="container">
