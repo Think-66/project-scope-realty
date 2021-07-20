@@ -1,4 +1,10 @@
-function AgentDetails() {
+import { useEffect } from "react";
+
+function AgentDetails({ details }) {
+  useEffect(() => {
+    console.log("details: ", details);
+  });
+
   return (
     <div className="ctl-ceo-bck-blo">
       <div className="row">
@@ -502,7 +508,7 @@ function AgentDetails() {
           <div className="cmp-cel-rit-blo">
             <div className="ctl-rit-blo-top">
               <div className="ctl-ceo-nam-top">
-                <h4>Paul Reisner</h4>
+                <h4>{details.firstname + " " + details.lastname}</h4>
               </div>
               <div className="ctl-ceo-des-bot">
                 <h4>
@@ -520,7 +526,7 @@ function AgentDetails() {
                       fill="black"
                     />
                   </svg>
-                  President / CEO / Broker
+                  {details.title}
                 </h4>
               </div>
               <div className="clearfix" />
