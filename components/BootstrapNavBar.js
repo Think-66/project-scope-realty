@@ -45,7 +45,7 @@ export default function BootstrapNavBar() {
                 <div className="ctl-nav-lnk-txt">About Us</div>
               </OverlayTrigger>
             </Nav.Link>
-            <Nav.Link href="/webflow-scope-reality?listingType=listingRent">
+            <Nav.Link href="/listing-interface?listingType=listingRent">
               <div className=" ctl-nav-lnk-txt">
                 Rent
               </div>
@@ -55,12 +55,12 @@ export default function BootstrapNavBar() {
                 Buy
               </div>
             </Nav.Link>
-            <Nav.Link href="/webflow-scope-reality?listingType=listingSale">
+            <Nav.Link href="/listing-interface?listingType=listingSale">
               <div className=" ctl-nav-lnk-txt">
                 Sell
               </div>
             </Nav.Link>
-            <Nav.Link href="/webflow-scope-reality?listingType=listingSale">
+            <Nav.Link href="/listing-interface?listingType=listingSale">
               <div className="clt-sig-lnk">
                 SIGN IN
               </div>
