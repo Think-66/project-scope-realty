@@ -2,7 +2,7 @@ import ClientLayout from "../components/client-layout";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import NavBarHeader from '../components/navBarHeader'
-import BootstrapNavBar from '../componentsBootstrapNavBar';
+import BootstrapNavBar from '../components/BootstrapNavBar';
 
 function HomeValueEstimator() {
 
