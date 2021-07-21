@@ -50,17 +50,17 @@ export default function BootstrapNavBar() {
                 Rent
               </div>
             </Nav.Link>
-            <Nav.Link href="/buy">
+            <Nav.Link href="/listing-interface?listingType=listingSale">
               <div className=" ctl-nav-lnk-txt">
                 Buy
               </div>
             </Nav.Link>
-            <Nav.Link href="/listing-interface?listingType=listingSale">
+            <Nav.Link href="/sell">
               <div className=" ctl-nav-lnk-txt">
                 Sell
               </div>
             </Nav.Link>
-            <Nav.Link href="/listing-interface?listingType=listingSale">
+            <Nav.Link href="/login">
               <div className="clt-sig-lnk">
                 SIGN IN
               </div>

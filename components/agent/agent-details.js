@@ -508,7 +508,7 @@ function AgentDetails({ details }) {
           <div className="cmp-cel-rit-blo">
             <div className="ctl-rit-blo-top">
               <div className="ctl-ceo-nam-top">
-                <h4>{details.firstname + " " + details.lastname}</h4>
+                <h4>{details ? (details.firstname + " " + details.lastname) : ""}</h4>
               </div>
               <div className="ctl-ceo-des-bot">
                 <h4>
@@ -526,7 +526,7 @@ function AgentDetails({ details }) {
                       fill="black"
                     />
                   </svg>
-                  {details.title}
+                  {details ? details.title : ""}
                 </h4>
               </div>
               <div className="clearfix" />

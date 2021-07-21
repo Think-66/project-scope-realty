@@ -80,14 +80,14 @@ export default function NavBarHeader({
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/buy" passHref>
+                  <Link href="/listing-interface?listingType=listingSale" passHref>
                     <a className="ctl-nav-lnk-txt" href="#">
                       Buy
                     </a>
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link href="/listing-interface?listingType=listingSale" passHref>
+                  <Link href="/sell" passHref>
                     <a className="ctl-nav-lnk-txt" href="#">
                       Sell
                     </a>

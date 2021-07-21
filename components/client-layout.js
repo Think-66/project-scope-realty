@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
-import NavBarHeader from './navBarHeader'
+import BootstrapNavBar from './BootstrapNavBar'
 import Footer from '../components/footer'
 
 export default function ClientLayout({
@@ -20,7 +20,7 @@ export default function ClientLayout({
       {!noHeader && (
         <div className="b-cen d-bac">
           <div className="cen-i-top">
-            <NavBarHeader darkNav={darkNav} />
+            <BootstrapNavBar darkNav={darkNav} />
           </div>
           {title && (
             <div className="cen-i-cen">
