@@ -36,7 +36,7 @@ function Index() {
     const data = dataList.slice(skip, perPage + skip);
     setCurrentAgentList(data);
   };
-
+  console.log("Agent list ", currentAgentList)
   return (
     <ClientLayout title="Agents">
       <div className="b-bot">
@@ -55,7 +55,7 @@ function Index() {
                           <div className="col-sm-12 col-md-12 col-lg-4">
                             <div className="cmp-ceo-blo-box">
                               <div className="ctl-age-ico-top">
-                                <img src="../images/ceo-paul.png" alt="" />
+                                <img src={agent.image || 'images/avatar-placeholder.jpg'} alt="" />
                               </div>
                             </div>
                           </div>

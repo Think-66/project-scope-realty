@@ -264,7 +264,7 @@ export default function ListingInterface({ property }) {
         </div>
       </ClientLayout>
       <div className="modal" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div className="modal-dialog" role="document">
+        <div className="modal-dialog" style={{ top: '10%' }} role="document">
           <div className="modal-content">
             <div className="modal-header" style={{ background: '#3A4A54' }}>
               <div className="container">

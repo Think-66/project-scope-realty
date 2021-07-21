@@ -295,194 +295,205 @@ export default function PracticeExamPageOne({ listingType }) {
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-8">
                       <div className="ctl-tab-eso-top">
-                        <div className="ctl-pil-tab-top">
-                          <div className="cmp-lis-hdr">
-                            <h3>Search By</h3>
+                        <div className="row">
+                          <div className="col-md-6 col-lg-6 pb-4">
+                            <div>
+                              <div className="cmp-lis-hdr">
+                                <h3>Search By</h3>
+                              </div>
+                              <ul
+                                className="ctl-tab-ind-bot nav nav-tabs"
+                                id="myTabMD"
+                                role="tablist"
+                              >
+                                <li className="nav-item waves-effect waves-light">
+                                  <a
+                                    className={filters.searchBy == "location" ? "active" : ""}
+                                    id="first-tab" data-toggle="tab" href="#tab-first" role="tab" aria-controls="tab-first"
+                                    id="location-tab"
+                                    onClick={() => onClick("searchBy", "location")}
+                                  >
+                                    Location
+                                  </a>
+                                </li>
+                                <li className="nav-item waves-effect waves-light">
+                                  <a
+                                    className={filters.searchBy == "zipCode" ? "active" : ""}
+                                    onClick={() => onClick("searchBy", "zipCode")}
+                                    id="second-tab" data-toggle="tab" href="#tab-second" role="tab" aria-controls="tab-second"
+                                    id="zipCode-tab"
+                                  >
+                                    Zip Code
+                                  </a>
+                                </li>
+                                <li className="nav-item waves-effect waves-light">
+                                  <a
+                                    id="bedrooms-tab"
+                                    className={filters.searchBy == "bedrooms" ? "active" : ""}
+                                    onClick={() => onClick("searchBy", "bedrooms")}
+                                    id="third-tab" data-toggle="tab" href="#tab-third" role="tab" aria-controls="tab-third"
+                                  >
+                                    Bedrooms
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
-                          <ul
-                            className="ctl-tab-ind-bot nav nav-tabs"
-                            id="myTabMD"
-                            role="tablist"
-                          >
-                            <li className="nav-item waves-effect waves-light">
-                              <a
-                                className={filters.searchBy == "location" ? "active" : ""}
-                                id="location-tab"
-                                onClick={() => onClick("searchBy", "location")}
+                          <div className="col-md-6 col-lg-6">
+                            <div
+                              className="tab-content"
+                              id="myTabContentMD"
+                            >
+                              <div
+                                className="tab-pane fade active show"
+                                id="tab-first"
+                                role="tabpanel"
+                                aria-labelledby="first-tab"
                               >
-                                Location
-                              </a>
-                            </li>
-                            <li className="nav-item waves-effect waves-light">
-                              <a
-                                className={filters.searchBy == "zipCode" ? "active" : ""}
-                                onClick={() => onClick("searchBy", "zipCode")}
-                                id="zipCode-tab"
+                                <div className="cmp-lis-hdr">
+                                  <h3>{filters.searchBy}</h3>
+                                </div>
+                                <div className="ctl-tab-eso-top">
+                                  <div className="ctl-frm-pot-box">
+                                    <label htmlFor="location" />
+                                    <input
+                                      type="search"
+                                      id="search"
+                                      name="searchText"
+                                      onChange={onChange}
+                                      value={filters.searchText}
+                                      className="ctl-pot-inp-box"
+                                      placeholder={`Type ${filters.searchBy}`}
+                                      required
+                                    />
+                                  </div>
+                                  <div className="ctl-pot-btn-bot">
+                                    <button type="submit">
+                                      <svg
+                                        width="15px"
+                                        height="15px"
+                                        viewBox="0 0 15 15"
+                                        version="1.1"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g id="24--basic--screenshot">
+                                          <path
+                                            d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
+                                            transform="translate(1.875 0.9375)"
+                                            id="icon"
+                                            fill="#000000"
+                                            fillRule="evenodd"
+                                            stroke="none"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div className="clearfix" />
+                                </div>
+                                <div className="clearfix" />
+                              </div>
+                              <div
+                                className="tab-pane fade"
+                                id="tab-second"
+                                role="tabpanel"
+                                aria-labelledby="second-tab"
                               >
-                                Zip Code
-                              </a>
-                            </li>
-                            <li className="nav-item waves-effect waves-light">
-                              <a
-                                id="bedrooms-tab"
-                                className={filters.searchBy == "bedrooms" ? "active" : ""}
-                                onClick={() => onClick("searchBy", "bedrooms")}
+                                <div className="cmp-lis-hdr">
+                                  <h3>Zip Code</h3>
+                                </div>
+                                <div className="ctl-tab-eso-top">
+                                  <div className="ctl-frm-pot-box">
+                                    <label htmlFor="zipcode" />
+                                    <input
+                                      type="text"
+                                      id="zipcode"
+                                      className="ctl-pot-inp-box"
+                                      placeholder="Type Zipcode"
+                                      required
+                                    />
+                                  </div>
+                                  <div className="ctl-pot-btn-bot">
+                                    <button type="submit">
+                                      <svg
+                                        width="15px"
+                                        height="15px"
+                                        viewBox="0 0 15 15"
+                                        version="1.1"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g id="24--basic--screenshot">
+                                          <path
+                                            d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
+                                            transform="translate(1.875 0.9375)"
+                                            id="icon"
+                                            fill="#000000"
+                                            fillRule="evenodd"
+                                            stroke="none"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div className="clearfix" />
+                                </div>
+                                <div className="clearfix" />
+                              </div>
+                              <div
+                                className="tab-pane fade"
+                                id="tab-third"
+                                role="tabpanel"
+                                aria-labelledby="third-tab"
                               >
-                                Bedrooms
-                              </a>
-                            </li>
-                          </ul>
+                                <div className="cmp-lis-hdr">
+                                  <h3>Bedrooms</h3>
+                                </div>
+                                <div className="ctl-tab-eso-top">
+                                  <div className="ctl-frm-pot-box">
+                                    <label htmlFor="bedrooms" />
+                                    <input
+                                      type="text"
+                                      id="bedrooms"
+                                      className="ctl-pot-inp-box"
+                                      placeholder="Type Bedrooms"
+                                      required
+                                    />
+                                  </div>
+                                  <div className="ctl-pot-btn-bot">
+                                    <button type="submit">
+                                      <svg
+                                        width="15px"
+                                        height="15px"
+                                        viewBox="0 0 15 15"
+                                        version="1.1"
+                                        xmlnsXlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                      >
+                                        <g id="24--basic--screenshot">
+                                          <path
+                                            d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
+                                            transform="translate(1.875 0.9375)"
+                                            id="icon"
+                                            fill="#000000"
+                                            fillRule="evenodd"
+                                            stroke="none"
+                                          />
+                                        </g>
+                                      </svg>
+                                    </button>
+                                  </div>
+                                  <div className="clearfix" />
+                                </div>
+                                <div className="clearfix" />
+                              </div>
+                              <div className="clearfix" />
+                            </div>
+                          </div>
                         </div>
-                        <div
-                          className="tab-content cmp-lft-pad"
-                          id="myTabContentMD"
-                        >
-                          <div
-                            className="tab-pane fade active show"
-                            id="tab-first"
-                            role="tabpanel"
-                            aria-labelledby="first-tab"
-                          >
-                            <div className="cmp-lis-hdr">
-                              <h3>{filters.searchBy}</h3>
-                            </div>
-                            <div className="ctl-tab-eso-top">
-                              <div className="ctl-frm-pot-box">
-                                <label htmlFor="location" />
-                                <input
-                                  type="search"
-                                  id="search"
-                                  name="searchText"
-                                  onChange={onChange}
-                                  value={filters.searchText}
-                                  className="ctl-pot-inp-box"
-                                  placeholder={`Type ${filters.searchBy}`}
-                                  required
-                                />
-                              </div>
-                              <div className="ctl-pot-btn-bot">
-                                <button type="submit">
-                                  <svg
-                                    width="15px"
-                                    height="15px"
-                                    viewBox="0 0 15 15"
-                                    version="1.1"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <g id="24--basic--screenshot">
-                                      <path
-                                        d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
-                                        transform="translate(1.875 0.9375)"
-                                        id="icon"
-                                        fill="#000000"
-                                        fillRule="evenodd"
-                                        stroke="none"
-                                      />
-                                    </g>
-                                  </svg>
-                                </button>
-                              </div>
-                              <div className="clearfix" />
-                            </div>
-                            <div className="clearfix" />
-                          </div>
-                          <div
-                            className="tab-pane fade"
-                            id="tab-second"
-                            role="tabpanel"
-                            aria-labelledby="second-tab"
-                          >
-                            <div className="cmp-lis-hdr">
-                              <h3>Zip Code</h3>
-                            </div>
-                            <div className="ctl-tab-eso-top">
-                              <div className="ctl-frm-pot-box">
-                                <label htmlFor="zipcode" />
-                                <input
-                                  type="text"
-                                  id="zipcode"
-                                  className="ctl-pot-inp-box"
-                                  placeholder="Type Zipcode"
-                                  required
-                                />
-                              </div>
-                              <div className="ctl-pot-btn-bot">
-                                <button type="submit">
-                                  <svg
-                                    width="15px"
-                                    height="15px"
-                                    viewBox="0 0 15 15"
-                                    version="1.1"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <g id="24--basic--screenshot">
-                                      <path
-                                        d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
-                                        transform="translate(1.875 0.9375)"
-                                        id="icon"
-                                        fill="#000000"
-                                        fillRule="evenodd"
-                                        stroke="none"
-                                      />
-                                    </g>
-                                  </svg>
-                                </button>
-                              </div>
-                              <div className="clearfix" />
-                            </div>
-                            <div className="clearfix" />
-                          </div>
-                          <div
-                            className="tab-pane fade"
-                            id="tab-third"
-                            role="tabpanel"
-                            aria-labelledby="third-tab"
-                          >
-                            <div className="cmp-lis-hdr">
-                              <h3>Bedrooms</h3>
-                            </div>
-                            <div className="ctl-tab-eso-top">
-                              <div className="ctl-frm-pot-box">
-                                <label htmlFor="bedrooms" />
-                                <input
-                                  type="text"
-                                  id="bedrooms"
-                                  className="ctl-pot-inp-box"
-                                  placeholder="Type Bedrooms"
-                                  required
-                                />
-                              </div>
-                              <div className="ctl-pot-btn-bot">
-                                <button type="submit">
-                                  <svg
-                                    width="15px"
-                                    height="15px"
-                                    viewBox="0 0 15 15"
-                                    version="1.1"
-                                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                    <g id="24--basic--screenshot">
-                                      <path
-                                        d="M4.65869 13.2009L5.625 14.062L6.59131 13.2009C9.67697 10.4509 11.25 8.00823 11.25 5.72166C11.25 2.47541 8.75872 0 5.625 0C2.49128 0 0 2.47541 0 5.72166C0 8.00823 1.57303 10.4509 4.65869 13.2009ZM5.625 1.875C7.72586 1.875 9.375 3.51363 9.375 5.72166C9.375 7.28695 8.15813 9.23146 5.625 11.5473C3.09187 9.23146 1.875 7.28695 1.875 5.72166C1.875 3.51363 3.52414 1.875 5.625 1.875ZM5.625 2.8125C7.1783 2.8125 8.4375 4.0717 8.4375 5.625C8.4375 7.1783 7.1783 8.4375 5.625 8.4375C4.0717 8.4375 2.8125 7.1783 2.8125 5.625C2.8125 4.0717 4.0717 2.8125 5.625 2.8125ZM4.6875 5.625C4.6875 5.10723 5.10723 4.6875 5.625 4.6875C6.14277 4.6875 6.5625 5.10723 6.5625 5.625C6.5625 6.14277 6.14277 6.5625 5.625 6.5625C5.10723 6.5625 4.6875 6.14277 4.6875 5.625Z"
-                                        transform="translate(1.875 0.9375)"
-                                        id="icon"
-                                        fill="#000000"
-                                        fillRule="evenodd"
-                                        stroke="none"
-                                      />
-                                    </g>
-                                  </svg>
-                                </button>
-                              </div>
-                              <div className="clearfix" />
-                            </div>
-                            <div className="clearfix" />
-                          </div>
-                          <div className="clearfix" />
-                        </div>
+
+
                         <div className="clearfix" />
                       </div>
                       <div className="clearfix" />
@@ -758,96 +769,118 @@ export default function PracticeExamPageOne({ listingType }) {
                           return (<li key={index}>
                             <div className="cmp-lis-flx-inf">
                               <div className="ctl-inf-com-con">
-                                <div className="ctl-lis-pic-lft cursor-pointer" onClick={() => onSelectProperty(item.api, item.id)}>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-lis-pic-con">
-                                        <img src={item.image} alt="" />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="ctl-lis-inf-rit">
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Building</div>
+                                <div className="container p-0 m-0">
+                                  <div className="row">
+                                    <div className="col-md-12 col-lg-2">
+                                      <div className="ctl-lis-pic-lft cursor-pointer" onClick={() => onSelectProperty(item.api, item.id)}>
+                                        <div>
+                                          <div className="ctl-com-inf-con">
+                                            <div className="ctl-lis-pic-con">
+                                              <img src={item.image} alt="" />
+                                            </div>
+                                          </div>
                                         </div>
                                       </div>
-                                      <div className="ctl-bui-com-des">
-                                        <h3>{item.building?.address}</h3>
-                                        <p>{item.building?.house}</p>
-                                        <p>{item.building?.street}</p>
-                                      </div>
-                                      <div className="clearfix" />
                                     </div>
-                                  </div>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Unit</div>
+                                    <div className="col-md-12 col-lg-10">
+                                      <div className="">
+                                        <div className="container p-0 m-0">
+                                          <div className="row">
+                                            <div className="col-lg-6 col-md-12">
+                                              <div className="ctl-lis-inf-rit p-3 m-0">
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Building</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <h3>{item.building?.address}</h3>
+                                                      <p>{item.building?.house}</p>
+                                                      <p>{item.building?.street}</p>
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Unit</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <p>{item.unit}</p>
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Location</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <p>{item.location?.neighborhoods}, {item.location?.city}</p>
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div className="col-lg-6 col-md-12">
+                                              <div className="ctl-lis-inf-rit p-3 m-0">
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Price</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <p>${item.price}</p>
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Layout</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <p>{item.layout?.bedRooms} Bed</p>
+                                                      <p>{item.layout?.bathrooms}  Baths</p>
+                                                      {item.layout?.squareFootage && <p>{item.layout?.squareFootage}  SQFT </p>}
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                                <div className="pb-3">
+                                                  <div className="ctl-com-inf-con">
+                                                    <div className="ctl-bui-com-hdr">
+                                                      <div className="ctl-lis-sel-inf">
+                                                        <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Date Available</div>
+                                                      </div>
+                                                    </div>
+                                                    <div className="ctl-bui-com-des">
+                                                      <p>{item.availability}</p>
+                                                    </div>
+                                                    <div className="clearfix" />
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
+
+
                                       </div>
-                                      <div className="ctl-bui-com-des">
-                                        <p>{item.unit}</p>
-                                      </div>
-                                      <div className="clearfix" />
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Location</div>
-                                        </div>
-                                      </div>
-                                      <div className="ctl-bui-com-des">
-                                        <p>{item.location?.neighborhoods}, {item.location?.city}</p>
-                                      </div>
-                                      <div className="clearfix" />
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Price</div>
-                                        </div>
-                                      </div>
-                                      <div className="ctl-bui-com-des">
-                                        <p>${item.price}</p>
-                                      </div>
-                                      <div className="clearfix" />
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Layout</div>
-                                        </div>
-                                      </div>
-                                      <div className="ctl-bui-com-des">
-                                        <p>{item.layout?.bedRooms} Bed</p>
-                                        <p>{item.layout?.bathrooms}  Baths</p>
-                                        {item.layout?.squareFootage && <p>{item.layout?.squareFootage}  SQFT </p>}
-                                      </div>
-                                      <div className="clearfix" />
-                                    </div>
-                                  </div>
-                                  <div>
-                                    <div className="ctl-com-inf-con">
-                                      <div className="ctl-bui-com-hdr">
-                                        <div className="ctl-lis-sel-inf">
-                                          <div style={{ color: "#3898ec", fontSize: "16px", fontWeight: "bold" }}>Date Available</div>
-                                        </div>
-                                      </div>
-                                      <div className="ctl-bui-com-des">
-                                        <p>{item.availability}</p>
-                                      </div>
-                                      <div className="clearfix" />
                                     </div>
                                   </div>
                                 </div>

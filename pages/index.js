@@ -3,6 +3,7 @@ import ClientLayout from "../components/client-layout";
 import { useRouter } from "next/router";
 import NavBarHeader from '../components/navBarHeader'
 import BootstrapNavBar from '../components/BootstrapNavBar'
+import { Col, Row, Container, Image } from "react-bootstrap";
 
 function Index({ featured }) {
 
@@ -58,40 +59,48 @@ function Index({ featured }) {
                     </div>
                   </div>
                 </div>
-                <div className="cmp-pad-bot-pad">
-                  <div className="row">
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/netflix.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/hgtv.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/bravio.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/nbc.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/discovery.png" alt="" />
-                      </div>
-                    </div>
-                    <div className="col-sm-12 col-md-2 col-lg-2">
-                      <div className="ctl-lan-cli-pic">
-                        <img src="/images/netflix.png" alt="" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <Container>
+                  <Row>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/netflix.png" style={{ height: 25, width: 50 }} />
+                    </Col>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/hgtv.png" style={{ height: 25, width: 50 }} />
+                    </Col>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/bravio.png" style={{ height: 25, width: 55 }} />
+                    </Col>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/nbc.png" style={{ height: 25, width: 50 }} />
+                    </Col>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/discovery.png" style={{ height: 25, width: 70 }} />
+                    </Col>
+                    <Col xs={4} sm={2} className="d-sm d-lg-none">
+                      <Image src="/images/netflix.png" style={{ height: 25, width: 50 }} />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/netflix.png" />
+                    </Col>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/hgtv.png" />
+                    </Col>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/bravio.png" />
+                    </Col>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/nbc.png" />
+                    </Col>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/discovery.png" />
+                    </Col>
+                    <Col md={2} lg={2} className="d-none d-lg-block">
+                      <Image src="/images/netflix.png" />
+                    </Col>
+                  </Row>
+                </Container>
                 <div className="clearfix" />
               </div>
             </div>
@@ -363,7 +372,7 @@ function Index({ featured }) {
                         </p>
                       </div>
                       <div className="ctl-giv-brn-bot">
-                        <a href="#!">Contact us today</a>
+                        <a type="button" className="btn btn-primary py-2" style={{ background: '#4AAEE8', borderColor: '#4AAEE8' }} data-toggle="modal" data-target="#contactModal">Contact us today</a>
                       </div>
                       <div className="clearfix" />
                     </div>
