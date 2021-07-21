@@ -1633,7 +1633,7 @@ ul.cmp-mar-cus-bot li:not(:last-child){
     padding-top: 140px;
 }
 .cmp-lad-top-pad{
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 .cmp-pad-bot-pad{
     padding-bottom: 30px;
