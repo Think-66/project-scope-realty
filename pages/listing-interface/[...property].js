@@ -7,6 +7,9 @@ import {
 } from "../../services/listingApiService";
 import { followUpBoss } from "../../services/crmAPIServices";
 
+const RENT = "Rent";
+const SELL = "Sell";
+
 export default function ListingInterface({ property }) {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -25,17 +28,54 @@ export default function ListingInterface({ property }) {
   };
 
   const onFormSubmit = async () => {
-    const data = {
-      createdAt: "2021-07-20",
-      firstName: formData.firstName,
-      lastName: formData.lastName,
-      stage: "Lead",
-      emails: [formData.email],
-      phones: [formData.mobile],
-      // assignedLenderId: property.id,
-      // customMsg: formData.message,
-    };
-    const res = await followUpBoss(data);
+    let dt = new Date();
+    if (property.status === RENT) { //Follow up boss lead
+      const data = {
+        createdAt: dt.toUTCString,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        stage: "Lead",
+        emails: [formData.email],
+        phones: [formData.mobile],
+        // assignedLenderId: property.id,
+        // customMsg: formData.message,
+        source: window.location.href,
+        // custMessage: formData.message
+      };
+
+      const res = await followUpBoss(data);
+      $('#propertyContactModal').modal('hide');
+      router.push('/listing-interface/confirm');
+    }
+    else if (property.status === SELL) { // Top producer lead
+
+      const data = {
+        createdAt: dt.toUTCString,
+        name: formData.firstName + ' ' + formData.lastName,
+        stage: "Lead",
+        email: formData.email,
+        phone: formData.mobile,
+        note: formData.message,
+        // assignedLenderId: property.id,
+        // customMsg: formData.message,
+        source: window.location.href
+      };
+
+      fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      }).then((res) => {
+        console.log('Response received')
+        if (res.status === 200) {
+          $('#propertyContactModal').modal('hide');
+          router.push('/listing-interface/confirm');
+        }
+      });
+    }
   };
 
   const router = useRouter();
@@ -249,7 +289,7 @@ export default function ListingInterface({ property }) {
                           <div className="clearfix" />
                         </div>
                         <div className="cmp-prd-cot-bot">
-                          <button type="button" className="btn btn-primary rounded-pill py-2 w-100" style={{ background: '#4AAEE8', borderColor: '#4AAEE8' }} data-toggle="modal" data-target="#contactModal">
+                          <button type="button" className="btn btn-primary rounded-pill py-2 w-100" style={{ background: '#4AAEE8', borderColor: '#4AAEE8' }} data-toggle="modal" data-target="#propertyContactModal">
                             Get In Touch
                           </button>
                         </div>
@@ -263,7 +303,7 @@ export default function ListingInterface({ property }) {
           </div>
         </div>
       </ClientLayout>
-      <div className="modal" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div className="modal" id="propertyContactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div className="modal-dialog" style={{ top: '10%' }} role="document">
           <div className="modal-content">
             <div className="modal-header" style={{ background: '#3A4A54' }}>
@@ -367,6 +407,7 @@ export async function getServerSideProps(context) {
   ) {
     const res = await getListingsDataaById(context.query.property[1]);
     if (res?.LISTINGS?.length > 0) {
+      console.log("res.LISTINGS[0].STATUS: ", res.LISTINGS[0].STATUS);
       tempRes.price = res.LISTINGS[0].PRICE;
       tempRes.rooms = res.LISTINGS[0].TOTAL_ROOMS;
       tempRes.bathRooms = res.LISTINGS[0].BATHROOMS;
@@ -388,10 +429,12 @@ export async function getServerSideProps(context) {
           ? res.LISTINGS[0].PHOTOS.map((o) => o.PHOTO_URL)
           : [];
       tempRes.address = res.LISTINGS[0].ADDRESS;
+      tempRes.status = res.LISTINGS[0].STATUS === "For Rent" ? RENT : SELL;
     }
   } else {
     const res = await getListingsRealtymById(context.query.property[1]);
     if (res?.length > 0) {
+      console.log("res[0].main_status: ", res[0].main_status);
       tempRes.price = res[0].financials_price;
       tempRes.rooms = res[0].essentials_rooms;
       tempRes.bathRooms = res[0].essentials_bath;
@@ -407,6 +450,7 @@ export async function getServerSideProps(context) {
       tempRes.description = res[0].main_description;
       tempRes.images = [res[0].main_image];
       tempRes.address = res[0].main_address;
+      tempRes.status = res[0].main_status === "For Rent" ? RENT : SELL;
     }
   }
   return { props: { property: tempRes } };

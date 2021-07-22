@@ -6,8 +6,11 @@ import NavBarHeader from '../../components/navBarHeader';
 import BootstrapNavBar from '../../components/BootstrapNavBar'
 import Footer from '../../components/footer'
 import { getListingsDataa, getListingsRealtym } from '../../services/listingApiService'
+import ReactPaginate from 'react-paginate';
 
 export default function PracticeExamPageOne({ listingType }) {
+
+  const [pageCount, setPageCount] = useState(10);
   const router = useRouter();
   const [items, setItems] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -52,16 +55,28 @@ export default function PracticeExamPageOne({ listingType }) {
     onSearch()
   }, [listingType]);
 
-  const onSearch = async () => {
+
+  const handlePageClick = (e) => {
+    const selectedPage = e.selected;
+    onSearch(selectedPage)
+    window.scrollTo(0, 0);
+  };
+
+  const onSearch = async (page) => {
     setIsLoading(true)
 
     const dataaReq = {
+      page: page ? page : 1,
+      limit: 10,
+      status: filters.listingType == "listingRent" ? 2 : 1,
       amenities: "",
       extras: "",
     }
     const tempListingDataa = await getListingsDataa(dataaReq)
 
     const realtymReq = {
+      page: page ? page : 1,
+      perPage: 10,
       amenities: "",
       extras: "",
       type: "",
@@ -115,7 +130,7 @@ export default function PracticeExamPageOne({ listingType }) {
       realtymReq.city = filters.searchText
       realtymReq.zipcode = filters.searchText
     }
-    const tempListingRealtym = await getListingsRealtym(realtymReq)
+    const tempListingRealtym = await getListingsRealtym(realtymReq);
     mapData(tempListingDataa, tempListingRealtym)
   }
 
@@ -180,6 +195,7 @@ export default function PracticeExamPageOne({ listingType }) {
     })
 
     setItems(tempItems)
+    setPageCount(Math.floor(itemCount / 20) + (itemCount % 20 > 0 ? 1 : 0))
     setIsLoading(false)
   }
 
@@ -889,6 +905,21 @@ export default function PracticeExamPageOne({ listingType }) {
                           </li>)
                         })}
                     </ul>
+                  </div>
+                  <div className="row justify-content-center mt-3">
+                    <ReactPaginate
+                      previousLabel={"<"}
+                      nextLabel={">"}
+                      breakLabel={"..."}
+                      breakClassName={"break-me"}
+                      pageCount={pageCount}
+                      marginPagesDisplayed={2}
+                      pageRangeDisplayed={5}
+                      onPageChange={handlePageClick}
+                      containerClassName={"pagination"}
+                      subContainerClassName={"pages pagination"}
+                      activeClassName={"active"}
+                    />
                   </div>
                   <div className="clearfix" />
                 </div>

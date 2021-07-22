@@ -2,6 +2,7 @@ import { Provider } from "next-auth/client";
 import Head from 'next/head'
 import React, { useState } from 'react'
 import { followUpBoss } from "../services/crmAPIServices";
+import { useRouter } from 'next/router'
 
 import "../public/css/vendors/bootstrap.min.css";
 import "../public/css/vendors/calender-style.css";
@@ -12,7 +13,7 @@ import "../public/css/core.css";
 import "../public/css/custom.css";
 
 export default function App({ Component, pageProps }) {
-
+  const router = useRouter();
   const [contactFormData, setContactFormData] = useState({
     firstName: "",
     lastName: "",
@@ -30,17 +31,24 @@ export default function App({ Component, pageProps }) {
   };
 
   const onFormSubmit = async () => {
+    let dt = new Date();
+
     const data = {
-      createdAt: "2021-07-20",
+      createdAt: dt.toUTCString,
       firstName: contactFormData.firstName,
       lastName: contactFormData.lastName,
       stage: "Lead",
       emails: [contactFormData.email],
       phones: [contactFormData.mobile],
       // assignedLenderId: property.id,
-      // customMsg: contactFormData.message,
+      // customMsg: formData.message,
+      source: window.location.href,
+      // custMessage: formData.message
     };
+
     const res = await followUpBoss(data);
+    $('#contactModal').modal('hide');
+    router.push('/listing-interface/confirm');
   };
 
   return (
