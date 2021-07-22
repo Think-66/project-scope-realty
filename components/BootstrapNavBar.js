@@ -18,7 +18,7 @@ export default function BootstrapNavBar() {
             </Link>
           </div>
           <div className="row my-2">
-            <Link href="/">
+            <Link href="/Press">
               <div className="text-dark font-weight-bold">Press</div>
             </Link>
           </div>

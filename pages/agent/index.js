@@ -635,70 +635,23 @@ function Index() {
                     aria-label="Page navigation example"
                     className="cmp-exp-pge-lnk"
                   >
-                    <ul className="pagination">
-                      <li className="page-item">
-                        <a
-                          className="cmp-page-link active"
-                          href="#"
-                          aria-label="Previous"
-                        >
-                          <span aria-hidden="true">«</span>
-                          <span className="sr-only">Previous</span>
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="cmp-page-link" href="#">
-                          1
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="cmp-page-link" href="#">
-                          2
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="cmp-page-link" href="#">
-                          3
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="cmp-page-link" href="#">
-                          4
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a className="cmp-page-link" href="#">
-                          5
-                        </a>
-                      </li>
-                      <li className="page-item">
-                        <a
-                          className="cmp-page-link active"
-                          href="#"
-                          aria-label="Next"
-                        >
-                          <span aria-hidden="true">»</span>
-                          <span className="sr-only">Next</span>
-                        </a>
-                      </li>
-                    </ul>
+                    <ReactPaginate
+                      previousLabel={"<"}
+                      nextLabel={">"}
+                      breakLabel={"..."}
+                      breakClassName={"break-me"}
+                      pageCount={pageCount}
+                      marginPagesDisplayed={2}
+                      pageRangeDisplayed={5}
+                      onPageChange={handlePageClick}
+                      containerClassName={"pagination"}
+                      subContainerClassName={"pages pagination"}
+                      activeClassName={"active"}
+                    />
                   </nav>
                 </div>
               </div>
 
-              <ReactPaginate
-                previousLabel={"<"}
-                nextLabel={">"}
-                breakLabel={"..."}
-                breakClassName={"break-me"}
-                pageCount={pageCount}
-                marginPagesDisplayed={2}
-                pageRangeDisplayed={5}
-                onPageChange={handlePageClick}
-                containerClassName={"pagination"}
-                subContainerClassName={"pages pagination"}
-                activeClassName={"active"}
-              />
 
               <div className="clearfix" />
             </div>
