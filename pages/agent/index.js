@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ClientLayout from "../../components/client-layout";
-import { getAgents } from "../../services/agentAPIService";
+import { getAgentImageById, getAgents } from "../../services/agentAPIService";
 import ReactPaginate from "react-paginate";
 
 function Index() {
@@ -34,6 +34,12 @@ function Index() {
 
   const getCurrentPageData = (dataList, skip) => {
     const data = dataList.slice(skip, perPage + skip);
+    data.forEach(element => {
+      const am = getAgentImageById(element.id);
+      if (am !== "") {
+        element.image = am;
+      }
+    });
     setCurrentAgentList(data);
   };
   console.log("Agent list ", currentAgentList)
@@ -66,7 +72,7 @@ function Index() {
                                   {/* <Link href={`agent/${agent.id}`}>
                                     <a> */}
                                   <h4>
-                                    {agent.firstname + " " + agent.lastname}
+                                    {agent.firstname + " " + agent.lastname + " " + agent.id}
                                   </h4>
                                   {/* </a>
                                   </Link> */}
