@@ -72,7 +72,7 @@ function Index() {
                                   {/* <Link href={`agent/${agent.id}`}>
                                     <a> */}
                                   <h4>
-                                    {agent.firstname + " " + agent.lastname + " " + agent.id}
+                                    {agent.firstname + " " + agent.lastname}
                                   </h4>
                                   {/* </a>
                                   </Link> */}
