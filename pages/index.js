@@ -59,48 +59,6 @@ function Index({ featured }) {
                     </div>
                   </div>
                 </div>
-                <Container>
-                  <Row>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/netflix.png" style={{ height: 25, width: 50 }} />
-                    </Col>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/hgtv.png" style={{ height: 25, width: 50 }} />
-                    </Col>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/bravio.png" style={{ height: 25, width: 55 }} />
-                    </Col>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/nbc.png" style={{ height: 25, width: 50 }} />
-                    </Col>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/discovery.png" style={{ height: 25, width: 70 }} />
-                    </Col>
-                    <Col xs={4} sm={2} className="d-sm d-lg-none">
-                      <Image src="/images/netflix.png" style={{ height: 25, width: 50 }} />
-                    </Col>
-                  </Row>
-                  <Row>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/netflix.png" />
-                    </Col>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/hgtv.png" />
-                    </Col>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/bravio.png" />
-                    </Col>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/nbc.png" />
-                    </Col>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/discovery.png" />
-                    </Col>
-                    <Col md={2} lg={2} className="d-none d-lg-block">
-                      <Image src="/images/netflix.png" />
-                    </Col>
-                  </Row>
-                </Container>
                 <div className="clearfix" />
               </div>
             </div>

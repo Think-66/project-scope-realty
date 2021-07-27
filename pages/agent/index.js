@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import ClientLayout from "../../components/client-layout";
-import { getAgentImageById, getAgents } from "../../services/agentAPIService";
+import { getAgentImageById, getAgents, setSequence } from "../../services/agentAPIService";
 import ReactPaginate from "react-paginate";
 
 function Index() {
@@ -18,11 +18,18 @@ function Index() {
   const getAgentsInitial = async () => {
     const agents = await getAgents();
     console.log(agents);
-    setAgentList(agents);
-    getCurrentPageData(agents, 0);
+    const filterAgents = agents.filter(x => x.title === "Lic. RE Salesperson" || x.title === "Licence R.E Salesperson" || x.title === "Licensed Real Estate Salesperson" || x.title === "Lic. Real  Estate Sales Person");
+    filterAgents.forEach(element => {
+      const am = setSequence(element.id);
+      element.sequence = am;
+    });
+    filterAgents.sort((a, b) => (a.sequence > b.sequence) ? 1 : ((b.sequence > a.sequence) ? -1 : 0))
+    setAgentList(filterAgents);
 
-    if (agents !== undefined && agents.length > 0) {
-      setPageCount(Math.ceil(agents.length / perPage));
+    getCurrentPageData(filterAgents, 0);
+
+    if (filterAgents !== undefined && filterAgents.length > 0) {
+      setPageCount(Math.ceil(filterAgents.length / perPage));
     }
   };
 
@@ -32,12 +39,21 @@ function Index() {
     getCurrentPageData(agentList, e.selected * perPage);
   };
 
+  const sortList = () => {
+
+  }
+
   const getCurrentPageData = (dataList, skip) => {
     const data = dataList.slice(skip, perPage + skip);
     data.forEach(element => {
-      const am = getAgentImageById(element.id);
-      if (am !== "") {
-        element.image = am;
+      if (element.image) {
+
+      }
+      else {
+        const am = getAgentImageById(element.id);
+        if (am !== "") {
+          element.image = am;
+        }
       }
     });
     setCurrentAgentList(data);

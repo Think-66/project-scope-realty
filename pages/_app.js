@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { followUpBoss } from "../services/crmAPIServices";
 import { useRouter } from 'next/router'
 
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "../public/css/vendors/bootstrap.min.css";
 import "../public/css/vendors/calender-style.css";
 import "../public/css/vendors/calender-theme.css";

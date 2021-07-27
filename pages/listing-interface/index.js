@@ -48,11 +48,12 @@ export default function PracticeExamPageOne({ listingType }) {
   }
 
   useEffect(() => {
-    setFilters({
+    const tempFilters = {
       ...filters,
       listingType: listingType
-    })
-    onSearch()
+    }
+    setFilters(tempFilters)
+    onSearch(null, tempFilters)
   }, [listingType]);
 
 
@@ -62,13 +63,14 @@ export default function PracticeExamPageOne({ listingType }) {
     window.scrollTo(0, 0);
   };
 
-  const onSearch = async (page) => {
+  const onSearch = async (page, filtersParam) => {
     setIsLoading(true)
+    const tempFilters = filtersParam ? filtersParam : filters
 
     const dataaReq = {
       page: page ? page : 1,
       limit: 10,
-      status: filters.listingType == "listingRent" ? 2 : 1,
+      status: tempFilters.listingType == "listingRent" ? 2 : 1,
       amenities: "",
       extras: "",
     }
@@ -81,54 +83,54 @@ export default function PracticeExamPageOne({ listingType }) {
       extras: "",
       type: "",
     }
-    if (filters.listingType) {
-      realtymReq.status = filters.listingType == "listingRent" ? 2 : 1
+    if (tempFilters.listingType) {
+      realtymReq.status = tempFilters.listingType == "listingRent" ? 2 : 1
     }
-    if (filters.featurePets) {
+    if (tempFilters.featurePets) {
       realtymReq.amenities = "pets"
     }
-    if (filters.featureHasOpenHouse) {
+    if (tempFilters.featureHasOpenHouse) {
       realtymReq.extras = "openhouse"
     }
-    if (filters.featureNewListing) {
+    if (tempFilters.featureNewListing) {
       realtymReq.amenities = "newConstruction "
     }
-    if (filters.bed) {
-      realtymReq.bedsMin = filters.bed
+    if (tempFilters.bed) {
+      realtymReq.bedsMin = tempFilters.bed
     }
-    if (filters.bath) {
-      realtymReq.bathMin = filters.bath
+    if (tempFilters.bath) {
+      realtymReq.bathMin = tempFilters.bath
     }
-    if (filters.price) {
-      realtymReq.priceMax = filters.price
+    if (tempFilters.price) {
+      realtymReq.priceMax = tempFilters.price
     }
-    if (filters.featurePets) {
-      realtymReq.pets = filters.featurePets ? 3 : 99
+    if (tempFilters.featurePets) {
+      realtymReq.pets = tempFilters.featurePets ? 3 : 99
     }
-    if (filters.featureCondo) {
+    if (tempFilters.featureCondo) {
       realtymReq.type = realtymReq.type ? realtymReq.type + ",Condo" : "Condo"
     }
-    if (filters.featureCoop) {
+    if (tempFilters.featureCoop) {
       realtymReq.type = realtymReq.type ? realtymReq.type + ",Coop" : "Coop"
     }
-    if (filters.featureLand) {
+    if (tempFilters.featureLand) {
       realtymReq.type = realtymReq.type ? realtymReq.type + ",Land" : "Land"
     }
-    if (filters.searchBy == "location" && filters.searchText) {
-      realtymReq.address = filters.searchText
-      realtymReq.city = filters.searchText
+    if (tempFilters.searchBy == "location" && tempFilters.searchText) {
+      realtymReq.address = tempFilters.searchText
+      realtymReq.city = tempFilters.searchText
     }
-    if (filters.searchBy == "zipCode" && filters.searchText) {
-      realtymReq.zipcode = filters.searchText
+    if (tempFilters.searchBy == "zipCode" && tempFilters.searchText) {
+      realtymReq.zipcode = tempFilters.searchText
     }
-    if (filters.searchBy == "bedrooms" && filters.searchText) {
-      realtymReq.bedsMin = filters.searchText
+    if (tempFilters.searchBy == "bedrooms" && tempFilters.searchText) {
+      realtymReq.bedsMin = tempFilters.searchText
     }
-    if (filters.freeTextSearch) {
+    if (tempFilters.freeTextSearch) {
       realtymReq.label = realtymReq.freeTextSearch
-      realtymReq.address = filters.searchText
-      realtymReq.city = filters.searchText
-      realtymReq.zipcode = filters.searchText
+      realtymReq.address = tempFilters.searchText
+      realtymReq.city = tempFilters.searchText
+      realtymReq.zipcode = tempFilters.searchText
     }
     const tempListingRealtym = await getListingsRealtym(realtymReq);
     mapData(tempListingDataa, tempListingRealtym)

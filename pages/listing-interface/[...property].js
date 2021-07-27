@@ -6,6 +6,7 @@ import {
   getListingsRealtymById,
 } from "../../services/listingApiService";
 import { followUpBoss } from "../../services/crmAPIServices";
+import { Carousel } from 'react-responsive-carousel';
 
 const RENT = "Rent";
 const SELL = "Sell";
@@ -89,30 +90,16 @@ export default function ListingInterface({ property }) {
                 <div className="cmp-pro-blo-fir">
                   <div className="row">
                     <div className="col-sm-12 col-md-7 col-lg-7 hide-of p-0 product-details-left-background">
-                      <div className="cmp-pro-sli-blo-top">
-                        <div className="single-carousel-wrapper">
-                          <div
-                            className="owl-carousel owl-theme single-inner-carousel"
-                            styles={{ width: "100%", overflow: "hidden" }}
-                          >
-                            <div id="carouselContactControls" className="carousel slide" data-ride="carousel">
-                              <div className="carousel-inner">
-                                {property?.images?.map((o, index) => (<div key={index} className={`carousel-item ${index == 0 ? 'active' : ''}`}>
-                                  <img className="d-block w-100" src={o} alt="First slide" />
-                                </div>))}
-                              </div>
-                              <a className="carousel-control-prev" href="#carouselContactControls" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                              </a>
-                              <a className="carousel-control-next" href="#carouselContactControls" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                      <Carousel
+                        showStatus={false}
+                        showThumbs={false}
+                        showIndicators={false}
+                      >
+                        {property?.images?.map((o, index) => (<div key={index}>
+                          <img src={o} />
+                          <p className="legend" style={{ bottom: '-10px' }}>{(index + 1)}/{property?.images?.length}</p>
+                        </div>))}
+                      </Carousel>
                       <div className="cmp-pro-sli-blo-cen px-5">
                         <div className="ctl-prd-hdr-top">
                           <h3 style={{ color: "#4AAEE8" }}>Description</h3>
@@ -132,9 +119,9 @@ export default function ListingInterface({ property }) {
                           <div className="row">
                             <div className="col-lg-12 col-md-12 col-sm-12 ">
                               <div className="row">
-                                <div className="col-sm-12 col-md-4 col-lg-4 mb-3">
-                                  <div className="row">
-                                    <div className=" col-sm-12 col-md-4 col-lg-4 m-auto">
+                                <div className=" col-sm-12 col-md-4 col-lg-4 mb-3">
+                                  <div className="row align-items-start">
+                                    <div className="col-sm-12 col-md-4 col-lg-4">
                                       <div className="ctl-prd-ico-con">
                                         <img src="/images/i-icon.png" alt="" />
                                       </div>
@@ -142,37 +129,43 @@ export default function ListingInterface({ property }) {
                                     <div className=" col-sm-12 col-md-8 col-lg-8 cmp-prd-pad-lft">
                                       <div className="cmp-pro-fea-inf">
                                         <h4>Patio</h4>
-                                        <span>Dishwasher</span>
+                                        <div className="features">
+                                          <div>Dishwasher</div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className=" col-sm-12 col-md-4 col-lg-4 mb-3">
-                                  <div className="row">
-                                    <div className=" col-sm-12 col-md-4 col-lg-4 m-auto">
+                                  <div className="row align-items-start">
+                                    <div className="col-sm-12 col-md-4 col-lg-4">
                                       <div className="ctl-prd-ico-con">
                                         <img src="/images/i-icon.png" alt="" />
                                       </div>
                                     </div>
                                     <div className=" col-sm-12 col-md-8 col-lg-8 cmp-prd-pad-lft">
                                       <div className="cmp-pro-fea-inf">
-                                        <h4>Patio</h4>
-                                        <span>Dishwasher</span>
+                                        <h4>Renovated</h4>
+                                        <div className="features">
+                                          <div>Marble Bath</div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className=" col-sm-12 col-md-4 col-lg-4 mb-3">
-                                  <div className="row">
-                                    <div className=" col-sm-12 col-md-4 col-lg-4 m-auto">
+                                  <div className="row align-items-start">
+                                    <div className="col-sm-12 col-md-4 col-lg-4">
                                       <div className="ctl-prd-ico-con">
                                         <img src="/images/i-icon.png" alt="" />
                                       </div>
                                     </div>
                                     <div className=" col-sm-12 col-md-8 col-lg-8 cmp-prd-pad-lft">
                                       <div className="cmp-pro-fea-inf">
-                                        <h4>Patio</h4>
-                                        <span>Dishwasher</span>
+                                        <h4>Microwave</h4>
+                                        <div className="features">
+                                          <div>Convertible</div>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
