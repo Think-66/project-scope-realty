@@ -35,6 +35,29 @@ export const agentImages = [
     { id: 490, path: "https://scoperealtynyc.blob.core.windows.net/agents/hsaldarriaga20200928201539378.jpg", sequence: 100 },
     { id: 551, path: "https://scoperealtynyc.blob.core.windows.net/agents/grodriguez20210308160811288.jpg", sequence: 101 },
     { id: 508, path: "https://scoperealtynyc.blob.core.windows.net/agents/kkim20201104151544793.jpg", sequence: 111 },
+    { id: 489, path: "https://scoperealtynyc.blob.core.windows.net/agents/jrusovskiy20200929184235954.jpg", sequence: 112 },
+    { id: 491, path: "https://scoperealtynyc.blob.core.windows.net/agents/snewman20200929184321543.jpg", sequence: 115 },
+    { id: 487, path: "https://scoperealtynyc.blob.core.windows.net/agents/rramlall20200929185716644.jpg", sequence: 116 },
+    { id: 505, path: "https://scoperealtynyc.blob.core.windows.net/agents/mquinones20201028230152816.jpg", sequence: 125 },
+    { id: 481, path: "https://scoperealtynyc.blob.core.windows.net/agents/pelder20200914141608380.jpg", sequence: 126 },
+    {
+        id: 495, path: "https://scoperealtynyc.blob.core.windows.net/agents/nothman20201010034018112.jpg",
+        sequence: 127
+    },
+    { id: 442, path: "https://scoperealtynyc.blob.core.windows.net/agents/nchikuni20200303222726289.jpg", sequence: 130 },
+    { id: 483, path: "https://scoperealtynyc.blob.core.windows.net/agents/mpaul20200921174116343.jpg", sequence: 131 },
+    { id: 515, path: "https://scoperealtynyc.blob.core.windows.net/agents/scope_logo_square.png", sequence: 132 },
+    { id: 524, path: "https://scoperealtynyc.blob.core.windows.net/agents/y.soto20200921174317914.jpg", sequence: 135 },
+    { id: 484, path: "https://scoperealtynyc.blob.core.windows.net/agents/ttorres20200921174215243.jpg", sequence: 140 },
+    { id: 476, path: "https://scoperealtynyc.blob.core.windows.net/agents/vchandiramani20200908152550397.jpg", sequence: 141 },
+    { id: 282, path: "https://scoperealtynyc.blob.core.windows.net/agents/scope_logo_square.png", sequence: 150 },
+    { id: 309, path: "https://scoperealtynyc.blob.core.windows.net/agents/ajonss20191209212747996.jpg", sequence: 160 },
+    { id: 564, path: "https://scoperealtynyc.blob.core.windows.net/agents/jlambert20191230211742811.jpg", sequence: 170 },
+    { id: 353, path: "https://scoperealtynyc.blob.core.windows.net/agents/mseidel20191230155911382.jpg", sequence: 180 },
+    { id: 363, path: "https://scoperealtynyc.blob.core.windows.net/agents/solmo20191230154337358.jpg", sequence: 185 },
+    { id: 364, path: "https://scoperealtynyc.blob.core.windows.net/agents/vkrishna20191230161303169.jpg", sequence: 186 },
+    { id: 8, path: "https://scoperealtynyc.blob.core.windows.net/agents/drivera@scoperealty.nyc.jpg", sequence: 187 },
+    { id: 26, path: "https://scoperealtynyc.blob.core.windows.net/agents/csobers@scoperealty.nyc.jpg", sequence: 195 },
 
     { id: 129, path: "https://scoperealtynyc.blob.core.windows.net/agents/rallen20190605161152932.jpg" },
     { id: 246, path: "https://scoperealtynyc.blob.core.windows.net/agents/aantoine20191021173846599.jpg" },
@@ -48,15 +71,15 @@ export const agentImages = [
 
     { id: 404, path: "https://scoperealtynyc.blob.core.windows.net/agents/mcervantes20200226201514690.jpg" },
 
-    { id: 476, path: "https://scoperealtynyc.blob.core.windows.net/agents/vchandiramani20200908152550397.jpg" },
-    { id: 442, path: "https://scoperealtynyc.blob.core.windows.net/agents/nchikuni20200303222726289.jpg" },
+
+
     { id: 469, path: "https://scoperealtynyc.blob.core.windows.net/agents/fchu20200128155513744.jpeg" },
-    { id: 515, path: "https://scoperealtynyc.blob.core.windows.net/agents/scope_logo_square.png" },
+
     { id: 556, path: "https://scoperealtynyc.blob.core.windows.net/agents/adavies20201218131800936.jpeg" },
 
     { id: 318, path: "https://scoperealtynyc.blob.core.windows.net/agents/rdelacruz20190408225422032.jpg" },
 
-    { id: 481, path: "https://scoperealtynyc.blob.core.windows.net/agents/pelder20200914141608380.jpg" },
+
     { id: 588, path: "https://scoperealtynyc.blob.core.windows.net/agents/nfagan20190821005452974.jpeg" },
 
 
@@ -66,40 +89,40 @@ export const agentImages = [
 
 
     { id: 11, path: "https://scoperealtynyc.blob.core.windows.net/agents/maggie20190715163342464.jpg" },
-    { id: 364, path: "https://scoperealtynyc.blob.core.windows.net/agents/vkrishna20191230161303169.jpg" },
-    { id: 564, path: "https://scoperealtynyc.blob.core.windows.net/agents/jlambert20191230211742811.jpg" },
 
 
 
 
-    { id: 282, path: "https://scoperealtynyc.blob.core.windows.net/agents/scope_logo_square.png" },
+
+
+
     { id: 608, path: "https://scoperealtynyc.blob.core.windows.net/agents/knazaire@scoperealty.nyc.png" },
-    { id: 491, path: "https://scoperealtynyc.blob.core.windows.net/agents/snewman20200929184321543.jpg" },
 
 
-    { id: 363, path: "https://scoperealtynyc.blob.core.windows.net/agents/solmo20191230154337358.jpg" },
-    { id: 495, path: "https://scoperealtynyc.blob.core.windows.net/agents/nothman20201010034018112.jpg" },
-
-    { id: 483, path: "https://scoperealtynyc.blob.core.windows.net/agents/mpaul20200921174116343.jpg" },
 
 
-    { id: 505, path: "https://scoperealtynyc.blob.core.windows.net/agents/mquinones20201028230152816.jpg" },
-    { id: 487, path: "https://scoperealtynyc.blob.core.windows.net/agents/rramlall20200929185716644.jpg" },
-    { id: 8, path: "https://scoperealtynyc.blob.core.windows.net/agents/drivera@scoperealty.nyc.jpg" },
+
+
+
+
+
+
+
+
     { id: 518, path: "https://scoperealtynyc.blob.core.windows.net/agents/trizvi20210419175025184.jpg" },
 
-    { id: 489, path: "https://scoperealtynyc.blob.core.windows.net/agents/jrusovskiy20200929184235954.jpg" },
+
 
     { id: 146, path: "https://scoperealtynyc.blob.core.windows.net/agents/msantos20190715164407443.jpg" },
-    { id: 353, path: "https://scoperealtynyc.blob.core.windows.net/agents/mseidel20191230155911382.jpg" },
+
     { id: 132, path: "https://scoperealtynyc.blob.core.windows.net/agents/sshah20191209225616372.jpg" },
 
-    { id: 26, path: "https://scoperealtynyc.blob.core.windows.net/agents/csobers@scoperealty.nyc.jpg" },
-
-    { id: 524, path: "https://scoperealtynyc.blob.core.windows.net/agents/y.soto20200921174317914.jpg" },
 
 
-    { id: 484, path: "https://scoperealtynyc.blob.core.windows.net/agents/ttorres20200921174215243.jpg" },
+
+
+
+
 
 
 

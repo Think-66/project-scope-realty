@@ -94,10 +94,12 @@ export default function ListingInterface({ property }) {
                         showStatus={false}
                         showThumbs={false}
                         showIndicators={false}
+                        showArrows={property?.images?.length > 1 ? true : false}
+                        showIndicators={property?.images?.length > 1 ? true : false}
                       >
                         {property?.images?.map((o, index) => (<div key={index}>
                           <img src={o} />
-                          <p className="legend" style={{ bottom: '-10px' }}>{(index + 1)}/{property?.images?.length}</p>
+                          {property?.images?.length > 1 && <p className="legend" style={{ bottom: '-10px' }}>{(index + 1)}/{property?.images?.length}</p>}
                         </div>))}
                       </Carousel>
                       <div className="cmp-pro-sli-blo-cen px-5">

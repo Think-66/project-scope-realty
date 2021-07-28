@@ -73,6 +73,8 @@ export default function PracticeExamPageOne({ listingType }) {
       status: tempFilters.listingType == "listingRent" ? 2 : 1,
       amenities: "",
       extras: "",
+      sort: "date",
+      order: "desc"
     }
     const tempListingDataa = await getListingsDataa(dataaReq)
 
@@ -82,6 +84,8 @@ export default function PracticeExamPageOne({ listingType }) {
       amenities: "",
       extras: "",
       type: "",
+      sort: "date",
+      order: "desc"
     }
     if (tempFilters.listingType) {
       realtymReq.status = tempFilters.listingType == "listingRent" ? 2 : 1
