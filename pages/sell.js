@@ -2,8 +2,11 @@ import Link from "next/link";
 import ClientLayout from "../components/client-layout";
 import BootstrapNavBar from '../components/BootstrapNavBar'
 import React, { useState } from 'react'
+import { useRouter } from "next/router";
 
 function Sell() {
+  const router = useRouter();
+
   const [formData, setFormData] = useState({
     name: "",
     address: "",
@@ -21,6 +24,34 @@ function Sell() {
   };
 
   const onFormSubmit = async () => {
+    let dt = new Date();
+    const data = {
+      createdAt: dt.toUTCString,
+      name: formData.name,
+      stage: "Lead",
+      email: formData.email,
+      phone: formData.mobile,
+      note: formData.message,
+      // assignedLenderId: property.id,
+      // customMsg: formData.message,
+      source: window.location.href
+    };
+
+    // console.log("data: ", data);
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        $('#propertyContactModal').modal('hide');
+        router.push('/thankyou');
+      }
+    });
   }
 
   return (
