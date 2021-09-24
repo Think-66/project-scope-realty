@@ -49,6 +49,7 @@
     "react-toastify": "^7.0.4",
     "shortid": "^2.2.16",
     "swr": "^0.3.11",
-    "vimeo": "^2.1.1"
+    "vimeo": "^2.1.1",
+    "file-view-react": "0.0.4"
   }
 }
