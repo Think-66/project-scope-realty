@@ -6,14 +6,14 @@ import Layout from "./layout";
 import AccessDenied from "./access-denied";
 import { ToastContainer } from "react-nextjs-toast";
 
-export default function ProtectedLayout({ children }) {
+export default function ProtectedLayout({ children, adminOnly }) {
   const [session, loading] = useSession();
 
   // When rendering client side don't display anything until loading is complete
   if (typeof window !== "undefined" && loading) return null;
 
   // If no session exists, display access denied message
-  if (!session) {
+  if (!session || (adminOnly && !session?.user?.isAdmin)) {
     return (
       <Layout>
         <AccessDenied />
