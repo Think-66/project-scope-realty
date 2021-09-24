@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import ProtectedLayout from "../components/ProtectedLayout";
 import { GetFireBase } from '../services/fireBase'
 import { defineFileAction, ChonkyActions, ChonkyIconName } from 'chonky';
-import FileViewer from 'file-view-react'
+// import FileViewer from 'file-view-react'
 
 import {
   FileBrowser,
@@ -76,7 +76,7 @@ export default function ClientSideECheck() {
               </button>
             </div>
             <div className="modal-body d-flex justify-content-center">
-              <FileViewer fileType={fileType} filePath={filePath} />
+//               <FileViewer fileType={fileType} filePath={filePath} />
             </div>
             <div className="modal-footer">
               <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
