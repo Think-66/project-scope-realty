@@ -1,7 +1,7 @@
-import { getRequest } from './coreApiServices'
+import { getRequest, getJsonpRequest } from './coreApiServices'
 
 export const getListingsDataa = (params = null) => {
-    return getRequest(`https://dataapi.realtymx.com/listings?apiKey=487133496c474d70`, params)
+    return getJsonpRequest(`https://dataapi.realtymx.com/listings?apiKey=487133496c474d70`, params)
 }
 
 export const getListingsRealtym = (params = null) => {

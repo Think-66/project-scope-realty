@@ -4,6 +4,23 @@ import https from "https";
 import { getSession } from "next-auth/client";
 import { signOut } from "next-auth/client";
 import { toast } from "react-toastify";
+import fetchJsonp from "fetch-jsonp";
+
+export const getJsonpRequest = async (url, params = null) => {
+  var url = await new URL(url)
+  params = { ...params }
+  Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
+
+  return fetchJsonp(url.toString())
+    .then(function (response) {
+      return response.json()
+    })
+    .catch(function (ex) {
+      toast.error(
+        customErrorMessage || "Something went wrong please try again!"
+      );
+    })
+}
 
 export const getRequest = async (
   url,
@@ -24,6 +41,7 @@ export const getRequest = async (
     headers: {
       Authorization: `Bearer ${token}`,
       ApplicationId: parseInt(process.env.appId),
+      'Access-Control-Allow-Origin': '*'
     },
   });
 
@@ -77,6 +95,7 @@ export const postRequest = async (
     headers: {
       Authorization: `Bearer ${token}`,
       ApplicationId: parseInt(process.env.appId),
+      'Access-Control-Allow-Origin': '*'
     },
   });
 
@@ -137,6 +156,7 @@ export const putRequest = async (
     headers: {
       Authorization: `Bearer ${token}`,
       ApplicationId: parseInt(process.env.appId),
+      'Access-Control-Allow-Origin': '*'
     },
   });
 
@@ -190,6 +210,7 @@ export const deleteRequest = async (
     headers: {
       Authorization: `Bearer ${token}`,
       ApplicationId: parseInt(process.env.appId),
+      'Access-Control-Allow-Origin': '*'
     },
   });
 
