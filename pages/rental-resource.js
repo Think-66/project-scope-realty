@@ -76,6 +76,7 @@ export default function ClientSideECheck() {
               </button>
             </div>
             <div className="modal-body d-flex justify-content-center">
+    
 //               <FileViewer fileType={fileType} filePath={filePath} />
             </div>
             <div className="modal-footer">
