@@ -87,9 +87,9 @@ function Sell() {
         </div>
         <div className="row d-flex justify-content-center" style={{ marginTop: "-400px" }}>
           <div className="col-md-6 col-sm-12">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
                 <form action="#!" method="post">
                   <div className="ctl-prd-frm-box">
                     <div className="ctl-cot-inp-box">

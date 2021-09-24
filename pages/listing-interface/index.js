@@ -76,6 +76,22 @@ export default function PracticeExamPageOne({ listingType }) {
       sort: "date",
       order: "desc"
     }
+    if (tempFilters.price) {
+      dataaReq.priceMax = tempFilters.price
+    }
+    if (tempFilters.bed) {
+      dataaReq.bedsMin = tempFilters.bed
+    }
+    if (tempFilters.bath) {
+      dataaReq.bathMin = tempFilters.bath
+    }
+    if (tempFilters.freeTextSearch || tempFilters.searchText) {
+      realtymReq.label = realtymReq.freeTextSearch ? realtymReq.freeTextSearch : tempFilters.searchText
+    }
+    if (tempFilters.searchText) {
+      realtymReq.address = tempFilters.searchText
+    }
+
     const tempListingDataa = await getListingsDataa(dataaReq)
 
     const realtymReq = {
@@ -97,7 +113,7 @@ export default function PracticeExamPageOne({ listingType }) {
       realtymReq.extras = "openhouse"
     }
     if (tempFilters.featureNewListing) {
-      realtymReq.amenities = "newConstruction "
+      realtymReq.amenities += " newConstruction "
     }
     if (tempFilters.bed) {
       realtymReq.bedsMin = tempFilters.bed
@@ -132,9 +148,9 @@ export default function PracticeExamPageOne({ listingType }) {
     }
     if (tempFilters.freeTextSearch) {
       realtymReq.label = realtymReq.freeTextSearch
-      realtymReq.address = tempFilters.searchText
-      realtymReq.city = tempFilters.searchText
-      realtymReq.zipcode = tempFilters.searchText
+      realtymReq.address = type == "location" ? tempFilters.searchText : ""
+      realtymReq.city = type == "location" ? tempFilters.searchText : ""
+      realtymReq.zipcode = type == "zipCode" ? tempFilters.searchText : ""
     }
     const tempListingRealtym = await getListingsRealtym(realtymReq);
     mapData(tempListingDataa, tempListingRealtym)

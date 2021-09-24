@@ -1,8 +1,10 @@
-import { Provider } from "next-auth/client";
 import Head from 'next/head'
 import React, { useState } from 'react'
 import { followUpBoss } from "../services/crmAPIServices";
 import { useRouter } from 'next/router'
+import { Provider as AuthProvider } from 'next-auth/client'
+import { setChonkyDefaults } from 'chonky';
+import { ChonkyIconFA } from 'chonky-icon-fontawesome';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "../public/css/vendors/bootstrap.min.css";
@@ -14,6 +16,8 @@ import "../public/css/core.css";
 import "../public/css/custom.css";
 
 export default function App({ Component, pageProps }) {
+  setChonkyDefaults({ iconComponent: ChonkyIconFA });
+
   const router = useRouter();
   const [contactFormData, setContactFormData] = useState({
     firstName: "",
@@ -53,13 +57,7 @@ export default function App({ Component, pageProps }) {
   };
 
   return (
-    <Provider
-      options={{
-        clientMaxAge: 0,
-        keepAlive: 0,
-      }}
-      session={pageProps.session}
-    >
+    <AuthProvider session={pageProps.session}>
       <Head>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
@@ -163,6 +161,6 @@ export default function App({ Component, pageProps }) {
           </div>
         </div>
       </div>
-    </Provider>
+    </AuthProvider>
   );
 }

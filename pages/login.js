@@ -36,7 +36,7 @@ export default function Login() {
                   </div>
                 )}
 
-                <form
+                {/* <form
                   onSubmit={(e) => {
                     e.preventDefault();
                     signIn("email", { email });
@@ -58,7 +58,7 @@ export default function Login() {
                           }}
                         />
                       </div>
-                      {/* <div className="ctl-com-inp ctl-mar-bot">
+                      <div className="ctl-com-inp ctl-mar-bot">
                       <label htmlFor="pwd">PASSWORD</label>
                       <input
                         type="password"
@@ -68,7 +68,7 @@ export default function Login() {
                       <a href="#!" className="ctl-fot-pwd">
                         Forget your password?
                       </a>
-                    </div> */}
+                    </div>
                       <div className="ctl-sigin ctl-mar-bot">
                         <input type="submit" defaultValue="Sign in" />
                       </div>
@@ -84,19 +84,19 @@ export default function Login() {
                     </div>
                     <div className="clearfix" />
                   </div>
-                </form>
+                </form> */}
 
                 <div className="ctl-pro-inf-scp">
                   <div className="ctl-scp-top">
                     <h4>SCOPE REALTY AGENTS:</h4>
                   </div>
                   <div className="ctl-scp-bot">
-                    <div className="ctl-sco-ico-lft">
+                    {/* <div className="ctl-sco-ico-lft">
                       <a href="#!">
                         {" "}
                         <img src="/images/image12.png" alt="" />
                       </a>
-                    </div>
+                    </div> */}
                     <div className="ctl-sco-ico-rit">
                       <a onClick={() => signIn("google")}>
                         <img src="/images/image11.png" alt="" />
