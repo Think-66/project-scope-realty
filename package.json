@@ -50,9 +50,7 @@
     "react-toastify": "^7.0.4",
     "shortid": "^2.2.16",
     "swr": "^0.3.11",
-    "vimeo": "^2.1.1"
-  },
-    "browser": {    
-    "zlib":false  
+    "vimeo": "^2.1.1",
+    "pdfjs-dist": "^2.9.359"
   }
 }
