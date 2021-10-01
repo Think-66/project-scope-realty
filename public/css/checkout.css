@@ -61,3 +61,7 @@
     padding-top: 25% !important;
   }
 }
+
+.paypal-popup-close:hover {
+  transform: scale(1.1);
+}
