@@ -141,7 +141,7 @@ const options = {
       //console.log("URL: " + JSON.stringify(url, null, 4));
       //console.log("Base URL: " + JSON.stringify(baseUrl, null, 4));
       return Promise.resolve(
-        `${process.env.APP_URL || "http://localhost:3000/"}dashboard`
+        `${process.env.APP_URL || "http://localhost:3000"}/dashboard`
       );
     },
     // jwt: async (token, user, account, profile, isNewUser) => { return Promise.resolve(token) },
