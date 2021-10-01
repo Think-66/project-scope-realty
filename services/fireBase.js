@@ -128,7 +128,7 @@ export const UploadToFireBase = (setProgress, eventFiles, folder) => {
             // Upload completed successfully, now we can get the download URL
             getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
               resolve(downloadURL)
-              toast.info('File available at', downloadURL);
+              console.log('File available at', downloadURL);
             });
           }
         );
@@ -155,4 +155,40 @@ export const CancelUploadToFireBase = (index) => {
   if (task?.length > index) {
     task[index].cancel()
   }
+}
+
+export const DownloadFireBase = (url, name) => {
+  const storage = getStorage();
+  const httpsReference = ref(storage, url)
+  // Get the download URL
+  getDownloadURL(httpsReference)
+    .then((url) => {
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = name;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    })
+    .catch((error) => {
+      // A full list of error codes is available at
+      // https://firebase.google.com/docs/storage/web/handle-errors
+      switch (error.code) {
+        case 'storage/object-not-found':
+          // File doesn't exist
+          break;
+        case 'storage/unauthorized':
+          // User doesn't have permission to access the object
+          break;
+        case 'storage/canceled':
+          // User canceled the upload
+          break;
+
+        // ...
+
+        case 'storage/unknown':
+          // Unknown error occurred, inspect the server response
+          break;
+      }
+    });
 }
