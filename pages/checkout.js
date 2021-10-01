@@ -35,10 +35,13 @@ export default function page() {
    {popUp && <>
 
     <div className='pb-5 px-4 paypal-popup-main' style={{ background: 'rgba(0, 0, 0, 0.1)', position: "fixed", zIndex: 2000, width: '100%', height: '100%', overflowY: 'scroll', paddingTop: '10%' }}>
-     <div className="px-5 mr-5 d-flex justify-content-end">
-      <button type="button" className="btn btn-dark" style={{ border: '1px solid black', borderRadius: '10px' }} onClick={() => setPopUp(false)}>Close</button>
-     </div>
-     <div className="d-flex justify-content-center p-5 paypal-popup " style={{ width: '60%', margin: 'auto', background: 'white', border: '3px solid black', borderRadius: '10px' }}>
+
+     <div className="d-flex justify-content-center pt-4 pb-5 px-5 paypal-popup row" style={{ width: '60%', margin: 'auto', background: 'white' }}>
+
+      <div className="px-2 mb-5 d-flex justify-content-end col-12 ">
+       <div className='ml-5 mx-md-2 d-flex align-items-center justify-content-center btn paypal-popup-close' style={{ background: '#FFDCD8', borderRadius: '100%', width: '2.5em', height: '2.5em' }} onClick={() => setPopUp(false)}><img src="/images/close-icon.png" alt="" width='auto' /></div>
+      </div>
+
       <Paypal
        price={value}
        subscription_type={subscriptionType}
@@ -74,19 +77,19 @@ export default function page() {
           </div>
           <br />
 
-          <form onSubmit={Submit1} className="px-3" >
-           <ul >
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Ipsum cursus vestibulum massa faucibus.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Elementum ullamcorper viverra id faucibus.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Nulla ut nec ornare porttitor mi feugiat nulla.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Egestas magna amet augue leo bibendum.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Velit in scelerisque orci in eget vitae nulla.</li>
-           </ul>
-           <br />
 
+          <ul className='px-3'>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Ipsum cursus vestibulum massa faucibus.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Elementum ullamcorper viverra id faucibus.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Nulla ut nec ornare porttitor mi feugiat nulla.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Egestas magna amet augue leo bibendum.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Velit in scelerisque orci in eget vitae nulla.</li>
+          </ul>
+          <br />
+          <form onSubmit={Submit1} className="px-3" >
            <div className="form-group">
             <label className=" font-weight-bold">DOWN PAYMENT</label>
-            <input required style={{ height: "49px", background: "#DFE1E6" }} type="text" className="form-control" id="payment" placeholder="$300" value={value1} onChange={(e) => { setValue1(e.target.value) }} />
+            <input required style={{ height: "49px", background: "#DFE1E6" }} type="number" className="form-control" id="payment" placeholder="$300" value={value1} onChange={(e) => { setValue1(e.target.value) }} />
            </div>
 
            <button type="submit" className="btn checkout2-btn"><img src="../images/logos_paypal.png" width="13px" /> Pay With PayPal </button>
@@ -112,22 +115,23 @@ export default function page() {
           </div>
           <br />
 
+          <ul className='px-3'>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Ipsum cursus vestibulum massa faucibus.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Elementum ullamcorper viverra id faucibus.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Nulla ut nec ornare porttitor mi feugiat nulla.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Egestas magna amet augue leo bibendum.</li>
+           <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Velit in scelerisque orci in eget vitae nulla.</li>
+          </ul>
+
+          <br />
+
           <form onSubmit={Submit2} className="px-3" >
-           <ul >
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Ipsum cursus vestibulum massa faucibus.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Elementum ullamcorper viverra id faucibus.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Nulla ut nec ornare porttitor mi feugiat nulla.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Egestas magna amet augue leo bibendum.</li>
-            <li><img src="../images/Ellipse 22.png" width="10px" className="mr-1" />Velit in scelerisque orci in eget vitae nulla.</li>
-           </ul>
-
-           <br />
-
            <div className="form-group">
             <label className=" font-weight-bold">DOWN PAYMENT</label>
             <input
-             required style={{ height: "49px", background: "#DFE1E6" }}
-             type="text"
+             required
+             style={{ height: "49px", background: "#DFE1E6" }}
+             type="number"
              className="form-control"
              placeholder="$300"
              value={value2}
