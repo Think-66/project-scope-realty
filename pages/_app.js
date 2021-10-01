@@ -14,6 +14,7 @@ import "../public/css/main.css";
 import "../public/css/responsive.css";
 import "../public/css/core.css";
 import "../public/css/custom.css";
+import '../public/css/checkout.css';
 
 export default function App({ Component, pageProps }) {
   setChonkyDefaults({ iconComponent: ChonkyIconFA });

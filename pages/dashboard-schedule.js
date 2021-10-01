@@ -157,7 +157,7 @@ export default function EventCalendar(props) {
     return <div style={{ display: 'flex', justifyContent: 'center', marginBottom: 20, }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', width: 970 }}>
         <button className='btn text-primary font-weight-bold' style={{ background: 'silver', width: '100px', height: '40px', fontSize: '20px' }} onClick={() => props.onNavigate('PREV')}>Prev</button>
-        <h3 style={{ fontFamily: 'Abhaya Libre', fontSize: 40, textAlign: 'center', color: '#3A4A54' }} ><strong>{localizer.format(date, 'MMMM')}</strong></h3>
+        <h3 style={{ fontFamily: 'Abhaya Libre', fontSize: 40, textAlign: 'center', color: '#3A4A54' }} ><strong>{localizer.format(date, 'YYYY MMMM')}</strong></h3>
         <button className='btn text-primary font-weight-bold' style={{ background: 'silver', width: '100px', height: '40px', fontSize: '20px' }} onClick={() => props.onNavigate('NEXT')} >Next</button>
       </div>
     </div>
@@ -168,7 +168,7 @@ export default function EventCalendar(props) {
     return (
       <div className="rbc-header" style={{ height: 150, padding: 10, }}>
         <div className='m-2' style={{ fontSize: 30, fontWeight: 600 }}>{localizer.format(date, 'D')}</div>
-        <div style={{ fontSize: 18, fontWeight: 100 }}>{localizer.format(date, 'ddd')}</div>
+        <div style={{ fontSize: 18, fontWeight: 100 }}>{localizer.format(date, 'dddd')}</div>
       </div>
     )
   }
@@ -176,7 +176,7 @@ export default function EventCalendar(props) {
   const MyWeek = (props) => {
 
     let { date } = props
-    let range = MyWeek.range(date)
+    let range = MyWeek.range(date, props)
 
     return <TimeGrid {...props} range={range} evetOffset={15} />
 
