@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 
-const SubcriptionsSchema = new mongoose.Schema({
+const SubscriptionsSchema = new mongoose.Schema({
 
  create_time: {
   type: String,
@@ -38,5 +38,5 @@ const SubcriptionsSchema = new mongoose.Schema({
  }
 });
 
-export default mongoose.models.Subcriptions ||
- mongoose.model("Subcriptions", SubcriptionsSchema);
+export default mongoose.models.Subscriptions ||
+ mongoose.model("Subscriptions", SubscriptionsSchema);
